@@ -1,0 +1,22 @@
+
+$color-1: green;
+$color-2: red;
+
+::-webkit-scrollbar-track{
+  border-radius: 0;
+  background-color: $color-1;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+  background-color: $color-2;
+
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 0;
+  background-color: $color-1;
+}
+
+::selection {
+  background: $color-1;
+}

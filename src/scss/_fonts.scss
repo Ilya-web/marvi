@@ -1,0 +1,21 @@
+@import "mixins";
+
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../../fonts/Gotham-Font/Gotham-Book.woff2') format('woff2'),
+  url('../../fonts/Gotham-Font/Gotham-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../../fonts/Gotham-Font/Gotham-LightItalic.woff2') format('woff2'),
+  url('../../fonts/Gotham-Font/Gotham-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+

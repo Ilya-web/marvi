@@ -1,0 +1,49 @@
+
+.checkbox-site {
+  $this: &;
+  position: relative;
+  padding-left: 25px;
+  user-select: none;
+
+  input[type='checkbox'] {
+    display: none;
+
+    &:checked ~ {
+      #{$this}_icon {
+        svg {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &_icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid #eeeeee;
+    background: #fff;
+    cursor: pointer;
+
+    svg {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  &_label {
+    font-weight: 300;
+
+    a {
+
+    }
+  }
+}

@@ -1,0 +1,468 @@
+@@include('components/head/index.html', {'title': 'Marvi'})
+@@include('components/header/index.html', {'fixed' : true})
+<div class="wrapper">
+  <main class="main">
+    <section class="section-main section-main-small section section-bg">
+      <div class="section-bg_image">
+        <picture>
+          <source srcset="images/bg/section-main-small.webp" />
+          <img src="images/bg/section-main-small.jpg" loading="lazy" alt="" />
+        </picture>
+      </div>
+      @@include('components/header/index.html')
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-main__content">
+              <h1 class="h1">Ціни та плани</h1>
+              <div class="section-main__btns">
+                <a href="#" class="btn-site click-animation green"
+                  >Дізнатись більше</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="madeInUkraine">
+        <div class="madeInUkraine_icon">
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#flagForUkraine"></use>
+          </svg>
+        </div>
+        Made in Ukraine
+      </div>
+    </section>
+
+    <section class="section-prices section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row align-items-center">
+              <div class="col-3">
+                <div class="section-prices__title h4">
+                  MARVI надає можливість обрати тарифний план, залежно від того, які
+                  функції дійсно необхідні для оптимізації робочого процесу
+                </div>
+              </div>
+              <div class="col-9">
+                <ul class="nav prices-nav" id="pricesTab" role="tablist">
+                  <li class="prices-nav__item" role="presentation">
+                    <button class="prices-nav__link active click-animation green" id="year-tab" data-bs-toggle="tab" data-bs-target="#year" type="button" role="tab" aria-controls="year" aria-selected="true">На рік</button>
+                  </li>
+                  <li class="prices-nav__item" role="presentation">
+                    <button class="prices-nav__link click-animation green" id="months-tab" data-bs-toggle="tab" data-bs-target="#months" type="button" role="tab" aria-controls="months" aria-selected="false">На 3 місяці</button>
+                  </li>
+                </ul>
+                <div class="tab-content prices-tabContent" id="pricesTabContent">
+                  <div class="tab-pane fade show active" id="year" role="tabpanel" aria-labelledby="year-tab">
+                    <div class="row g-1 g-lg-2 g-xl-3">
+                      @@loop('components/price-item/index.html',
+                      'components/price-item/bd.json')
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="months" role="tabpanel" aria-labelledby="months-tab">
+                    <div class="row g-1 g-lg-2 g-xl-3">
+                      @@loop('components/price-item/index.html',
+                      'components/price-item/bd-2.json')
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-9 offset-lg-3">
+                <div class="info-sales">
+                  <div class="info-sales__title h3">Отримай знижку в залежності від кількості філій:</div>
+                  <div class="info-sales__items">
+                    <div class="info-sales__item">
+                      <div class="info-sales__item--title h3">3-5 філій</div>
+                      <div class="info-sales__item--discount h2">10%</div>
+                    </div>
+                    <div class="info-sales__item">
+                      <div class="info-sales__item--title h3">6-9 філій</div>
+                      <div class="info-sales__item--discount h2">15%</div>
+                    </div>
+                    <div class="info-sales__item">
+                      <div class="info-sales__item--title h3">10 і більше</div>
+                      <div class="info-sales__item--discount h2">25%</div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="accordion-header accordion-header-sticky">
+              <li>Basic</li>
+              <li>Smart</li>
+              <li>Smart+ Medical</li>
+            </ul>
+            <div class="accordion-site" id="accordionPrices">
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-1">
+                  <button class="accordion-btn click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                    <span>Керування ассортиментом та складом</span>
+                  </button>
+                </h2>
+                <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      @@loop('components/table-tr/index.html',
+                      'components/table-tr/table-1.json')
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-2">
+                  <button class="accordion-btn click-animation h2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+                    <span>Інструменти продажів</span>
+                  </button>
+                </h2>
+                <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      @@loop('components/table-tr/index.html',
+                      'components/table-tr/table-2.json')
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-3">
+                  <button class="accordion-btn click-animation h2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                    <span>Звіти та аналітика</span>
+                  </button>
+                </h2>
+                <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      @@loop('components/table-tr/index.html',
+                      'components/table-tr/table-3.json')
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-4">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+                    <span>Керування фінансами</span>
+                  </button>
+                </h2>
+                <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      @@loop('components/table-tr/index.html',
+                      'components/table-tr/table-4.json')
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-5">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
+                    <span>База клієнтів</span>
+                  </button>
+                </h2>
+                <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      @@loop('components/table-tr/index.html',
+                      'components/table-tr/table-5.json')
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-6">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
+                    <span>Комунікації</span>
+                  </button>
+                </h2>
+                <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="heading-6" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      @@loop('components/table-tr/index.html',
+                      'components/table-tr/table-6.json')
+                      <tr>
+                        <td colspan="5" class="endnote h4 text-center mb-0">* - функція активується за додакову плату</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-7">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
+                    <span>Безпека</span>
+                  </button>
+                </h2>
+                <div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="heading-7" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      @@loop('components/table-tr/index.html',
+                      'components/table-tr/table-7.json')
+                    </table>
+                  </div>
+                </div>
+            </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-8">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="true" aria-controls="collapse-8">
+                    <span>Медичний блок</span>
+                  </button>
+                </h2>
+                <div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="heading-8" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      @@loop('components/table-tr/index.html',
+                      'components/table-tr/table-8.json')
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-9">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-9" aria-expanded="true" aria-controls="collapse-9">
+                    <span>Технічна підтримка</span>
+                  </button>
+                </h2>
+                <div id="collapse-9" class="accordion-collapse collapse" aria-labelledby="heading-9" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      @@loop('components/table-tr/index.html',
+                      'components/table-tr/table-9.json')
+                      <tr>
+                        <td colspan="5" class="endnote h4 text-center mb-0">* - функція активується за додакову плату</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-10">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-10" aria-expanded="true" aria-controls="collapse-10">
+                    <span>Впровадження системи</span>
+                  </button>
+                </h2>
+                <div id="collapse-10" class="accordion-collapse collapse" aria-labelledby="heading-10" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      @@loop('components/table-tr/index.html',
+                      'components/table-tr/table-10.json')
+                      <tr>
+                        <td colspan="5" class="endnote h4 text-center mb-0">* - функція активується за додакову плату</td>
+                      </tr>
+                      <tr>
+                        <td colspan="5" class="endnote h4 text-center mb-0">** - за умови підписки на рік надається в подарунок</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-11">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-11" aria-expanded="true" aria-controls="collapse-11">
+                    <span>Хмарне сховище</span>
+                  </button>
+                </h2>
+                <div id="collapse-11" class="accordion-collapse collapse" aria-labelledby="heading-11" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>Місце на диску на хмарному сервері</td>
+                        <td></td>
+                        <td class="h3">1 ГБ</td>
+                        <td class="h3">5 ГБ</td>
+                        <td class="h3">10 ГБ</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-info" style="background-image: url('images/bg/macbook-bg.webp')">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 offset-lg-1">
+            <div class="info-box3__content content-box">
+              <div class="info-box3__title h1 text-center">Умови демо-версії</div>
+              <div class="info-box3__desc">
+                <ul>
+                  <li>Демо-версія надається безкоштовно на 2 тижні</li>
+                  <li>Навчання роботі в системі та імпорт даних доступні тільки для платних версій, і в демо-версії нашою командою не надаються</li>
+                  <li>Чат та email підтримка доступні для клієнтів, які пробують демо. Телефонні консультації можуть надаватись на платній основі, як і усім клієнтам, за звичайним тарифом ($15/година)</li>
+                </ul>
+              </div>
+              <div class="info-box3__btn">
+                <a href="#" class="btn-site click-animation green">Замовити демо</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-7">
+            <img src="images/bg/image.jpg" class="mw-100" alt="">
+          </div>
+          <div class="col-5">
+            <div class="info-box3__content content-box">
+              <div class="info-box3__title h1 text-center">Кастомні рішення</div>
+              <div class="info-box3__desc">
+                <p>Можлива повна кастомізація системи під Ваш окремий випадок і специфіку бізнеса.
+                  Вартість такого проекта обговорюється та оцінюється окремо, після підготовки окремого технічного завдання. Ми з радістю обговоримо це з Вами!</p>
+              </div>
+              <div class="info-box3__btn">
+                <a href="#" class="btn-site click-animation green">Зв’язатись</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12"><h2 class="h1 mb-80 text-center">Додаткові послуги</h2></div>
+        </div>
+        <div class="row service-items g-1 g-lg-2 g-xl-3">
+          <div class="col-4">
+            <div class="service-item bg-1">
+              <div class="service-item__header">
+                <div class="service-item__header--icon">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#learnMore"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="service-item__desc h4">Індивідуальне навчання співробітників роботі з системою</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="service-item bg-2">
+              <div class="service-item__header">
+                <div class="service-item__header--icon">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#barcode"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="service-item__desc h4">Продаж сканерів та принтерів штрих-кодів</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="service-item bg-3">
+              <div class="service-item__header">
+                <div class="service-item__header--icon">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#newspaper"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="service-item__desc h4">Налаштування РРО</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="service-item bg-4">
+              <div class="service-item__header">
+                <div class="service-item__header--icon">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#chatBox"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="service-item__desc h4">Персоналізовані повідомлення клієнтам через SMS, Viber, Telegram, WhatsApp</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="service-item bg-5">
+              <div class="service-item__header">
+                <div class="service-item__header--icon">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#server"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="service-item__desc h4">Можливість придбати додаткове місце на сервері</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-1 mt-lg-2 mt-xl-3">
+          <div class="col-12">
+            <div class="info-box4">
+              <div class="info-box4__content text-center">
+                <div class="info-box4__content--title h1">Існуючим клієнтам</div>
+                <div class="info-box4__content--text h4">Якщо Ви - діючий клієнт, та хочете змінити свій тарифний план, замовити додаткові послуги, чи маєте запитання - зв'яжіться з відділом продажів</div>
+                <div class="info-box4__content--phone h2">
+                  <a href="tel:+380112223344">+380 (11) 222 33 44</a>
+                </div>
+                <div class="info-box4__content--btn">
+                  <a href="#" class="btn-site-2 click-animation">Зворотній зв’язок</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-12">
+            @@include('components/info-box/index.html', {'green': true})
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-reviews section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-80 text-center">Відгуки про MARVI</h2>
+          </div>
+          <div class="col-12">
+            <div class="swiper reviews-slider">
+              <div class="swiper-wrapper">
+                @@loop('components/reviews-item/index.html',
+                'components/reviews-item/bd-2.json')
+              </div>
+              <div class="slider-pagination"></div>
+              <div class="slider-navigation">
+                <div class="slider-navigation-prev reviews-slider-prev"></div>
+                <a href="#" class="btn-site click-animation green">Відгуки</a>
+                <div class="slider-navigation-next reviews-slider-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('components/section-review/index.html',{'green': true})
+
+  </main>
+
+  @@include('components/footer/index.html')
+</div>
+
+@@include('components/modal/index.html')
+@@include('components/scripts/index.html')

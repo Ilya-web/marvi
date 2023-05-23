@@ -1,0 +1,147 @@
+@@include('components/head/index.html', {'title': 'Marvi'})
+@@include('components/header/index.html', {'fixed' : true})
+<div class="wrapper">
+  <main class="main">
+    <section class="section-main section-main-small section section-bg section-main-contacts">
+      <div class="section-bg_image">
+        <picture>
+          <source srcset="images/bg/contacts.webp" />
+          <img src="images/bg/contacts.jpg" loading="lazy" alt="" />
+        </picture>
+      </div>
+      @@include('components/header/index.html')
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-main__content">
+              <h1 class="h1">Контакти</h1>
+              @@include('components/social/index.html')
+              <div class="section-main__btns">
+                <a href="#" class="social-btn click-animation">
+                  <span class="social-btn__icon">
+                    <svg>
+                      <use xlink:href="images/icons/sprite.svg#telegram"></use>
+                    </svg>
+                  </span>
+                  <span>Чат у Telegram</span>
+                </a>
+                <a href="#" class="social-btn click-animation">
+                  <span class="social-btn__icon">
+                    <svg>
+                      <use xlink:href="images/icons/sprite.svg#viber"></use>
+                    </svg>
+                  </span>
+                  <span>Чат у Viber</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contacts">
+      <div class="container">
+        <div class="row mb-4 contacts-items">
+          <div class="col-3">
+            <a href="tel:+380123456789" class="contacts-item click-animation">
+              <div class="contacts-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#phone"></use>
+                </svg>
+              </div>
+              <div class="contacts-item__desc">
+                <div class="contacts-item__title">Відділ продажів</div>
+                <div class="contacts-item__link">+380 (12) 345 67 89</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="tel:+380123334455" class="contacts-item click-animation">
+              <div class="contacts-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#phone"></use>
+                </svg>
+              </div>
+              <div class="contacts-item__desc">
+                <div class="contacts-item__title">Існуючим клієнтам</div>
+                <div class="contacts-item__link">+380 (12) 333 44 55</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="tel:+380126667788" class="contacts-item click-animation">
+              <div class="contacts-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#phone"></use>
+                </svg>
+              </div>
+              <div class="contacts-item__desc">
+                <div class="contacts-item__title">Технічна підтримка</div>
+                <div class="contacts-item__link">+380 (12) 666 77 88</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="mailto:marvi@help.com" class="contacts-item click-animation">
+              <div class="contacts-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#phone"></use>
+                </svg>
+              </div>
+              <div class="contacts-item__desc">
+                <div class="contacts-item__title">Написати нам</div>
+                <div class="contacts-item__link">marvi@help.com</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="contacts-form">
+              <div class="row align-items-center">
+                <div class="col-4 offset-lg-1">
+                  <div class="contacts-form__img">
+                    <img src="images/dogs/dog_9.svg" class="mw-100" alt="">
+                  </div>
+                </div>
+                <div class="col-5 offset-lg-1">
+                  <div class="contacts-form__title h4 text-center">Наша команда з радістю зв’яжеться з вами для уточненя всіх питаннь що вас цікавлять</div>
+                  <form action="#" class="form-contacts">
+                    <div class="row g-2">
+                      <div class="col-12">
+                        <div class="wrap-input-site">
+                          <input type="text" class="input-site" placeholder="Ім’я" />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="wrap-input-site">
+                          <input type="text" class="input-site" placeholder="example@mail.com" />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="wrap-input-site">
+                          <textarea placeholder="Ваше повідомлення" class="input-site"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex">
+                        <button type="submit" class="btn-site click-animation mx-auto">Надіслати запит</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  @@include('components/footer/index.html')
+</div>
+
+@@include('components/modal/index.html')
+@@include('components/scripts/index.html')

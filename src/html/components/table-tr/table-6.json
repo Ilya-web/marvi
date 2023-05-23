@@ -1,0 +1,30 @@
+[
+  {
+    "title": "SMS-розсилка*",
+    "text": "Можливість відсилати SMS-повідомлення клієнтам",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Повідомлення в месенджерах*",
+    "text": "Можливість відсилати повідомлення клієнтам в Viber, Telegram",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Автонагадування про візит*",
+    "text": "Відсилається у вигляді SMS або повідомлення в месенджер.",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Повідомлення про виготовлений товар*",
+    "text": "",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  }
+]

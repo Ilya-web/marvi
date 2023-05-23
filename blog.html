@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvi</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+  <link rel="stylesheet" href="src/css/plugins.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+
+<body></body>
+
+</html>
+
+<header class="header header-fixed">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-auto">
+        <div class="header-logo">
+          <a href="index.html">
+            <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M35.0366 33.3311L32.4379 13.1595L26.7895 33.3311H20.4814L14.8296 13.1595L12.231 33.3311H6.74416L10.5782 6.66668H17.6303L23.6085 26.9217L29.6305 6.66668H36.6826L40.5166 33.3311H35.0366Z" />
+              <path d="M86.1715 24.3085H80.9742V33.3345H75.612V6.67002H87.2016C94.0045 6.67002 97.5524 9.6931 97.5524 15.5293C97.5524 19.8156 95.6539 22.552 91.8603 23.6953L98.0877 33.3311H91.8199L86.1715 24.3085ZM80.9742 19.9389H86.4173C90.1301 19.9389 91.9849 18.429 91.9849 15.446C91.9849 12.5062 90.1301 11.0363 86.4173 11.0363H80.9742V19.9389Z" />
+              <path d="M127.986 6.66668L118.254 33.3311H110.953L101.262 6.66668H106.789L114.625 29.2081L122.462 6.66668H127.986Z" />
+              <path d="M64.8403 33.3311L57.0039 10.7897L49.1676 33.3311H43.6404L53.3315 6.66668H60.6326L70.3641 33.3311H64.8403Z" />
+              <path d="M138.256 33.3311H132.894V6.66668H138.256V33.3311Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-auto d-flex justify-content-end">
+        <ul class="header-menu">
+          <li class="drop-li">
+            <span>Продукт</span>
+            <ul class="drop-menu">
+              <li>
+                <a href="optical.html">Для магазинів оптики</a>
+              </li>
+              <li>
+                <a href="optical.html">Для офтальмологічних клінік</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="prices.html">Ціни та плани</a>
+          </li>
+          <li class="drop-li">
+            <span>О компанії</span>
+            <ul class="drop-menu">
+              <li>
+                <a href="#">Про MARVI</a>
+              </li>
+              <li>
+                <a href="#">Безпека</a>
+              </li>
+              <li>
+                <a href="fag.html">FAQ</a>
+              </li>
+              <li>
+                <a href="contacts.html">Контакти</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="blog.html">Блог</a>
+          </li>
+        </ul>
+
+        <div class="header-btns">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#entranceModal" class="btn-site-2 click-animation header-btns__btn" id="login">
+            <span>Увійти</span>
+          </a>
+          <a href="#" class="btn-site click-animation header-btns__btn">
+            <span>Отримати демо</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrapper">
+  <main class="main">
+    <section class="section-main section-main-small section section-bg">
+      <div class="section-bg_image">
+        <picture>
+          <source srcset="images/bg/section-main-small-2.webp" />
+          <img src="images/bg/section-main-small-2.jpg" loading="lazy" alt="" />
+        </picture>
+      </div>
+      <header class="header ">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+              <div class="header-logo">
+                <a href="index.html">
+                  <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.0366 33.3311L32.4379 13.1595L26.7895 33.3311H20.4814L14.8296 13.1595L12.231 33.3311H6.74416L10.5782 6.66668H17.6303L23.6085 26.9217L29.6305 6.66668H36.6826L40.5166 33.3311H35.0366Z" />
+                    <path d="M86.1715 24.3085H80.9742V33.3345H75.612V6.67002H87.2016C94.0045 6.67002 97.5524 9.6931 97.5524 15.5293C97.5524 19.8156 95.6539 22.552 91.8603 23.6953L98.0877 33.3311H91.8199L86.1715 24.3085ZM80.9742 19.9389H86.4173C90.1301 19.9389 91.9849 18.429 91.9849 15.446C91.9849 12.5062 90.1301 11.0363 86.4173 11.0363H80.9742V19.9389Z" />
+                    <path d="M127.986 6.66668L118.254 33.3311H110.953L101.262 6.66668H106.789L114.625 29.2081L122.462 6.66668H127.986Z" />
+                    <path d="M64.8403 33.3311L57.0039 10.7897L49.1676 33.3311H43.6404L53.3315 6.66668H60.6326L70.3641 33.3311H64.8403Z" />
+                    <path d="M138.256 33.3311H132.894V6.66668H138.256V33.3311Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-auto d-flex justify-content-end">
+              <ul class="header-menu">
+                <li class="drop-li">
+                  <span>Продукт</span>
+                  <ul class="drop-menu">
+                    <li>
+                      <a href="optical.html">Для магазинів оптики</a>
+                    </li>
+                    <li>
+                      <a href="optical.html">Для офтальмологічних клінік</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="prices.html">Ціни та плани</a>
+                </li>
+                <li class="drop-li">
+                  <span>О компанії</span>
+                  <ul class="drop-menu">
+                    <li>
+                      <a href="#">Про MARVI</a>
+                    </li>
+                    <li>
+                      <a href="#">Безпека</a>
+                    </li>
+                    <li>
+                      <a href="fag.html">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="contacts.html">Контакти</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="blog.html">Блог</a>
+                </li>
+              </ul>
+
+              <div class="header-btns">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#entranceModal" class="btn-site-2 click-animation header-btns__btn" id="login">
+                  <span>Увійти</span>
+                </a>
+                <a href="#" class="btn-site click-animation header-btns__btn">
+                  <span>Отримати демо</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-main__content">
+              <h1 class="h1">Новини та публікації</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="blogs-nav mb-80">
+              <ul>
+                <li class="active">
+                  <a href="#" class="btn-site click-animation">Всі статті</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-site click-animation">Оновлення MARVI</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-site click-animation">Новини</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-site click-animation">Події</a>
+                </li>
+                <li>
+                  <a href="#" class="btn-site click-animation">Корисні поради</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row g-1 g-lg-2 g-xl-3">
+          <div class="col-3">
+            <div class="blog-item">
+              <div class="blog-item_img">
+                <picture>
+                  <source srcset="images/blog/image-2.webp" type="image/webp">
+                  <img src="images/blog/image-2.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="blog-item_desc">
+                <div class="blog-item_title">Як зберегти зір: корисні поради від офтальмолога</div>
+                <div class="blog-item_text">Nihil asperiores ratione accusamus suscipit voluptate odit expedita Nihil asperiores ratione accusamus suscipit voluptate odit expedita</div>
+                <div class="blog-item_footer">
+                  <div class="blog-item_date">31/06/2022</div>
+                  <div class="blog-item_readMore">
+                    <a href="article.html" class="link-read-more">
+                      <span>Читати</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <div class="blog-item">
+              <div class="blog-item_img">
+                <picture>
+                  <source srcset="images/blog/image-1.webp" type="image/webp">
+                  <img src="images/blog/image-1.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="blog-item_desc">
+                <div class="blog-item_title">Очі і комп'ютер: як захистити свій зір від шкід...</div>
+                <div class="blog-item_text">Nihil asperiores ratione accusamus suscipit voluptate odit expedita...</div>
+                <div class="blog-item_footer">
+                  <div class="blog-item_date">31/06/2022</div>
+                  <div class="blog-item_readMore">
+                    <a href="article.html" class="link-read-more">
+                      <span>Читати</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <div class="blog-item">
+              <div class="blog-item_img">
+                <picture>
+                  <source srcset="images/blog/image-3.webp" type="image/webp">
+                  <img src="images/blog/image-3.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="blog-item_desc">
+                <div class="blog-item_title">Новітні технології в офтальмології: які можлив...</div>
+                <div class="blog-item_text">Nihil asperiores ratione accusamus suscipit voluptate odit expedita con...</div>
+                <div class="blog-item_footer">
+                  <div class="blog-item_date">31/06/2022</div>
+                  <div class="blog-item_readMore">
+                    <a href="article.html" class="link-read-more">
+                      <span>Читати</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <div class="blog-item">
+              <div class="blog-item_img">
+                <picture>
+                  <source srcset="images/blog/image-4.webp" type="image/webp">
+                  <img src="images/blog/image-4.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="blog-item_desc">
+                <div class="blog-item_title">Хвороби очей: симптоми, діагностика, лікування Хвороби очей: симптоми, діагностика, лікування</div>
+                <div class="blog-item_text">Nihil asperiores ratione accusamus suscipit voluptate odit expedita co...</div>
+                <div class="blog-item_footer">
+                  <div class="blog-item_date">31/06/2022</div>
+                  <div class="blog-item_readMore">
+                    <a href="article.html" class="link-read-more">
+                      <span>Читати</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <div class="blog-item">
+              <div class="blog-item_img">
+                <picture>
+                  <source srcset="images/blog/image-2.webp" type="image/webp">
+                  <img src="images/blog/image-2.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="blog-item_desc">
+                <div class="blog-item_title">Як зберегти зір: корисні поради від офтальмолога</div>
+                <div class="blog-item_text">Nihil asperiores ratione accusamus suscipit voluptate odit expedita con...</div>
+                <div class="blog-item_footer">
+                  <div class="blog-item_date">31/06/2022</div>
+                  <div class="blog-item_readMore">
+                    <a href="article.html" class="link-read-more">
+                      <span>Читати</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <div class="blog-item">
+              <div class="blog-item_img">
+                <picture>
+                  <source srcset="images/blog/image-1.webp" type="image/webp">
+                  <img src="images/blog/image-1.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="blog-item_desc">
+                <div class="blog-item_title">Очі і комп'ютер: як захистити свій зір від шкід...</div>
+                <div class="blog-item_text">Nihil asperiores ratione accusamus suscipit voluptate odit expedita...</div>
+                <div class="blog-item_footer">
+                  <div class="blog-item_date">31/06/2022</div>
+                  <div class="blog-item_readMore">
+                    <a href="article.html" class="link-read-more">
+                      <span>Читати</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-3">
+            <div class="blog-item">
+              <div class="blog-item_img">
+                <picture>
+                  <source srcset="images/blog/image-3.webp" type="image/webp">
+                  <img src="images/blog/image-3.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="blog-item_desc">
+                <div class="blog-item_title">Новітні технології в офтальмології: які можлив...</div>
+                <div class="blog-item_text">Nihil asperiores ratione accusamus suscipit voluptate odit expedita con...</div>
+                <div class="blog-item_footer">
+                  <div class="blog-item_date">31/06/2022</div>
+                  <div class="blog-item_readMore">
+                    <a href="article.html" class="link-read-more">
+                      <span>Читати</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="row g-1 g-lg-2 g-xl-3">
+          <div class="col-12 text-center">
+            <a href="#" class="more-btn click-animation mt-4">
+              Показати щє
+            </a>
+          </div>
+          <div class="col-12">
+            <ul class="pagination-site">
+              <li class="prev">
+                <a href="#"></a>
+              </li>
+              <li class="active">
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#" class="click-animation">2</a>
+              </li>
+              <li>
+                <a href="#" class="click-animation">...</a>
+              </li>
+              <li>
+                <a href="#" class="click-animation">13</a>
+              </li>
+              <li class="next">
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 offset-lg-1">
+            <div class="h3">Спробувати демо-версію</div>
+            <div class="footer_form">
+              <form action="#">
+                <div class="row g-2">
+                  <div class="col-6">
+                    <div class="wrap-input-site">
+                      <input type="text" class="input-site" placeholder="Ім’я" />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="wrap-input-site">
+                      <input type="text" class="input-site" placeholder="Прізвище" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="email" class="input-site error" placeholder="example@mail.com" />
+                      <div class="input-site_error">Невірний формат даних.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <select class="input-site js-choice">
+                      <option>Для магазинів оптики 1</option>
+                      <option>Для магазинів оптики 2</option>
+                      <option>Для магазинів оптики 3</option>
+                    </select>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn-site click-animation">
+                      Замовити демо
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-3 offset-lg-1">
+            <div class="footer_top__item">
+              <div class="h3">Навігація</div>
+              <ul class="footer-menu">
+                <li>
+                  <a href="#">О компанії</a>
+                </li>
+                <li>
+                  <a href="#">Для магазинів оптики</a>
+                </li>
+                <li>
+                  <a href="#">Для офтальмологічних клінік</a>
+                </li>
+                <li>
+                  <a href="#">Ціни та плани</a>
+                </li>
+                <li>
+                  <a href="#">Безпека</a>
+                </li>
+                <li>
+                  <a href="#">Блог</a>
+                </li>
+                <li>
+                  <a href="#">Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer_top__item">
+              <div class="h3">Конфіденційність</div>
+              <ul class="footer-menu">
+                <li>
+                  <a href="#">Політика конфіденційності</a>
+                </li>
+                <li>
+                  <a href="#">Правила та умови користування</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_top__item">
+              <div class="h3">Проконсультуватись</div>
+              <ul class="footer-menu">
+                <li>
+                  <a href="tel:+380123456789">+380 (12) 345 67 89</a>
+                </li>
+                <li>
+                  <a href="mailto:marvi@help.com">marvi@help.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center flex-column">
+            <div class="footer_logo">
+              <img src="images/logo.svg" alt="" />
+            </div>
+            <div class="social">
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="copyRight">© MARVI. 2023. Всі права захищені</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<div class="modal fade" id="entranceModal" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <svg>
+          <use xlink:href="images/icons/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <ul class="entrance entrance-nav" id="entranceTabs" role="tablist">
+          <li class="entrance-item" role="presentation">
+            <button class="entrance-link active click-animation" id="registration-item-tab" data-bs-toggle="tab" data-bs-target="#registration-item" type="button" role="tab" aria-controls="registration-item" aria-selected="true">
+              Реєстрація
+            </button>
+          </li>
+          <li class="entrance-item" role="presentation">
+            <button class="entrance-link click-animation" id="login-item-tab" data-bs-toggle="tab" data-bs-target="#login-item" type="button" role="tab" aria-controls="login-item" aria-selected="false">
+              Увійти
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content entrance-content" id="entranceTabsContent">
+          <div class="tab-pane fade show active" id="registration-item" role="tabpanel" aria-labelledby="registration-item-tab">
+            <div class="entrance-content_item">
+              <form action="#">
+                <div class="row gy-2">
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="text" class="input-site" placeholder="Ім’я" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="email" class="input-site error" placeholder="example@mail.com" />
+                      <div class="input-site_error">Невірний формат даних.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="password" class="input-site" placeholder="Придумайте пароль" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="password" class="input-site" placeholder="Повторити пароль" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <select class="input-site js-choice">
+                      <option>Для магазинів оптики 1</option>
+                      <option>Для магазинів оптики 2</option>
+                      <option>Для магазинів оптики 3</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-error">
+                      Сталась помилка. Перевірте правильність введених данних та
+                      спробуйте щє
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" disabled class="btn-site click-animation mt-2">
+                      Зареєструватись
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="login-item" role="tabpanel" aria-labelledby="login-item-tab">
+            <div class="entrance-content_item">
+              <form action="#">
+                <div class="row gy-2">
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="email" class="input-site" placeholder="example@mail.com" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="password" class="input-site" placeholder="Введіть пароль" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-error">
+                      Сталась помилка. Перевірте правильність введених данних та
+                      спробуйте щє
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" disabled class="btn-site click-animation mt-2">
+                      Увійти
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<script src="js/main.min.js"></script>
+
+
+</body>
+
+</html>

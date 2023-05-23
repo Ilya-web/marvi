@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Списання грошових коштів",
+    "text": "Списання грошей на оплату витрат філій (не тільки оплати постачальникам, а й інших витрат, таких як оренда, комунальні та інше)",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Повернення грошових коштів",
+    "text": "Повернення грошей від постачальників, повернення грошей клієнтам з визначенням необхідної каси та філії.",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Переміщення коштів",
+    "text": "Переміщення коштив між касами філій",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  }
+]

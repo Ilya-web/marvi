@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Картки клієнтів",
+    "text": "Створення та ведення карток клієнтів. Історія продажів по клієнтам. Статуси оплат. Можливість присвоювати теги клієнтам",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Необмежена кількість клієнтів",
+    "text": "",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Smart-повторення замовлень",
+    "text": "Можливість створювати повторні замовлення клієнтів одним кліком. Просто натиснувши кнопку в картці пацієнта, можна повторити будь-яке з його замовлень за секунду",
+    "statusChecked1": false,
+    "statusChecked2": true,
+    "statusChecked3": true
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Каталог товарів",
+    "text": "Ведення асортименту в системі зі спеціально розробленими для оптики параметрами товарів",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Надходження та списання товарів",
+    "text": "Можливість ставити на склад надходження товару, повертати товар постачальникам, приймати повернення від клієнта",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Переміщення товарів між філіями",
+    "text": "Переміщення товарів між філіями з фіксацією історії",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Створення замовлень постачальникам",
+    "text": "Автоматичне створення замовлень проданих товарів та товарів, що додаються на склад",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Ціноутворення",
+    "text": "Можливість редагувати ціну товару з карточки товару",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Керування націнкой",
+    "text": "Можливість управляти цінами через вказання націнки. При підвищенні ціни постачальника націнка залишається, а ціна реалізації зростає",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Керування постачальниками",
+    "text": "Додавання та редагування даних постачальників. Перегляд історії оплат по постачальникам",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Категорія послуг",
+    "text": "Можливість створювати різні категорії послуг, що надаються магазином оптики",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Синхронізація з принтерами/сканерами штрихкодів",
+    "text": "Принтеры и сканеры штрихкодов синхронизуються з системою",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Наявність товару на складі",
+    "text": "Можливість бачити залишки товарів на складі",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Функція Smart-створення параметрів кроку лінз в \"один клік\"",
+    "text": "Можливість швидкого створення великої кількості індивідуальних параметрів кроку лінз за бажанням користувача",
+    "statusChecked1": false,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Smart-керування ціною та націнкою",
+    "text": "Можливість підвищувати ціни або націнки на певний відсоток або значення на всю категорію товару/послуги для всієї мережі або для кожної філії окремо",
+    "statusChecked1": false,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Smart-замовлення",
+    "text": "Функція об'єднання товарів з замовлень різних клієнтів в єдине замовлення для постачальника",
+    "statusChecked1": false,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Smart-інвентаризація",
+    "text": "Інтерактивний інструмент для проведення інвентаризації (можливість використовувати сторонні сканери штрихкодів)",
+    "statusChecked1": false,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Smart-нагадування для замовлення товару",
+    "text": "Після встановлення мінімального залишку по товарах система автоматично показує повідомлення про необхідність дозамовити товар",
+    "statusChecked1": false,
+    "statusChecked2": true,
+    "statusChecked3": true
+  }
+]

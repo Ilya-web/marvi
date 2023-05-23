@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Навчання роботі в системі**",
+    "text": "Надаємо 2-годинне навчання роботі в програмі для ваших співробітників",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Імпорт даних*",
+    "text": "Можливість перенести наявних клієнтів в нашу систему. Вартість послуги - $50 ",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Віджет",
+    "text": "Можливість додавання візиту пацієнта в календар MARVI через сайт магазину оптики або офтальмологічної клініки",
+    "statusChecked1": false,
+    "statusChecked2": false,
+    "statusChecked3": true
+  },
+  {
+    "title": "Автонагадування про візити",
+    "text": "Можливість автоматичного нагадування пацієнтам про візит",
+    "statusChecked1": false,
+    "statusChecked2": false,
+    "statusChecked3": true
+  },
+  {
+    "title": "Звіти (за видами обстежень, візитами, лікарями)",
+    "text": "Детальні звіти за результатами роботи лікарів, візитами пацієнтів, видами обстежень",
+    "statusChecked1": false,
+    "statusChecked2": false,
+    "statusChecked3": true
+  },
+  {
+    "title": "Календар",
+    "text": "Можливість індувідіально заповнювати графік роботи лікарів та записувати пацієнтів на візити",
+    "statusChecked1": false,
+    "statusChecked2": false,
+    "statusChecked3": true
+  },
+  {
+    "title": "Обстеження",
+    "text": "18 детальних видів обстеження пацієнтів",
+    "statusChecked1": false,
+    "statusChecked2": false,
+    "statusChecked3": true
+  },
+  {
+    "title": "Нарахування заробітної плати",
+    "text": "Можливість нараховувати бонуси та зарплату лікарям відповідно до результатів їхньої работи",
+    "statusChecked1": false,
+    "statusChecked2": false,
+    "statusChecked3": true
+  },
+  {
+    "title": "Завантаження файлів у систему",
+    "text": "До кожного візиту можна прикріпити необхідний файл з результатами обстеження або будь-якою іншою важливою інформацією про пацієнта",
+    "statusChecked1": false,
+    "statusChecked2": false,
+    "statusChecked3": true
+  }
+]

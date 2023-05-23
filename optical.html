@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvi</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+  <link rel="stylesheet" href="src/css/plugins.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+
+<body></body>
+
+</html>
+
+<header class="header header-fixed">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-auto">
+        <div class="header-logo">
+          <a href="index.html">
+            <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M35.0366 33.3311L32.4379 13.1595L26.7895 33.3311H20.4814L14.8296 13.1595L12.231 33.3311H6.74416L10.5782 6.66668H17.6303L23.6085 26.9217L29.6305 6.66668H36.6826L40.5166 33.3311H35.0366Z" />
+              <path d="M86.1715 24.3085H80.9742V33.3345H75.612V6.67002H87.2016C94.0045 6.67002 97.5524 9.6931 97.5524 15.5293C97.5524 19.8156 95.6539 22.552 91.8603 23.6953L98.0877 33.3311H91.8199L86.1715 24.3085ZM80.9742 19.9389H86.4173C90.1301 19.9389 91.9849 18.429 91.9849 15.446C91.9849 12.5062 90.1301 11.0363 86.4173 11.0363H80.9742V19.9389Z" />
+              <path d="M127.986 6.66668L118.254 33.3311H110.953L101.262 6.66668H106.789L114.625 29.2081L122.462 6.66668H127.986Z" />
+              <path d="M64.8403 33.3311L57.0039 10.7897L49.1676 33.3311H43.6404L53.3315 6.66668H60.6326L70.3641 33.3311H64.8403Z" />
+              <path d="M138.256 33.3311H132.894V6.66668H138.256V33.3311Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-auto d-flex justify-content-end">
+        <ul class="header-menu">
+          <li class="drop-li">
+            <span>Продукт</span>
+            <ul class="drop-menu">
+              <li>
+                <a href="optical.html">Для магазинів оптики</a>
+              </li>
+              <li>
+                <a href="optical.html">Для офтальмологічних клінік</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="prices.html">Ціни та плани</a>
+          </li>
+          <li class="drop-li">
+            <span>О компанії</span>
+            <ul class="drop-menu">
+              <li>
+                <a href="#">Про MARVI</a>
+              </li>
+              <li>
+                <a href="#">Безпека</a>
+              </li>
+              <li>
+                <a href="fag.html">FAQ</a>
+              </li>
+              <li>
+                <a href="contacts.html">Контакти</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="blog.html">Блог</a>
+          </li>
+        </ul>
+
+        <div class="header-btns">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#entranceModal" class="btn-site-2 click-animation header-btns__btn" id="login">
+            <span>Увійти</span>
+          </a>
+          <a href="#" class="btn-site click-animation header-btns__btn">
+            <span>Отримати демо</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrapper">
+  <main class="main">
+    <section class="section-main section section-bg">
+      <div class="section-bg_image">
+        <picture>
+          <source srcset="images/bg/optical.webp" />
+          <img src="images/bg/optical.jpg" loading="lazy" alt="" />
+        </picture>
+      </div>
+      <header class="header ">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+              <div class="header-logo">
+                <a href="index.html">
+                  <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.0366 33.3311L32.4379 13.1595L26.7895 33.3311H20.4814L14.8296 13.1595L12.231 33.3311H6.74416L10.5782 6.66668H17.6303L23.6085 26.9217L29.6305 6.66668H36.6826L40.5166 33.3311H35.0366Z" />
+                    <path d="M86.1715 24.3085H80.9742V33.3345H75.612V6.67002H87.2016C94.0045 6.67002 97.5524 9.6931 97.5524 15.5293C97.5524 19.8156 95.6539 22.552 91.8603 23.6953L98.0877 33.3311H91.8199L86.1715 24.3085ZM80.9742 19.9389H86.4173C90.1301 19.9389 91.9849 18.429 91.9849 15.446C91.9849 12.5062 90.1301 11.0363 86.4173 11.0363H80.9742V19.9389Z" />
+                    <path d="M127.986 6.66668L118.254 33.3311H110.953L101.262 6.66668H106.789L114.625 29.2081L122.462 6.66668H127.986Z" />
+                    <path d="M64.8403 33.3311L57.0039 10.7897L49.1676 33.3311H43.6404L53.3315 6.66668H60.6326L70.3641 33.3311H64.8403Z" />
+                    <path d="M138.256 33.3311H132.894V6.66668H138.256V33.3311Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-auto d-flex justify-content-end">
+              <ul class="header-menu">
+                <li class="drop-li">
+                  <span>Продукт</span>
+                  <ul class="drop-menu">
+                    <li>
+                      <a href="optical.html">Для магазинів оптики</a>
+                    </li>
+                    <li>
+                      <a href="optical.html">Для офтальмологічних клінік</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="prices.html">Ціни та плани</a>
+                </li>
+                <li class="drop-li">
+                  <span>О компанії</span>
+                  <ul class="drop-menu">
+                    <li>
+                      <a href="#">Про MARVI</a>
+                    </li>
+                    <li>
+                      <a href="#">Безпека</a>
+                    </li>
+                    <li>
+                      <a href="fag.html">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="contacts.html">Контакти</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="blog.html">Блог</a>
+                </li>
+              </ul>
+
+              <div class="header-btns">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#entranceModal" class="btn-site-2 click-animation header-btns__btn" id="login">
+                  <span>Увійти</span>
+                </a>
+                <a href="#" class="btn-site click-animation header-btns__btn">
+                  <span>Отримати демо</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-main__content">
+              <h1 class="h1">Інноваційна система управління магазинами оптики</h1>
+              <div class="section-main__desc">
+                Зручне керування всіма ключовими процесами бізнесу в одному місці
+              </div>
+              <div class="section-main__btns">
+                <a href="#" class="btn-site-2 click-animation">Відеоогляд</a>
+                <a href="#" class="btn-site click-animation blue">Отримати демо</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="madeInUkraine">
+        <div class="madeInUkraine_icon">
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#flagForUkraine"></use>
+          </svg>
+        </div>
+        Made in Ukraine
+      </div>
+    </section>
+
+    <section class="section-about section">
+      <div class="container">
+        <div class="row align-items-start position-relative">
+          <div class="col-7 sticky-desktop">
+            <div class="section-about__img">
+              <img src="images/dogs/dog_5.svg" class="mw-100" alt="" />
+            </div>
+          </div>
+          <div class="col-5 content-box">
+            <div class="section-about_row">
+              <h2 class="h1 mb-80">Рішення для магазинів оптики</h2>
+              <h3 class="h3 mb-80">
+                MARVI створено саме для магазинів оптики, отже система повністю враховує специфіку цього бізнесу
+              </h3>
+            </div>
+            <div class="section-about_row">
+              <div class="li-item">Інтуїтивно зрозуміла та проста в користуванні база клієнтів, що дає змогу комунікувати з ними в будь-якій зручній формі</div>
+            </div>
+            <div class="section-about_row">
+              <div class="li-item">Зручне керування та відстеження замовлень клієнтів</div>
+            </div>
+            <div class="section-about_row">
+              <div class="li-item">Автоматизований процес взаємодії з постачальниками лінз та окулярів: система нагадає про необхідність замовити товар, підкаже оптимальну кількість одиниць, зробить автозамовлення</div>
+            </div>
+            <div class="section-about_row">
+              <div class="li-item">Специфічні для сфери оптики параметри товарів (OD и OS, SPH, CYL, AX, ADD та ін.)</div>
+            </div>
+            <div class="section-about_row">
+              <div class="li-item">Можливість швидко створити велику кількість власних параметрів лінз, що спрощують процес підбору та продажу</div>
+            </div>
+            <div class="section-about_row">
+              <div class="li-item">Автоматизований процесс роботи офтальмолога та оптометриста: система нагадає про візити клієнтів, зробить звіт за необхідними параметрами (за видами обстеження, візитами, лікарями)</div>
+            </div>
+            <div class="section-about_row">
+              <div class="li-item">Зручна система керування асортиментом на складі, що зазвичай у магазинах оптики має великий перелік позицій: інтуїтивно зрозумілий каталог товарів та послуг, можливість переміщувати товари між філіями, інструменти, що прискорюють інвентаризацію на складі</div>
+            </div>
+            <div class="section-about_row">
+              <div class="li-item">Автоматизована система керування роздрібними цінами та націнками для певних товарів або цілих категорій</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 offset-lg-3 text-center">
+            <h2 class="h1 mb-40">Унікальна система MARVI</h2>
+            <div class="h3 mb-40">MARVI — унікальна система, що об’єднує в собі функції CRM та ERP систем, плюс містить модулі Task Management (управління задачами) та Call Tracking (аналітика дзвінків)</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="systemMARVI">
+              <ul class="nav systemMARVI-nav" id="systemMARVITab" role="tablist">
+                <li class="systemMARVI-nav__item" role="presentation">
+                  <button class="systemMARVI-nav__link active click-animation blue" id="store-tab" data-bs-toggle="tab" data-bs-target="#store" type="button" role="tab" aria-controls="store" aria-selected="true">Для магазину</button>
+                </li>
+                <li class="systemMARVI-nav__item" role="presentation">
+                  <button class="systemMARVI-nav__link click-animation blue" id="stores-tab" data-bs-toggle="tab" data-bs-target="#stores" type="button" role="tab" aria-controls="stores" aria-selected="false">Для мережі магазинів</button>
+                </li>
+              </ul>
+              <div class="tab-content systemMARVI-tabContent" id="pricesTabContent">
+                <div class="tab-pane fade show active" id="store" role="tabpanel" aria-labelledby="store-tab">
+                  <div class="row align-items-center g-1 g-lg-2 g-xl-3">
+                    <div class="col-4 offset-lg-1 content-box textWhite">
+                      <ul>
+                        <li>Просте керування операційним (продавці / адміністратори) та медичним персоналом салону оптики</li>
+                        <li>Зручна система ведення продажів товару</li>
+                        <li>Інтуїтивне управління складом та залишками товарів у магазині</li>
+                        <li>Можливість синхронізації системи з вашим РРО, сканером та принтером штрихкодів</li>
+                        <li>Найлегша у використанні система ціноутворення та контролю націнки</li>
+                      </ul>
+                      <a href="#" class="btn-site-2">Отримати демо</a>
+                    </div>
+                    <div class="col-7">
+                      <picture>
+                        <source srcset="images/bg/image-1.webp" type="image/webp">
+                        <img src="images/bg/image-1.png" class="mw-100" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="stores" role="tabpanel" aria-labelledby="stores-tab">
+                  <div class="row align-items-center g-1 g-lg-2 g-xl-3">
+                    <div class="col-4 offset-lg-1 content-box textWhite">
+                      <ul>
+                        <li>Зручне керування цінами в усіх філіях (за умови зміні ціни на товар чи категорію в одній філії, MARVI покаже це в сповіщеннях та запропонує змінити ціну в інших)</li>
+                        <li>Швидке переміщення грошових коштів між філіями в системі</li>
+                        <li>Єдиний каталог товарів та послуг для всіх філій мережі</li>
+                        <li>Зручні звіти за всією мережею магазинів оптики та окремими філіями прямо в системі MARVI</li>
+                        <li>Інтуїтивне управління складом та залишками товарів мережі магазинів</li>
+                      </ul>
+                      <a href="#" class="btn-site-2">Отримати демо</a>
+                    </div>
+                    <div class="col-7">
+                      <picture>
+                        <source srcset="images/bg/image-1.webp" type="image/webp">
+                        <img src="images/bg/image-1.png" class="mw-100" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-system section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-80 text-center">Так виглядає система</h2>
+          </div>
+          <div class="col-12">
+            <div class="system_img">
+              <picture>
+                <source srcset="images/bg/image-2.webp" type="image/webp">
+                <img src="images/bg/image-2.png" class="mw-100 mx-auto" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-6 offset-lg-1">
+            <div class="info-box3__content content-box">
+              <div class="info-box3__title h1 text-center">Зручність</div>
+              <div class="info-box3__desc">
+                <ul>
+                  <li>Функціонал, розроблений саме під особливості бізнесу магазинів оптики та офтальмологічних клінік, дає змогу просто та ефективно керувати бізнесом</li>
+                  <li>Інтуїтивно зрозумілий та зручний інтерфейс значно спрощує робочий процес та навчання працівників</li>
+                  <li>Можливість працювати із системою онлайн із будь-якого місця та будь-якого девайсу</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-6 offset-lg-5">
+            <div class="info-box3__content content-box">
+              <div class="info-box3__title h1 text-center">Безпека</div>
+              <div class="info-box3__desc">
+                <ul>
+                  <li>Можливість виставляти різні рівні доступу співробітників до функцій системи</li>
+                  <li>Система здійснює автоматичне резервування даних на сервері 2 рази на добу</li>
+                  <li>Завдяки унікальному коду шифрування, ваші дані завжди перебуватимутьзнаходяться в безпеці</li>
+                </ul>
+              </div>
+              <div class="info-box3__btn">
+                <a href="#" class="btn-site click-animation blue">Безпека</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-6 offset-lg-3">
+            <div class="info-box3__content content-box">
+              <div class="info-box3__title h1 text-center">Сервіс</div>
+              <div class="info-box3__desc">
+                <ul>
+                  <li>Надаємо технічну підтримку запо будь-якими питаннями по системі через чат, Е-мейл та телефонні консультації з менеджером. Все пояснимо, допоможемо та виправимо!</li>
+                  <li>Забезпечимо перенесення бази клієнтів із вашої наявноїіснуючої системи до MARVI. Вам не потрібно буде вносити інформацію самому та витрачати на це багато часу</li>
+                </ul>
+              </div>
+              <div class="info-box3__btn">
+                <a href="#" class="btn-site click-animation blue">Детальніше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+    <section class="section-functionsMARVI section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="h1 text-center mb-80">Основні функції MARVI</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-0">
+    <div class="row">
+      <div class="col-12">
+        <div class="banners" data-scroll-in-section>
+          <div class="wrap-banner">
+  <div class="banner bg-1">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="images/jsonAnimate/1.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Клієнтська база</h2>
+        <div class="banner__desc_text">Детальні картки клієнтів із можливістю відстежувати активність, історію покупок, та останні дії: дзвінки, візити, обстеження, лікування, замовлення тощо</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner">
+  <div class="banner bg-2">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="images/jsonAnimate/2.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Календар</h2>
+        <div class="banner__desc_text">Можливість індувідіально заповнювати графік роботи лікарів і відповідно до нього, записувати пацієнтів на візити. Зручний та приємний для користування інтерфейс</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner">
+  <div class="banner bg-3">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="images/jsonAnimate/3.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Медичний блок</h2>
+        <div class="banner__desc_text">Повний цикл візиту пацієнта, в якому буде представлений анамнез (медична картка), результати обстеження, щоденник пацієнта та його детальний діагноз. До кожного візиту можна прикріпити необхідний файл з результатами обстеження або будь-якою важливою інформацією про пацієнта</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner">
+  <div class="banner bg-4">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="images/jsonAnimate/4.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Робота із замовленнями</h2>
+        <div class="banner__desc_text">Можливість швидко підібрати наявний товар за конкретними характеристиками, вказаними в рецепті лікаря. Відстеження статусу замовлення: створений, переданий постачальнику або майстру, отриманий постачальником або майстром, завершений</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner">
+  <div class="banner bg-5">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="images/jsonAnimate/5.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Платежі</h2>
+        <div class="banner__desc_text">Проведення платежів у зручній для клієнта формі (карткою, готівкою) з фіксацією в системі та можливістю друку квитанції за кожну операцію</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner">
+  <div class="banner bg-6">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="images/jsonAnimate/6.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Керування асортиментом</h2>
+        <div class="banner__desc_text">Категорії товарів із параметрами спеціально розробленими для оптики. Можливість додавати та редагувати параметри. Окремі розділи для продажу готового товару та того, що виготовляється на замовлення запо рецептому лікаря</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner">
+  <div class="banner bg-7">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="images/jsonAnimate/7.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Керування цінами</h2>
+        <div class="banner__desc_text">Можливість виставляти ціни на товари вручну, та автоматично для конкретної категорії товару через встановлення націнки. Автоматизована система ціноутворення товарів. У разі зростанняі вартості товару у постачальника націнка залишається, та ціна реалізації підвищується</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner">
+  <div class="banner bg-8">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="images/jsonAnimate/8.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Робота з постачальниками</h2>
+        <div class="banner__desc_text">Можливість додавати постачальників до системи для легкої взаємодії з ними, а саме: консолідація різних замовлень клієнтів в єдине замовлення на постачальника, автоматичне створення замовлень товарів на склад, авто підказка оптимальної кількості замовлення</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner">
+  <div class="banner bg-9">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="images/jsonAnimate/9.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Складський облік</h2>
+        <div class="banner__desc_text">Дає змогу відстежувати кількість товарів на складі, та нагадує, коли потрібно зробити закупівлю. SMART-інвентаризація — інструмент для проведення інвентаризації швидше та зручніше (можливість використовувати сторонні сканери штрих-кодів)</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner">
+  <div class="banner bg-10">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="images/jsonAnimate/10.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Коммунікації</h2>
+        <div class="banner__desc_text">Можливість розсилати SMS та повідомлення в месенджери клієнтам: нагадування про візит, повідомлення про готове замовлення, маркетингові повідомлення тощо</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner">
+  <div class="banner bg-11">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="images/jsonAnimate/11.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Звіти</h2>
+        <div class="banner__desc_text">Детальні звіти по результатам діяльності компанії: звіти по комерційні діяльності, основні фінансові результати, звіти по продажах по популярних категоріях, звіти по співробітникам, лікарям, агентам, боржникам, залишкам та інші</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+    <section class="section-advantages section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 text-center mb-80">Переваги від впровадження MARVI</h2>
+          </div>
+        </div>
+        <div class="row advantages-items">
+          <div class="col-6 offset-lg-3">
+            <div class="advantages-item">
+              <div class="advantages-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#advantageAlarm"></use>
+                </svg>
+              </div>
+              <div class="advantages-item__text">Суттєве зменшення часу на повсякденні операції працівників. Операції, що раніше займали цілий робочій день, з MARVI можуть виконуватися за 1–2 години, або навіть швидше!</div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#advantageServer"></use>
+                </svg>
+              </div>
+              <div class="advantages-item__text">Усі дані забекаплені, їх неможливо втратити!</div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#advantageChart"></use>
+                </svg>
+              </div>
+              <div class="advantages-item__text">Звіти за популярними товарами та категоріями дають можливість легко провести аналіз та збільшити продажі, по досвіду наших клієнтів — до +30 %</div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#advantageCalendar"></use>
+                </svg>
+              </div>
+              <div class="advantages-item__text">Контролювання завдань для працівників дає змогу залучити більше клієнтів. MARVI вчасно нагадає про візит, запропонує товар чи повідомить про акцію</div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#advantageCart"></use>
+                </svg>
+              </div>
+              <div class="advantages-item__text">Нагадування про автоповтор замовлень для клієнта. Наприклад, якщо клієнт раніше купував лінзи на 3 місяці, у необхідний термін система нагадає йому, що потрібно замовити нові</div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#advantageTrending"></use>
+                </svg>
+              </div>
+              <div class="advantages-item__text">Зменшення витрат на папір — до 50 000 грн на філію в рік!</div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#advantageSmile"></use>
+                </svg>
+              </div>
+              <div class="advantages-item__text">Збільшення рівня задоволеності та лояльності клієнтів.</div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages-item__icon">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#advantagePercent"></use>
+                </svg>
+              </div>
+              <div class="advantages-item__text">Збільшення маржі бізнесу</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-smartMARVI section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-80 text-center">Smart-функції MARVI</h2>
+          </div>
+        </div>
+        <div class="row smartMARVI-items g-1 g-lg-2 g-xl-3">
+          <div class="col-6 smartMARVI-item--animate">
+            <div class="smartMARVI-item  bg-1">
+              <div class="smartMARVI-item_header">
+                <div class="smartMARVI-item_header__img">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#glasses"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="smartMARVI-item_title h2">Smart-параметри лінз</div>
+              <div class="smartMARVI-item_text">Можливість швидкого створення великої кількості індивідуальних параметрів кроку лінз за бажанням користувача</div>
+            </div>
+          </div>
+          <div class="col-6 smartMARVI-item--animate">
+            <div class="smartMARVI-item  bg-2">
+              <div class="smartMARVI-item_header">
+                <div class="smartMARVI-item_header__img">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#uah"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="smartMARVI-item_title h2">Smart-керування цінами</div>
+              <div class="smartMARVI-item_text">Зміна цін та націнок на певний відсоток або значення на всю категорію товару/послуги для мережі або для кожної філії окремо</div>
+            </div>
+          </div>
+          <div class="col-6 smartMARVI-item--animate">
+            <div class="smartMARVI-item  bg-3">
+              <div class="smartMARVI-item_header">
+                <div class="smartMARVI-item_header__img">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#cart"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="smartMARVI-item_title h2">Smart-замовлення постачальнику</div>
+              <div class="smartMARVI-item_text">Функція об'єднання товарів з замовлень різних клієнтів в єдине замовлення для постачальника</div>
+            </div>
+          </div>
+          <div class="col-6 smartMARVI-item--animate">
+            <div class="smartMARVI-item  bg-4">
+              <div class="smartMARVI-item_header">
+                <div class="smartMARVI-item_header__img">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#reader"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="smartMARVI-item_title h2">Smart-інвентаризація</div>
+              <div class="smartMARVI-item_text">Інтерактивний інструмент для проведення інвентаризації (можливість використовувати сторонні сканери штрих кодів)</div>
+            </div>
+          </div>
+          <div class="col-6 smartMARVI-item--animate">
+            <div class="smartMARVI-item  bg-5">
+              <div class="smartMARVI-item_header">
+                <div class="smartMARVI-item_header__img">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#chatBox"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="smartMARVI-item_title h2">Smart-нагадування про товар</div>
+              <div class="smartMARVI-item_text">Після встановлення мінімального залишку по товарах система автоматично показує повідомлення про необхідність замовити товар</div>
+            </div>
+          </div>
+          <div class="col-6 smartMARVI-item--animate">
+            <div class="smartMARVI-item  bg-6">
+              <div class="smartMARVI-item_header">
+                <div class="smartMARVI-item_header__img">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#statsChart"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="smartMARVI-item_title h2">Smart-аналітика продажів</div>
+              <div class="smartMARVI-item_text">Звіт з розбивкою продажів між співробітниками за період, популярні товари та категорії, звіт за інструментом залучення клієнтів</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-bestInMARVI section">
+      <div class="container mb-80">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h2 text-center mb-80">Що щє крутого в MARVI?</h2>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-4 offset-lg-1">
+            <div class="bestInMARVI_img">
+              <img src="images/dogs/dog_10.svg" class="mw-100" alt="" />
+            </div>
+          </div>
+
+          <div class="col-6 offset-lg-1">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item_title h4">РРО</div>
+                  <div class="bestInMARVI-item_text">Синхронізація з касовим апаратом або підключення РРО (CheckBox, ПриватБанк)</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item_title h4">Вчасне до-замовлення</div>
+                  <div class="bestInMARVI-item_text">Підказка про товари, що закінчуються з рекомендацією, скільки потрібно замовити</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item_title h4">Управління персоналом</div>
+                  <div class="bestInMARVI-item_text">Керування робочим графіком і доступами до системи персоналу. Нарахування зарплати і бонусів персоналу по результатах роботи</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item_title h4">Тарифні плани</div>
+                  <div class="bestInMARVI-item_text">Можливість обрати потрібний пакет послуг та платити лише за те, що дійсно необхідно для оптимізації робочого процесу</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item_title h4">Повна історія</div>
+                  <div class="bestInMARVI-item_text">Ведення повної історії клієнту із встановленням його статусу (лояльний, VIP, та інше)</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item_title h4">Безпека</div>
+                  <div class="bestInMARVI-item_text">Доступ як до функцій системи, так і до філіалів, персоналізований для кожного співробітника</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="info-box-2">
+              <div class="info-box-2_title h3 text-center">
+                Дізнайся більше про плани та тарифи або спробуй демо-версію
+              </div>
+              <div class="info-box-2_btn">
+                <a href="#" class="btn-site-2 click-animation">Плани та тарифи</a>
+                <a href="#" class="btn-site click-animation">Замовити демо</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-reviews section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-80 text-center">Відгуки про MARVI</h2>
+          </div>
+          <div class="col-12">
+            <div class="swiper reviews-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-1.webp" type="image/webp">
+                        <img src="images/reviews/image-1.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Мельник Дмитро</div>
+                      <div class="reviews-item_author__position"> Лікар-офтальмолог</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Est ratione aut qui unde ipsum qui. At nemo blanditiis. Omnis necessitatibus voluptatem enim voluptatem ut quod asperiores tenetur autem. Doloremque odit et et excepturi. Id sequi eos ducimus iure vitae quaerat.</div>
+
+                  <div class="reviews-item_video">
+                    <a data-fancybox="gallery-1" href="https://youtu.be/or047P2NOjc?t=16" class="link-site-video  blue">
+                      <span>Дивитись відеовідгук</span>
+                    </a>
+                  </div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-2.webp" type="image/webp">
+                        <img src="images/reviews/image-2.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Ковальчук Оксана</div>
+                      <div class="reviews-item_author__position">Власниця офтальмологічної клініки</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Ipsa delectus et perspiciatis rem voluptas nesciunt. Ea architecto nihil suscipit fuga dolorum placeat. Voluptates aperiam maxime accusantium maiores ab fuga laboriosam in. A culpa minima facilis similique ea cumque est eligendi sit. Incidunt quod nesciunt fugit fugit consequuntur dolorum. Et iure qui est in et non corrupti autem ratione.</div>
+
+                  <div class="reviews-item_video">
+                    <a data-fancybox="gallery-2" href="https://youtu.be/yZdpqBT7hw0?t=7" class="link-site-video  blue">
+                      <span>Дивитись відеовідгук</span>
+                    </a>
+                  </div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-3.webp" type="image/webp">
+                        <img src="images/reviews/image-3.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Петренко Андрій</div>
+                      <div class="reviews-item_author__position">Власник магазину оптики</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Aut tenetur qui modi aut aut temporibus aspernatur accusamus unde. Minus repellat voluptatem vel veniam aliquam reprehenderit tenetur itaque sed.</div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-1.webp" type="image/webp">
+                        <img src="images/reviews/image-1.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Мельник Дмитро</div>
+                      <div class="reviews-item_author__position"> Лікар-офтальмолог</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Est ratione aut qui unde ipsum qui. At nemo blanditiis. Omnis necessitatibus voluptatem enim voluptatem ut quod asperiores tenetur autem. Doloremque odit et et excepturi. Id sequi eos ducimus iure vitae quaerat.</div>
+
+                  <div class="reviews-item_video">
+                    <a data-fancybox="gallery-1" href="https://youtu.be/or047P2NOjc?t=16" class="link-site-video  blue">
+                      <span>Дивитись відеовідгук</span>
+                    </a>
+                  </div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-2.webp" type="image/webp">
+                        <img src="images/reviews/image-2.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Ковальчук Оксана</div>
+                      <div class="reviews-item_author__position">Власниця офтальмологічної клініки</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Ipsa delectus et perspiciatis rem voluptas nesciunt. Ea architecto nihil suscipit fuga dolorum placeat. Voluptates aperiam maxime accusantium maiores ab fuga laboriosam in. A culpa minima facilis similique ea cumque est eligendi sit. Incidunt quod nesciunt fugit fugit consequuntur dolorum. Et iure qui est in et non corrupti autem ratione.</div>
+
+                  <div class="reviews-item_video">
+                    <a data-fancybox="gallery-2" href="https://youtu.be/yZdpqBT7hw0?t=7" class="link-site-video  blue">
+                      <span>Дивитись відеовідгук</span>
+                    </a>
+                  </div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-3.webp" type="image/webp">
+                        <img src="images/reviews/image-3.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Петренко Андрій</div>
+                      <div class="reviews-item_author__position">Власник магазину оптики</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Aut tenetur qui modi aut aut temporibus aspernatur accusamus unde. Minus repellat voluptatem vel veniam aliquam reprehenderit tenetur itaque sed.</div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+
+              </div>
+              <div class="slider-pagination"></div>
+
+              <div class="slider-navigation">
+                <div class="slider-navigation-prev reviews-slider-prev"></div>
+                <a href="#" class="btn-site click-animation blue">Відгуки</a>
+                <div class="slider-navigation-next reviews-slider-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 offset-lg-1">
+            <div class="h3">Спробувати демо-версію</div>
+            <div class="footer_form">
+              <form action="#">
+                <div class="row g-2">
+                  <div class="col-6">
+                    <div class="wrap-input-site">
+                      <input type="text" class="input-site" placeholder="Ім’я" />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="wrap-input-site">
+                      <input type="text" class="input-site" placeholder="Прізвище" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="email" class="input-site error" placeholder="example@mail.com" />
+                      <div class="input-site_error">Невірний формат даних.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <select class="input-site js-choice">
+                      <option>Для магазинів оптики 1</option>
+                      <option>Для магазинів оптики 2</option>
+                      <option>Для магазинів оптики 3</option>
+                    </select>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn-site click-animation">
+                      Замовити демо
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-3 offset-lg-1">
+            <div class="footer_top__item">
+              <div class="h3">Навігація</div>
+              <ul class="footer-menu">
+                <li>
+                  <a href="#">О компанії</a>
+                </li>
+                <li>
+                  <a href="#">Для магазинів оптики</a>
+                </li>
+                <li>
+                  <a href="#">Для офтальмологічних клінік</a>
+                </li>
+                <li>
+                  <a href="#">Ціни та плани</a>
+                </li>
+                <li>
+                  <a href="#">Безпека</a>
+                </li>
+                <li>
+                  <a href="#">Блог</a>
+                </li>
+                <li>
+                  <a href="#">Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer_top__item">
+              <div class="h3">Конфіденційність</div>
+              <ul class="footer-menu">
+                <li>
+                  <a href="#">Політика конфіденційності</a>
+                </li>
+                <li>
+                  <a href="#">Правила та умови користування</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_top__item">
+              <div class="h3">Проконсультуватись</div>
+              <ul class="footer-menu">
+                <li>
+                  <a href="tel:+380123456789">+380 (12) 345 67 89</a>
+                </li>
+                <li>
+                  <a href="mailto:marvi@help.com">marvi@help.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center flex-column">
+            <div class="footer_logo">
+              <img src="images/logo.svg" alt="" />
+            </div>
+            <div class="social">
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="copyRight">© MARVI. 2023. Всі права захищені</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<div class="modal fade" id="entranceModal" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <svg>
+          <use xlink:href="images/icons/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <ul class="entrance entrance-nav" id="entranceTabs" role="tablist">
+          <li class="entrance-item" role="presentation">
+            <button class="entrance-link active click-animation" id="registration-item-tab" data-bs-toggle="tab" data-bs-target="#registration-item" type="button" role="tab" aria-controls="registration-item" aria-selected="true">
+              Реєстрація
+            </button>
+          </li>
+          <li class="entrance-item" role="presentation">
+            <button class="entrance-link click-animation" id="login-item-tab" data-bs-toggle="tab" data-bs-target="#login-item" type="button" role="tab" aria-controls="login-item" aria-selected="false">
+              Увійти
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content entrance-content" id="entranceTabsContent">
+          <div class="tab-pane fade show active" id="registration-item" role="tabpanel" aria-labelledby="registration-item-tab">
+            <div class="entrance-content_item">
+              <form action="#">
+                <div class="row gy-2">
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="text" class="input-site" placeholder="Ім’я" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="email" class="input-site error" placeholder="example@mail.com" />
+                      <div class="input-site_error">Невірний формат даних.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="password" class="input-site" placeholder="Придумайте пароль" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="password" class="input-site" placeholder="Повторити пароль" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <select class="input-site js-choice">
+                      <option>Для магазинів оптики 1</option>
+                      <option>Для магазинів оптики 2</option>
+                      <option>Для магазинів оптики 3</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-error">
+                      Сталась помилка. Перевірте правильність введених данних та
+                      спробуйте щє
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" disabled class="btn-site click-animation mt-2">
+                      Зареєструватись
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="login-item" role="tabpanel" aria-labelledby="login-item-tab">
+            <div class="entrance-content_item">
+              <form action="#">
+                <div class="row gy-2">
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="email" class="input-site" placeholder="example@mail.com" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="password" class="input-site" placeholder="Введіть пароль" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-error">
+                      Сталась помилка. Перевірте правильність введених данних та
+                      спробуйте щє
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" disabled class="btn-site click-animation mt-2">
+                      Увійти
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<script src="js/main.min.js"></script>
+
+
+</body>
+
+</html>

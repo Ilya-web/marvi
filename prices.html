@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvi</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+  <link rel="stylesheet" href="src/css/plugins.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+
+<body></body>
+
+</html>
+
+<header class="header header-fixed">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-auto">
+        <div class="header-logo">
+          <a href="index.html">
+            <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M35.0366 33.3311L32.4379 13.1595L26.7895 33.3311H20.4814L14.8296 13.1595L12.231 33.3311H6.74416L10.5782 6.66668H17.6303L23.6085 26.9217L29.6305 6.66668H36.6826L40.5166 33.3311H35.0366Z" />
+              <path d="M86.1715 24.3085H80.9742V33.3345H75.612V6.67002H87.2016C94.0045 6.67002 97.5524 9.6931 97.5524 15.5293C97.5524 19.8156 95.6539 22.552 91.8603 23.6953L98.0877 33.3311H91.8199L86.1715 24.3085ZM80.9742 19.9389H86.4173C90.1301 19.9389 91.9849 18.429 91.9849 15.446C91.9849 12.5062 90.1301 11.0363 86.4173 11.0363H80.9742V19.9389Z" />
+              <path d="M127.986 6.66668L118.254 33.3311H110.953L101.262 6.66668H106.789L114.625 29.2081L122.462 6.66668H127.986Z" />
+              <path d="M64.8403 33.3311L57.0039 10.7897L49.1676 33.3311H43.6404L53.3315 6.66668H60.6326L70.3641 33.3311H64.8403Z" />
+              <path d="M138.256 33.3311H132.894V6.66668H138.256V33.3311Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-auto d-flex justify-content-end">
+        <ul class="header-menu">
+          <li class="drop-li">
+            <span>Продукт</span>
+            <ul class="drop-menu">
+              <li>
+                <a href="optical.html">Для магазинів оптики</a>
+              </li>
+              <li>
+                <a href="optical.html">Для офтальмологічних клінік</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="prices.html">Ціни та плани</a>
+          </li>
+          <li class="drop-li">
+            <span>О компанії</span>
+            <ul class="drop-menu">
+              <li>
+                <a href="#">Про MARVI</a>
+              </li>
+              <li>
+                <a href="#">Безпека</a>
+              </li>
+              <li>
+                <a href="fag.html">FAQ</a>
+              </li>
+              <li>
+                <a href="contacts.html">Контакти</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="blog.html">Блог</a>
+          </li>
+        </ul>
+
+        <div class="header-btns">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#entranceModal" class="btn-site-2 click-animation header-btns__btn" id="login">
+            <span>Увійти</span>
+          </a>
+          <a href="#" class="btn-site click-animation header-btns__btn">
+            <span>Отримати демо</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrapper">
+  <main class="main">
+    <section class="section-main section-main-small section section-bg">
+      <div class="section-bg_image">
+        <picture>
+          <source srcset="images/bg/section-main-small.webp" />
+          <img src="images/bg/section-main-small.jpg" loading="lazy" alt="" />
+        </picture>
+      </div>
+      <header class="header ">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+              <div class="header-logo">
+                <a href="index.html">
+                  <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.0366 33.3311L32.4379 13.1595L26.7895 33.3311H20.4814L14.8296 13.1595L12.231 33.3311H6.74416L10.5782 6.66668H17.6303L23.6085 26.9217L29.6305 6.66668H36.6826L40.5166 33.3311H35.0366Z" />
+                    <path d="M86.1715 24.3085H80.9742V33.3345H75.612V6.67002H87.2016C94.0045 6.67002 97.5524 9.6931 97.5524 15.5293C97.5524 19.8156 95.6539 22.552 91.8603 23.6953L98.0877 33.3311H91.8199L86.1715 24.3085ZM80.9742 19.9389H86.4173C90.1301 19.9389 91.9849 18.429 91.9849 15.446C91.9849 12.5062 90.1301 11.0363 86.4173 11.0363H80.9742V19.9389Z" />
+                    <path d="M127.986 6.66668L118.254 33.3311H110.953L101.262 6.66668H106.789L114.625 29.2081L122.462 6.66668H127.986Z" />
+                    <path d="M64.8403 33.3311L57.0039 10.7897L49.1676 33.3311H43.6404L53.3315 6.66668H60.6326L70.3641 33.3311H64.8403Z" />
+                    <path d="M138.256 33.3311H132.894V6.66668H138.256V33.3311Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-auto d-flex justify-content-end">
+              <ul class="header-menu">
+                <li class="drop-li">
+                  <span>Продукт</span>
+                  <ul class="drop-menu">
+                    <li>
+                      <a href="optical.html">Для магазинів оптики</a>
+                    </li>
+                    <li>
+                      <a href="optical.html">Для офтальмологічних клінік</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="prices.html">Ціни та плани</a>
+                </li>
+                <li class="drop-li">
+                  <span>О компанії</span>
+                  <ul class="drop-menu">
+                    <li>
+                      <a href="#">Про MARVI</a>
+                    </li>
+                    <li>
+                      <a href="#">Безпека</a>
+                    </li>
+                    <li>
+                      <a href="fag.html">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="contacts.html">Контакти</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="blog.html">Блог</a>
+                </li>
+              </ul>
+
+              <div class="header-btns">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#entranceModal" class="btn-site-2 click-animation header-btns__btn" id="login">
+                  <span>Увійти</span>
+                </a>
+                <a href="#" class="btn-site click-animation header-btns__btn">
+                  <span>Отримати демо</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-main__content">
+              <h1 class="h1">Ціни та плани</h1>
+              <div class="section-main__btns">
+                <a href="#" class="btn-site click-animation green">Дізнатись більше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="madeInUkraine">
+        <div class="madeInUkraine_icon">
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#flagForUkraine"></use>
+          </svg>
+        </div>
+        Made in Ukraine
+      </div>
+    </section>
+
+    <section class="section-prices section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row align-items-center">
+              <div class="col-3">
+                <div class="section-prices__title h4">
+                  MARVI надає можливість обрати тарифний план, залежно від того, які
+                  функції дійсно необхідні для оптимізації робочого процесу
+                </div>
+              </div>
+              <div class="col-9">
+                <ul class="nav prices-nav" id="pricesTab" role="tablist">
+                  <li class="prices-nav__item" role="presentation">
+                    <button class="prices-nav__link active click-animation green" id="year-tab" data-bs-toggle="tab" data-bs-target="#year" type="button" role="tab" aria-controls="year" aria-selected="true">На рік</button>
+                  </li>
+                  <li class="prices-nav__item" role="presentation">
+                    <button class="prices-nav__link click-animation green" id="months-tab" data-bs-toggle="tab" data-bs-target="#months" type="button" role="tab" aria-controls="months" aria-selected="false">На 3 місяці</button>
+                  </li>
+                </ul>
+                <div class="tab-content prices-tabContent" id="pricesTabContent">
+                  <div class="tab-pane fade show active" id="year" role="tabpanel" aria-labelledby="year-tab">
+                    <div class="row g-1 g-lg-2 g-xl-3">
+                      <div class="col-4">
+                        <div class="price-item">
+                          <div class="price-item__price h2 text-center">$240</div>
+                          <div class="price-item__price h3 text-center">Basic</div>
+                          <div class="price-item__desc">Для тих, хто хоче спростити та покращити керування бізнес-процесами та інформацією в своєму магазині чи мережі оптики</div>
+                          <div class="price-item__btn">
+                            <a href="#" class="btn-site click-animation green w-100">Замовити</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="price-item">
+                          <div class="price-item__price h2 text-center">$360</div>
+                          <div class="price-item__price h3 text-center">Smart</div>
+                          <div class="price-item__desc">Aдаптований для магазинів оптики, що бажають не тільки зробити управління більш керованим, але й значно пришвидшити виконання бізнес-процесів та оптимізувати робочий час співробітників</div>
+                          <div class="price-item__btn">
+                            <a href="#" class="btn-site click-animation green w-100">Замовити</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="price-item">
+                          <div class="price-item__price h2 text-center">$480</div>
+                          <div class="price-item__price h3 text-center">Smart+Medical</div>
+                          <div class="price-item__desc">Має додатковий медичний блок. Підійде для офтальмологічних клінік або магазинів оптики, що також надають медичні послуги</div>
+                          <div class="price-item__btn">
+                            <a href="#" class="btn-site click-animation green w-100">Замовити</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="months" role="tabpanel" aria-labelledby="months-tab">
+                    <div class="row g-1 g-lg-2 g-xl-3">
+                      <div class="col-4">
+                        <div class="price-item">
+                          <div class="price-item__price h2 text-center">$100</div>
+                          <div class="price-item__price h3 text-center">Basic</div>
+                          <div class="price-item__desc">Для тих, хто хоче спростити та покращити керування бізнес-процесами та інформацією в своєму магазині чи мережі оптики</div>
+                          <div class="price-item__btn">
+                            <a href="#" class="btn-site click-animation green w-100">Замовити</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="price-item">
+                          <div class="price-item__price h2 text-center">$200</div>
+                          <div class="price-item__price h3 text-center">Smart</div>
+                          <div class="price-item__desc">Aдаптований для магазинів оптики, що бажають не тільки зробити управління більш керованим, але й значно пришвидшити виконання бізнес-процесів та оптимізувати робочий час співробітників</div>
+                          <div class="price-item__btn">
+                            <a href="#" class="btn-site click-animation green w-100">Замовити</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="price-item">
+                          <div class="price-item__price h2 text-center">$300</div>
+                          <div class="price-item__price h3 text-center">Smart+Medical</div>
+                          <div class="price-item__desc">Має додатковий медичний блок. Підійде для офтальмологічних клінік або магазинів оптики, що також надають медичні послуги</div>
+                          <div class="price-item__btn">
+                            <a href="#" class="btn-site click-animation green w-100">Замовити</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-9 offset-lg-3">
+                <div class="info-sales">
+                  <div class="info-sales__title h3">Отримай знижку в залежності від кількості філій:</div>
+                  <div class="info-sales__items">
+                    <div class="info-sales__item">
+                      <div class="info-sales__item--title h3">3-5 філій</div>
+                      <div class="info-sales__item--discount h2">10%</div>
+                    </div>
+                    <div class="info-sales__item">
+                      <div class="info-sales__item--title h3">6-9 філій</div>
+                      <div class="info-sales__item--discount h2">15%</div>
+                    </div>
+                    <div class="info-sales__item">
+                      <div class="info-sales__item--title h3">10 і більше</div>
+                      <div class="info-sales__item--discount h2">25%</div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="accordion-header accordion-header-sticky">
+              <li>Basic</li>
+              <li>Smart</li>
+              <li>Smart+ Medical</li>
+            </ul>
+            <div class="accordion-site" id="accordionPrices">
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-1">
+                  <button class="accordion-btn click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                    <span>Керування ассортиментом та складом</span>
+                  </button>
+                </h2>
+                <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>Каталог товарів</td>
+                        <td>Ведення асортименту в системі зі спеціально розробленими для оптики параметрами товарів</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Надходження та списання товарів</td>
+                        <td>Можливість ставити на склад надходження товару, повертати товар постачальникам, приймати повернення від клієнта</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Переміщення товарів між філіями</td>
+                        <td>Переміщення товарів між філіями з фіксацією історії</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Створення замовлень постачальникам</td>
+                        <td>Автоматичне створення замовлень проданих товарів та товарів, що додаються на склад</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Ціноутворення</td>
+                        <td>Можливість редагувати ціну товару з карточки товару</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Керування націнкой</td>
+                        <td>Можливість управляти цінами через вказання націнки. При підвищенні ціни постачальника націнка залишається, а ціна реалізації зростає</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Керування постачальниками</td>
+                        <td>Додавання та редагування даних постачальників. Перегляд історії оплат по постачальникам</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Категорія послуг</td>
+                        <td>Можливість створювати різні категорії послуг, що надаються магазином оптики</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Синхронізація з принтерами/сканерами штрихкодів</td>
+                        <td>Принтеры и сканеры штрихкодов синхронизуються з системою</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Наявність товару на складі</td>
+                        <td>Можливість бачити залишки товарів на складі</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Функція Smart-створення параметрів кроку лінз в "один клік"</td>
+                        <td>Можливість швидкого створення великої кількості індивідуальних параметрів кроку лінз за бажанням користувача</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Smart-керування ціною та націнкою</td>
+                        <td>Можливість підвищувати ціни або націнки на певний відсоток або значення на всю категорію товару/послуги для всієї мережі або для кожної філії окремо</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Smart-замовлення</td>
+                        <td>Функція об'єднання товарів з замовлень різних клієнтів в єдине замовлення для постачальника</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Smart-інвентаризація</td>
+                        <td>Інтерактивний інструмент для проведення інвентаризації (можливість використовувати сторонні сканери штрихкодів)</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Smart-нагадування для замовлення товару</td>
+                        <td>Після встановлення мінімального залишку по товарах система автоматично показує повідомлення про необхідність дозамовити товар</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-2">
+                  <button class="accordion-btn click-animation h2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+                    <span>Інструменти продажів</span>
+                  </button>
+                </h2>
+                <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>Керування замовленнями</td>
+                        <td>Ви можете переглядати статус та деталі замовлень, редагувати їх та автоматично передавати постачальнику. Фільтрування замовлень за станом, номером, філією, клієнтом, датою</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Фіксування всіх продажів в системі</td>
+                        <td>Усі продані товари та послуги будуть відображатися в системі з фіксацією ціни, націнки, клієнта та інших деталей. Можливість розділити замовлення на передплату та післяплату</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Первинна документація</td>
+                        <td>Швидке створення накладної та рахунків на оплату безпосередньо з системи</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Синхронізація з касовим обладнанням (РРО)</td>
+                        <td>Касові апарати синхронізуються з системою</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-3">
+                  <button class="accordion-btn click-animation h2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                    <span>Звіти та аналітика</span>
+                  </button>
+                </h2>
+                <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>Базова аналітика продажів</td>
+                        <td>Звіти за поточними залишками, обіг за період, боргові зобов’язання, комісія агентів та інше</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Доходи та прибуток</td>
+                        <td>Звіт щодо ефективності та основних операційних показників за необхідний період</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Нарахування бонусів співробітникам</td>
+                        <td>Можливість нараховувати бонуси співробітникам, встановлюючи різні відсотки бонусу за категоріями</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Smart-аналітика продажів</td>
+                        <td>Звіт з розбивкою продажів між співробітниками за період, популярні товари та категорії з фільтрацією за необхідний період, звіт за інструментом залучення клієнтів</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-4">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+                    <span>Керування фінансами</span>
+                  </button>
+                </h2>
+                <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>Списання грошових коштів</td>
+                        <td>Списання грошей на оплату витрат філій (не тільки оплати постачальникам, а й інших витрат, таких як оренда, комунальні та інше)</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Повернення грошових коштів</td>
+                        <td>Повернення грошей від постачальників, повернення грошей клієнтам з визначенням необхідної каси та філії.</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Переміщення коштів</td>
+                        <td>Переміщення коштив між касами філій</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-5">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
+                    <span>База клієнтів</span>
+                  </button>
+                </h2>
+                <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>Картки клієнтів</td>
+                        <td>Створення та ведення карток клієнтів. Історія продажів по клієнтам. Статуси оплат. Можливість присвоювати теги клієнтам</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Необмежена кількість клієнтів</td>
+                        <td></td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Smart-повторення замовлень</td>
+                        <td>Можливість створювати повторні замовлення клієнтів одним кліком. Просто натиснувши кнопку в картці пацієнта, можна повторити будь-яке з його замовлень за секунду</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-6">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
+                    <span>Комунікації</span>
+                  </button>
+                </h2>
+                <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="heading-6" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>SMS-розсилка*</td>
+                        <td>Можливість відсилати SMS-повідомлення клієнтам</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Повідомлення в месенджерах*</td>
+                        <td>Можливість відсилати повідомлення клієнтам в Viber, Telegram</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Автонагадування про візит*</td>
+                        <td>Відсилається у вигляді SMS або повідомлення в месенджер.</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Повідомлення про виготовлений товар*</td>
+                        <td></td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+
+                      <tr>
+                        <td colspan="5" class="endnote h4 text-center mb-0">* - функція активується за додакову плату</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-7">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
+                    <span>Безпека</span>
+                  </button>
+                </h2>
+                <div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="heading-7" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>Різні рівні доступу співробітників</td>
+                        <td>Доступ, як до функцій системи, так і до філій персоналізований під кожного співробітника</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Управління доступом співробітників від адміністратора</td>
+                        <td>Співробітникам можна редагувати доступ до системи з будь-якої точки світу</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Резервне копіювання</td>
+                        <td>2 рази на добу система робить автоматичне збереження даних на сервері</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-8">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="true" aria-controls="collapse-8">
+                    <span>Медичний блок</span>
+                  </button>
+                </h2>
+                <div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="heading-8" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>Віджет</td>
+                        <td>Можливість додавання візиту пацієнта в календар MARVI через сайт магазину оптики або офтальмологічної клініки</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Автонагадування про візити</td>
+                        <td>Можливість автоматичного нагадування пацієнтам про візит</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Звіти (за видами обстежень, візитами, лікарями)</td>
+                        <td>Детальні звіти за результатами роботи лікарів, візитами пацієнтів, видами обстежень</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Календар</td>
+                        <td>Можливість індувідіально заповнювати графік роботи лікарів та записувати пацієнтів на візити</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Обстеження</td>
+                        <td>18 детальних видів обстеження пацієнтів</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Нарахування заробітної плати</td>
+                        <td>Можливість нараховувати бонуси та зарплату лікарям відповідно до результатів їхньої работи</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Завантаження файлів у систему</td>
+                        <td>До кожного візиту можна прикріпити необхідний файл з результатами обстеження або будь-якою іншою важливою інформацією про пацієнта</td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status  status-unChecked"></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-9">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-9" aria-expanded="true" aria-controls="collapse-9">
+                    <span>Технічна підтримка</span>
+                  </button>
+                </h2>
+                <div id="collapse-9" class="accordion-collapse collapse" aria-labelledby="heading-9" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>Технічна підтримка з будь-яких питань роботи програми</td>
+                        <td></td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Чат підтримка/підтримка в месенджері</td>
+                        <td>Безліміт в робочий час (ПН-ПТ)</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Е-мейл підтримка</td>
+                        <td>Безліміт в робочий час (ПН-ПТ)</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Консультація по телефону з менеджером*</td>
+                        <td>В пакетах Smart та Smart+Medical надається 2 та 3 безкоштовних години на рік відповідно, далі за додаткову плату $15 за годину</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+
+                      <tr>
+                        <td colspan="5" class="endnote h4 text-center mb-0">* - функція активується за додакову плату</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-10">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-10" aria-expanded="true" aria-controls="collapse-10">
+                    <span>Впровадження системи</span>
+                  </button>
+                </h2>
+                <div id="collapse-10" class="accordion-collapse collapse" aria-labelledby="heading-10" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>Навчання роботі в системі**</td>
+                        <td>Надаємо 2-годинне навчання роботі в програмі для ваших співробітників</td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td>Імпорт даних*</td>
+                        <td>Можливість перенести наявних клієнтів в нашу систему. Вартість послуги - $50 </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                        <td>
+                          <div class="status status-checked "></div>
+                        </td>
+                      </tr>
+
+
+
+
+
+                      <tr>
+                        <td colspan="5" class="endnote h4 text-center mb-0">* - функція активується за додакову плату</td>
+                      </tr>
+                      <tr>
+                        <td colspan="5" class="endnote h4 text-center mb-0">** - за умови підписки на рік надається в подарунок</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-inner">
+                <h2 class="accordion-head" id="heading-11">
+                  <button class="accordion-btn collapsed click-animation h2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-11" aria-expanded="true" aria-controls="collapse-11">
+                    <span>Хмарне сховище</span>
+                  </button>
+                </h2>
+                <div id="collapse-11" class="accordion-collapse collapse" aria-labelledby="heading-11" data-bs-parent="#accordionPrices">
+                  <div class="accordion-content">
+                    <table class="table-site">
+                      <tr>
+                        <td>Місце на диску на хмарному сервері</td>
+                        <td></td>
+                        <td class="h3">1 ГБ</td>
+                        <td class="h3">5 ГБ</td>
+                        <td class="h3">10 ГБ</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-info" style="background-image: url('images/bg/macbook-bg.webp')">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 offset-lg-1">
+            <div class="info-box3__content content-box">
+              <div class="info-box3__title h1 text-center">Умови демо-версії</div>
+              <div class="info-box3__desc">
+                <ul>
+                  <li>Демо-версія надається безкоштовно на 2 тижні</li>
+                  <li>Навчання роботі в системі та імпорт даних доступні тільки для платних версій, і в демо-версії нашою командою не надаються</li>
+                  <li>Чат та email підтримка доступні для клієнтів, які пробують демо. Телефонні консультації можуть надаватись на платній основі, як і усім клієнтам, за звичайним тарифом ($15/година)</li>
+                </ul>
+              </div>
+              <div class="info-box3__btn">
+                <a href="#" class="btn-site click-animation green">Замовити демо</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-7">
+            <picture>
+              <source srcset="images/bg/image.webp" type="image/webp">
+              <img src="images/bg/image.jpg" class="mw-100" alt="">
+            </picture>
+          </div>
+          <div class="col-5">
+            <div class="info-box3__content content-box">
+              <div class="info-box3__title h1 text-center">Кастомні рішення</div>
+              <div class="info-box3__desc">
+                <p>Можлива повна кастомізація системи під Ваш окремий випадок і специфіку бізнеса.
+                  Вартість такого проекта обговорюється та оцінюється окремо, після підготовки окремого технічного завдання. Ми з радістю обговоримо це з Вами!</p>
+              </div>
+              <div class="info-box3__btn">
+                <a href="#" class="btn-site click-animation green">Зв’язатись</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-80 text-center">Додаткові послуги</h2>
+          </div>
+        </div>
+        <div class="row service-items g-1 g-lg-2 g-xl-3">
+          <div class="col-4">
+            <div class="service-item bg-1">
+              <div class="service-item__header">
+                <div class="service-item__header--icon">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#learnMore"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="service-item__desc h4">Індивідуальне навчання співробітників роботі з системою</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="service-item bg-2">
+              <div class="service-item__header">
+                <div class="service-item__header--icon">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#barcode"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="service-item__desc h4">Продаж сканерів та принтерів штрих-кодів</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="service-item bg-3">
+              <div class="service-item__header">
+                <div class="service-item__header--icon">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#newspaper"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="service-item__desc h4">Налаштування РРО</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="service-item bg-4">
+              <div class="service-item__header">
+                <div class="service-item__header--icon">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#chatBox"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="service-item__desc h4">Персоналізовані повідомлення клієнтам через SMS, Viber, Telegram, WhatsApp</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="service-item bg-5">
+              <div class="service-item__header">
+                <div class="service-item__header--icon">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#server"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="service-item__desc h4">Можливість придбати додаткове місце на сервері</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-1 mt-lg-2 mt-xl-3">
+          <div class="col-12">
+            <div class="info-box4">
+              <div class="info-box4__content text-center">
+                <div class="info-box4__content--title h1">Існуючим клієнтам</div>
+                <div class="info-box4__content--text h4">Якщо Ви - діючий клієнт, та хочете змінити свій тарифний план, замовити додаткові послуги, чи маєте запитання - зв'яжіться з відділом продажів</div>
+                <div class="info-box4__content--phone h2">
+                  <a href="tel:+380112223344">+380 (11) 222 33 44</a>
+                </div>
+                <div class="info-box4__content--btn">
+                  <a href="#" class="btn-site-2 click-animation">Зворотній зв’язок</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-12">
+            <div class="info-box">
+              <div class="info-box__content">
+                <div class="info-box__desc">
+                  <h2 class="h2">Вивчай можливості MARVI</h2>
+                  <div class="info-box__text">
+                    Заповнюй невелику форму та отримай демо-доступ до повного
+                    функціоналу системи управління
+                  </div>
+                  <a href="#" class="btn-site click-animation green">Хочу демо</a>
+                </div>
+                <div class="info-box__img">
+                  <img src="images/dogs/dog_1.svg" class="mw-100" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-reviews section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-80 text-center">Відгуки про MARVI</h2>
+          </div>
+          <div class="col-12">
+            <div class="swiper reviews-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-1.webp" type="image/webp">
+                        <img src="images/reviews/image-1.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Мельник Дмитро</div>
+                      <div class="reviews-item_author__position"> Лікар-офтальмолог</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Est ratione aut qui unde ipsum qui. At nemo blanditiis. Omnis necessitatibus voluptatem enim voluptatem ut quod asperiores tenetur autem. Doloremque odit et et excepturi. Id sequi eos ducimus iure vitae quaerat.</div>
+
+                  <div class="reviews-item_video">
+                    <a data-fancybox="gallery-1" href="https://youtu.be/or047P2NOjc?t=16" class="link-site-video green ">
+                      <span>Дивитись відеовідгук</span>
+                    </a>
+                  </div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-2.webp" type="image/webp">
+                        <img src="images/reviews/image-2.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Ковальчук Оксана</div>
+                      <div class="reviews-item_author__position">Власниця офтальмологічної клініки</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Ipsa delectus et perspiciatis rem voluptas nesciunt. Ea architecto nihil suscipit fuga dolorum placeat. Voluptates aperiam maxime accusantium maiores ab fuga laboriosam in. A culpa minima facilis similique ea cumque est eligendi sit. Incidunt quod nesciunt fugit fugit consequuntur dolorum. Et iure qui est in et non corrupti autem ratione.</div>
+
+                  <div class="reviews-item_video">
+                    <a data-fancybox="gallery-2" href="https://youtu.be/yZdpqBT7hw0?t=7" class="link-site-video green ">
+                      <span>Дивитись відеовідгук</span>
+                    </a>
+                  </div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-3.webp" type="image/webp">
+                        <img src="images/reviews/image-3.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Петренко Андрій</div>
+                      <div class="reviews-item_author__position">Власник магазину оптики</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Aut tenetur qui modi aut aut temporibus aspernatur accusamus unde. Minus repellat voluptatem vel veniam aliquam reprehenderit tenetur itaque sed.</div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-1.webp" type="image/webp">
+                        <img src="images/reviews/image-1.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Мельник Дмитро</div>
+                      <div class="reviews-item_author__position"> Лікар-офтальмолог</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Est ratione aut qui unde ipsum qui. At nemo blanditiis. Omnis necessitatibus voluptatem enim voluptatem ut quod asperiores tenetur autem. Doloremque odit et et excepturi. Id sequi eos ducimus iure vitae quaerat.</div>
+
+                  <div class="reviews-item_video">
+                    <a data-fancybox="gallery-1" href="https://youtu.be/or047P2NOjc?t=16" class="link-site-video green ">
+                      <span>Дивитись відеовідгук</span>
+                    </a>
+                  </div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-2.webp" type="image/webp">
+                        <img src="images/reviews/image-2.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Ковальчук Оксана</div>
+                      <div class="reviews-item_author__position">Власниця офтальмологічної клініки</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Ipsa delectus et perspiciatis rem voluptas nesciunt. Ea architecto nihil suscipit fuga dolorum placeat. Voluptates aperiam maxime accusantium maiores ab fuga laboriosam in. A culpa minima facilis similique ea cumque est eligendi sit. Incidunt quod nesciunt fugit fugit consequuntur dolorum. Et iure qui est in et non corrupti autem ratione.</div>
+
+                  <div class="reviews-item_video">
+                    <a data-fancybox="gallery-2" href="https://youtu.be/yZdpqBT7hw0?t=7" class="link-site-video green ">
+                      <span>Дивитись відеовідгук</span>
+                    </a>
+                  </div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+                <div class="swiper-slide reviews-item">
+                  <div class="reviews-item_author">
+                    <div class="reviews-item_author__img">
+                      <picture>
+                        <source srcset="images/reviews/image-3.webp" type="image/webp">
+                        <img src="images/reviews/image-3.jpg" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews-item_author__desc">
+                      <div class="reviews-item_author__name">Петренко Андрій</div>
+                      <div class="reviews-item_author__position">Власник магазину оптики</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item_text">Aut tenetur qui modi aut aut temporibus aspernatur accusamus unde. Minus repellat voluptatem vel veniam aliquam reprehenderit tenetur itaque sed.</div>
+
+                  <div class="reviews-item_date">31/06/2022</div>
+                </div>
+
+              </div>
+              <div class="slider-pagination"></div>
+              <div class="slider-navigation">
+                <div class="slider-navigation-prev reviews-slider-prev"></div>
+                <a href="#" class="btn-site click-animation green">Відгуки</a>
+                <div class="slider-navigation-next reviews-slider-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-review section" style="background-image: url('images/doctor.webp')">
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-5 offset-lg-1">
+            <div class="review_content green p-1 p-lg-2 p-xl-3">
+              <div class="review_text h3">
+                “Це справжній крок вперед у сфері організації роботи, що сприяє
+                покращенню якості медичних послуг і задоволенню пацієнтів”
+              </div>
+              <div class="review_name">Гончаренко Сергій</div>
+              <div class="review_position">Головний лікар</div>
+              <div class="review_btn">
+                <a href="https://youtu.be/yZdpqBT7hw0?t=7" class="btn-site green" data-fancybox="gallery-doctorReviews">Дивитись відеовідгук</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 offset-lg-1">
+            <div class="h3">Спробувати демо-версію</div>
+            <div class="footer_form">
+              <form action="#">
+                <div class="row g-2">
+                  <div class="col-6">
+                    <div class="wrap-input-site">
+                      <input type="text" class="input-site" placeholder="Ім’я" />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="wrap-input-site">
+                      <input type="text" class="input-site" placeholder="Прізвище" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="email" class="input-site error" placeholder="example@mail.com" />
+                      <div class="input-site_error">Невірний формат даних.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <select class="input-site js-choice">
+                      <option>Для магазинів оптики 1</option>
+                      <option>Для магазинів оптики 2</option>
+                      <option>Для магазинів оптики 3</option>
+                    </select>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn-site click-animation">
+                      Замовити демо
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-3 offset-lg-1">
+            <div class="footer_top__item">
+              <div class="h3">Навігація</div>
+              <ul class="footer-menu">
+                <li>
+                  <a href="#">О компанії</a>
+                </li>
+                <li>
+                  <a href="#">Для магазинів оптики</a>
+                </li>
+                <li>
+                  <a href="#">Для офтальмологічних клінік</a>
+                </li>
+                <li>
+                  <a href="#">Ціни та плани</a>
+                </li>
+                <li>
+                  <a href="#">Безпека</a>
+                </li>
+                <li>
+                  <a href="#">Блог</a>
+                </li>
+                <li>
+                  <a href="#">Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer_top__item">
+              <div class="h3">Конфіденційність</div>
+              <ul class="footer-menu">
+                <li>
+                  <a href="#">Політика конфіденційності</a>
+                </li>
+                <li>
+                  <a href="#">Правила та умови користування</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_top__item">
+              <div class="h3">Проконсультуватись</div>
+              <ul class="footer-menu">
+                <li>
+                  <a href="tel:+380123456789">+380 (12) 345 67 89</a>
+                </li>
+                <li>
+                  <a href="mailto:marvi@help.com">marvi@help.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center flex-column">
+            <div class="footer_logo">
+              <img src="images/logo.svg" alt="" />
+            </div>
+            <div class="social">
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icons/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </div>
+
+            <div class="copyRight">© MARVI. 2023. Всі права захищені</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<div class="modal fade" id="entranceModal" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <svg>
+          <use xlink:href="images/icons/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <ul class="entrance entrance-nav" id="entranceTabs" role="tablist">
+          <li class="entrance-item" role="presentation">
+            <button class="entrance-link active click-animation" id="registration-item-tab" data-bs-toggle="tab" data-bs-target="#registration-item" type="button" role="tab" aria-controls="registration-item" aria-selected="true">
+              Реєстрація
+            </button>
+          </li>
+          <li class="entrance-item" role="presentation">
+            <button class="entrance-link click-animation" id="login-item-tab" data-bs-toggle="tab" data-bs-target="#login-item" type="button" role="tab" aria-controls="login-item" aria-selected="false">
+              Увійти
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content entrance-content" id="entranceTabsContent">
+          <div class="tab-pane fade show active" id="registration-item" role="tabpanel" aria-labelledby="registration-item-tab">
+            <div class="entrance-content_item">
+              <form action="#">
+                <div class="row gy-2">
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="text" class="input-site" placeholder="Ім’я" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="email" class="input-site error" placeholder="example@mail.com" />
+                      <div class="input-site_error">Невірний формат даних.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="password" class="input-site" placeholder="Придумайте пароль" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="password" class="input-site" placeholder="Повторити пароль" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <select class="input-site js-choice">
+                      <option>Для магазинів оптики 1</option>
+                      <option>Для магазинів оптики 2</option>
+                      <option>Для магазинів оптики 3</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-error">
+                      Сталась помилка. Перевірте правильність введених данних та
+                      спробуйте щє
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" disabled class="btn-site click-animation mt-2">
+                      Зареєструватись
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="login-item" role="tabpanel" aria-labelledby="login-item-tab">
+            <div class="entrance-content_item">
+              <form action="#">
+                <div class="row gy-2">
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="email" class="input-site" placeholder="example@mail.com" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="wrap-input-site">
+                      <input type="password" class="input-site" placeholder="Введіть пароль" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-error">
+                      Сталась помилка. Перевірте правильність введених данних та
+                      спробуйте щє
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" disabled class="btn-site click-animation mt-2">
+                      Увійти
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<script src="js/main.min.js"></script>
+
+
+</body>
+
+</html>

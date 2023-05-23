@@ -1,0 +1,69 @@
+@@include('components/head/index.html', {'title': 'Marvi'})
+@@include('components/header/index.html', {'fixed' : true})
+<div class="wrapper">
+  <main class="main">
+    <section class="section-main section-main-small section section-bg">
+      <div class="section-bg_image">
+        <picture>
+          <source srcset="images/bg/section-main-small-2.webp" />
+          <img src="images/bg/section-main-small-2.jpg" loading="lazy" alt="" />
+        </picture>
+      </div>
+      @@include('components/header/index.html')
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-main__content">
+              <h1 class="h1">Новини та публікації</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="blogs-nav mb-80">
+              <ul>
+                <li class="active"><a href="#" class="btn-site click-animation">Всі статті</a></li>
+                <li><a href="#" class="btn-site click-animation">Оновлення MARVI</a></li>
+                <li><a href="#" class="btn-site click-animation">Новини</a></li>
+                <li><a href="#" class="btn-site click-animation">Події</a></li>
+                <li><a href="#" class="btn-site click-animation">Корисні поради</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row g-1 g-lg-2 g-xl-3">
+          @@loop('components/blog-item-with-col/index.html',
+          'components/blog-item/bd.json')
+        </div>
+        <div class="row g-1 g-lg-2 g-xl-3">
+          <div class="col-12 text-center">
+            <a href="#" class="more-btn click-animation mt-4">
+              Показати щє
+            </a>
+          </div>
+          <div class="col-12">
+            <ul class="pagination-site">
+              <li class="prev"><a href="#"></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#" class="click-animation">2</a></li>
+              <li><a href="#" class="click-animation">...</a></li>
+              <li><a href="#" class="click-animation">13</a></li>
+              <li class="next"><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('components/footer/index.html')
+</div>
+
+@@include('components/modal/index.html')
+@@include('components/scripts/index.html')

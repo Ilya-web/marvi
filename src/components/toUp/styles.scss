@@ -1,0 +1,43 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+/***toUp***/
+
+.toUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: $color-text;
+  border: 0;
+  display: flex;
+  @include transition;
+  opacity: 0;
+  visibility: hidden;
+
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  svg {
+    width: 12px;
+    height: 12px;
+    transform: rotate(180deg);
+    fill: $color-white;
+    margin: auto;
+  }
+
+  @media all and (hover: hover) {
+    &:hover {
+      background: $color-red-hover;
+    }
+  }
+
+  &:active {
+    background: $color-red-active;
+  }
+}
+
+/***toUp***/

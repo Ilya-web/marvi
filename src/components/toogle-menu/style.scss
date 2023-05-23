@@ -1,0 +1,38 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.toggle-menu {
+  width: 27px;
+  height: 27px;
+  border: 0;
+  background: transparent;
+
+  span {
+    background: $color-text;
+    display: block;
+    height: 2px;
+    margin-bottom: 5px;
+    @include transition;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &.active {
+    span {
+      &:first-child {
+        transform: rotate(-45deg) translate(-5px, 4px);
+      }
+
+      &:nth-child(2) {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+
+      &:last-child {
+        transform: rotate(45deg) translate(-6px, -5px);
+      }
+    }
+  }
+}

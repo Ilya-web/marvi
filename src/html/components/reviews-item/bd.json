@@ -1,0 +1,58 @@
+[
+  {
+    "urlImg": "images/reviews/image-1.jpg",
+    "name": "Мельник Дмитро",
+    "position": " Лікар-офтальмолог",
+    "text": "Est ratione aut qui unde ipsum qui. At nemo blanditiis. Omnis necessitatibus voluptatem enim voluptatem ut quod asperiores tenetur autem. Doloremque odit et et excepturi. Id sequi eos ducimus iure vitae quaerat.",
+    "video": true,
+    "countVideo": 1,
+    "linkVideo": "https://youtu.be/or047P2NOjc?t=16",
+    "date": "31/06/2022"
+  },
+  {
+    "urlImg": "images/reviews/image-2.jpg",
+    "name": "Ковальчук Оксана",
+    "position": "Власниця офтальмологічної клініки",
+    "text": "Ipsa delectus et perspiciatis rem voluptas nesciunt. Ea architecto nihil suscipit fuga dolorum placeat. Voluptates aperiam maxime accusantium maiores ab fuga laboriosam in. A culpa minima facilis similique ea cumque est eligendi sit. Incidunt quod nesciunt fugit fugit consequuntur dolorum. Et iure qui est in et non corrupti autem ratione.",
+    "video": true,
+    "countVideo": 2,
+    "linkVideo": "https://youtu.be/yZdpqBT7hw0?t=7",
+    "date": "31/06/2022"
+  },
+  {
+    "urlImg": "images/reviews/image-3.jpg",
+    "name": "Петренко Андрій",
+    "position": "Власник магазину оптики",
+    "text": "Aut tenetur qui modi aut aut temporibus aspernatur accusamus unde. Minus repellat voluptatem vel veniam aliquam reprehenderit tenetur itaque sed.",
+    "video": false,
+    "date": "31/06/2022"
+  },
+  {
+    "urlImg": "images/reviews/image-1.jpg",
+    "name": "Мельник Дмитро",
+    "position": " Лікар-офтальмолог",
+    "text": "Est ratione aut qui unde ipsum qui. At nemo blanditiis. Omnis necessitatibus voluptatem enim voluptatem ut quod asperiores tenetur autem. Doloremque odit et et excepturi. Id sequi eos ducimus iure vitae quaerat.",
+    "video": true,
+    "countVideo": 1,
+    "linkVideo": "https://youtu.be/or047P2NOjc?t=16",
+    "date": "31/06/2022"
+  },
+  {
+    "urlImg": "images/reviews/image-2.jpg",
+    "name": "Ковальчук Оксана",
+    "position": "Власниця офтальмологічної клініки",
+    "text": "Ipsa delectus et perspiciatis rem voluptas nesciunt. Ea architecto nihil suscipit fuga dolorum placeat. Voluptates aperiam maxime accusantium maiores ab fuga laboriosam in. A culpa minima facilis similique ea cumque est eligendi sit. Incidunt quod nesciunt fugit fugit consequuntur dolorum. Et iure qui est in et non corrupti autem ratione.",
+    "video": true,
+    "countVideo": 2,
+    "linkVideo": "https://youtu.be/yZdpqBT7hw0?t=7",
+    "date": "31/06/2022"
+  },
+  {
+    "urlImg": "images/reviews/image-3.jpg",
+    "name": "Петренко Андрій",
+    "position": "Власник магазину оптики",
+    "text": "Aut tenetur qui modi aut aut temporibus aspernatur accusamus unde. Minus repellat voluptatem vel veniam aliquam reprehenderit tenetur itaque sed.",
+    "video": false,
+    "date": "31/06/2022"
+  }
+]

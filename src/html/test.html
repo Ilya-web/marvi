@@ -1,0 +1,23 @@
+@@include('components/head/index.html', {'title': 'Marvi'})
+@@include('components/header/index.html', {'fixed' : true})
+<div class="wrapper">
+  <main class="main">
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="pageWrapper">
+      <section class="homeTeam" data-section-horizontal-scrolling>
+        @@include('components/section-functionsMARVI/index.html')
+      </section>
+<!--      <section class="afterHorizontalScroll">-->
+<!--        <p class="afterHorizontalScroll__title">-->
+<!--          My super title-->
+<!--        </p>-->
+<!--      </section>-->
+      @@include('components/section-smartMARVI/index.html')
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </main>
+
+</div>
+@@include('components/scripts/index.html')

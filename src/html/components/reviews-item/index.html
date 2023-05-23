@@ -1,0 +1,24 @@
+<div class="swiper-slide reviews-item">
+  <div class="reviews-item_author">
+    <div class="reviews-item_author__img">
+      <img src="@@urlImg" alt="" />
+    </div>
+    <div class="reviews-item_author__desc">
+      <div class="reviews-item_author__name">@@name</div>
+      <div class="reviews-item_author__position">@@position</div>
+    </div>
+  </div>
+  <div class="reviews-item_text">@@text</div>
+  @@if (context.video ) {
+  <div class="reviews-item_video">
+    <a
+      data-fancybox="gallery-@@countVideo"
+      href="@@linkVideo"
+      class="link-site-video @@if(context.green){green} @@if(context.blue){blue}"
+    >
+      <span>Дивитись відеовідгук</span>
+    </a>
+  </div>
+  }
+  <div class="reviews-item_date">@@date</div>
+</div>

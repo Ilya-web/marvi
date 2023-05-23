@@ -1,0 +1,216 @@
+@@include('components/head/index.html', {'title': 'Marvi'})
+@@include('components/header/index.html', {'fixed' : true})
+<div class="wrapper">
+  <main class="main">
+    <section
+      class="section-main section"
+      style="background-image: url('images/bg/section-main.webp')"
+    >
+      @@include('components/header/index.html')
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-main__content">
+              <h1 class="h1">Інноваційна система управління</h1>
+              <div class="section-main__desc">
+                Зручне керування всіма ключовими процесами для магазинів оптики
+                та офтальмологічних клінік в одному місці
+              </div>
+              <div class="section-main__btns">
+                <a href="#" class="btn-site-2 click-animation">Відеоогляд</a>
+                <a
+                  href="#"
+                  class="btn-site click-animation"
+                  data-bs-toggle="modal"
+                  data-bs-target="#entranceModal"
+                  id="registration"
+                  >Зареєструватись</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="madeInUkraine">
+        <div class="madeInUkraine_icon">
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#flagForUkraine"></use>
+          </svg>
+        </div>
+        Made in Ukraine
+      </div>
+    </section>
+
+    <section class="section-help section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-5 offset-md-1">
+            <h2 class="h1">Ваш помічник MARVI</h2>
+            <div class="section-help__desc">
+              <p>
+                Тепер можна легко керувати базою клієнтів, медичними послугами,
+                складом, ассортиментом, фінансами, касовими операціями та іншими
+                бізнес-процессами магазинів оптики та офтальмологічних клінік.
+              </p>
+              <p>
+                MARVI — унікальна система, яка об’єднує в собі функції CRM та
+                ERP систем, а також містить модулі Task Management (управління
+                завданнями) та Call Tracking (аналітика дзвінків)
+              </p>
+            </div>
+
+            <div class="section-help__btns">
+              <a href="#" class="btn-site click-animation"
+                >Для магизинів оптики</a
+              >
+              <a href="#" class="btn-site click-animation"
+                >Для офтольмологічних клінік</a
+              >
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="section-help__img">
+              <img src="images/dogs/dog_4.svg" class="mw-100" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-about section">
+      <div class="container">
+        <div class="row align-items-start position-relative">
+          <div class="col-7 sticky-desktop">
+            <div class="section-about__img">
+              <img src="images/imac.png" class="mw-100" alt="" />
+            </div>
+          </div>
+          <div class="col-5 content-box">
+            <div class="content-box_row section-about_itemAnimate">
+              <h2 class="h1">Що може MARVI?</h2>
+              <h4 class="h4">
+                Система управління MARVI для магазинів оптики та
+                офтальмологічних клінік об’єднує в собі багато функцій та
+                можливостей.
+              </h4>
+              <ul>
+                @@loop('components/lists/index.html','components/lists/list-1.json')
+              </ul>
+              @@include('components/btn/index.html', {'text': 'Ціни та плани'})
+            </div>
+
+            <div class="content-box_row section-about_itemAnimate">
+              <h2 class="h1">Зручність</h2>
+              <ul>
+                @@loop('components/lists/index.html','components/lists/list-2.json')
+              </ul>
+            </div>
+
+            <div class="content-box_row section-about_itemAnimate">
+              <h2 class="h1">Безпека</h2>
+              <ul>
+                @@loop('components/lists/index.html',
+                'components/lists/list-3.json')
+              </ul>
+              @@include('components/btn/index.html', {'text': 'Безпека'})
+            </div>
+
+            <div class="content-box_row section-about_itemAnimate">
+              <h2 class="h1">Сервіс</h2>
+              <ul>
+                @@loop('components/lists/index.html',
+                'components/lists/list-4.json')
+              </ul>
+              @@include('components/btn/index.html', {'text': 'Детальніше'})
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-aboutSystem section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 text-center mb-80">Як виглядає система</h2>
+          </div>
+          <div class="col-12">
+            <div class="section-aboutSystem__img">
+              <img src="images/systems-img.png" class="mw-100 mh-100 m-auto" alt="" />
+            </div>
+          </div>
+          <div class="col-12">
+            @@include('components/info-box/index.html')
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('components/section-functionsMARVI/index.html')
+
+    <section class="section-reviews section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-80 text-center">Відгуки про MARVI</h2>
+          </div>
+          <div class="col-12">
+            <div class="swiper reviews-slider">
+              <div class="swiper-wrapper">
+                @@loop('components/reviews-item/index.html',
+                'components/reviews-item/bd.json')
+              </div>
+
+              <!-- If we need pagination -->
+              <div class="slider-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="slider-navigation">
+                <div class="slider-navigation-prev reviews-slider-prev"></div>
+                <a href="#" class="btn-site click-animation">Відгуки</a>
+                <div class="slider-navigation-next reviews-slider-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('components/section-smartMARVI/index.html')
+
+    @@include('components/section-review/index.html')
+
+    @@include('components/section-bestInMARVI/index.html')
+
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-80 text-center">Новини та публікації</h2>
+          </div>
+          <div class="col-12">
+            <div class="swiper blog-slider">
+              <div class="swiper-wrapper">
+                @@loop('components/blog-item/index.html',
+                'components/blog-item/bd.json')
+              </div>
+
+              <div class="slider-pagination"></div>
+
+              <div class="slider-navigation">
+                <div class="slider-navigation-prev blog-slider-prev"></div>
+                @@include('components/btn/index.html', {'text': 'Відгуки'})
+                <div class="slider-navigation-next blog-slider-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  @@include('components/footer/index.html')
+</div>
+
+@@include('components/modal/index.html')
+@@include('components/scripts/index.html')

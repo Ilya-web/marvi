@@ -1,0 +1,98 @@
+<footer class="footer">
+  <div class="footer_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 offset-lg-1">
+          <div class="h3">Спробувати демо-версію</div>
+          <div class="footer_form">
+            <form action="#">
+              <div class="row g-2">
+                <div class="col-6">
+                  <div class="wrap-input-site">
+                    <input type="text" class="input-site" placeholder="Ім’я" />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="wrap-input-site">
+                    <input
+                      type="text"
+                      class="input-site"
+                      placeholder="Прізвище"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="wrap-input-site">
+                    <input
+                      type="email"
+                      class="input-site error"
+                      placeholder="example@mail.com"
+                    />
+                    <div class="input-site_error">Невірний формат даних.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <select class="input-site js-choice">
+                    <option>Для магазинів оптики 1</option>
+                    <option>Для магазинів оптики 2</option>
+                    <option>Для магазинів оптики 3</option>
+                  </select>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn-site click-animation">
+                    Замовити демо
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-3 offset-lg-1">
+          <div class="footer_top__item">
+            <div class="h3">Навігація</div>
+            <ul class="footer-menu">
+              <li><a href="#">О компанії</a></li>
+              <li><a href="#">Для магазинів оптики</a></li>
+              <li><a href="#">Для офтальмологічних клінік</a></li>
+              <li><a href="#">Ціни та плани</a></li>
+              <li><a href="#">Безпека</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="footer_top__item">
+            <div class="h3">Конфіденційність</div>
+            <ul class="footer-menu">
+              <li><a href="#">Політика конфіденційності</a></li>
+              <li><a href="#">Правила та умови користування</a></li>
+            </ul>
+          </div>
+          <div class="footer_top__item">
+            <div class="h3">Проконсультуватись</div>
+            <ul class="footer-menu">
+              <li><a href="tel:+380123456789">+380 (12) 345 67 89</a></li>
+              <li><a href="mailto:marvi@help.com">marvi@help.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer_bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-column">
+          <div class="footer_logo">
+            <img src="images/logo.svg" alt="" />
+          </div>
+          @@include('../../components/social/index.html')
+
+          <div class="copyRight">© MARVI. 2023. Всі права захищені</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

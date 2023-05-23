@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Технічна підтримка з будь-яких питань роботи програми",
+    "text": "",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Чат підтримка/підтримка в месенджері",
+    "text": "Безліміт в робочий час (ПН-ПТ)",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Е-мейл підтримка",
+    "text": "Безліміт в робочий час (ПН-ПТ)",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  },
+  {
+    "title": "Консультація по телефону з менеджером*",
+    "text": "В пакетах Smart та Smart+Medical надається 2 та 3 безкоштовних години на рік відповідно, далі за додаткову плату $15 за годину",
+    "statusChecked1": true,
+    "statusChecked2": true,
+    "statusChecked3": true
+  }
+]
