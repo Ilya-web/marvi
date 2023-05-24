@@ -1,5 +1,6 @@
 @@include('components/head/index.html', {'title': 'Marvi'})
 @@include('components/header/index.html', {'fixed' : true})
+@@include('components/loader/index.html')
 <div class="wrapper">
   <main class="main">
     <section
@@ -128,14 +129,14 @@
       </div>
     </section>
 
-    <section class="section-aboutSystem section">
+    <section class="section-aboutSystem section ">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <h2 class="h1 text-center mb-80">Як виглядає система</h2>
           </div>
-          <div class="col-12">
-            <div class="section-aboutSystem__img">
+          <div class="col-12 parentZoomImg">
+            <div class="section-aboutSystem__img zoomImg">
               <img src="images/systems-img.png" class="mw-100 mh-100 m-auto" alt="" />
             </div>
           </div>

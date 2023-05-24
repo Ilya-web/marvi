@@ -11324,10 +11324,6 @@ input[type=number] {
 html {
   min-height: 100%;
   background: #fff;
-  scroll-behavior: smooth;
-}
-html.lenis {
-  height: auto;
 }
 
 .lenis.lenis-smooth {
@@ -11349,6 +11345,10 @@ body {
   position: relative;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  overflow-x: hidden;
+}
+body.hidden {
+  overflow: hidden;
 }
 body.modal-open .header,
 body.modal-open .wrapper {
@@ -12428,6 +12428,14 @@ textarea.input-site {
   color: #190f19;
   padding: 10px 20px;
 }
+@media all and (hover: hover) {
+  .header-menu > li .drop-menu li a:hover, .header-menu > li .drop-menu li a:focus-visible {
+    color: #86368c;
+  }
+}
+.header-menu > li .drop-menu li a:active {
+  color: #86368c;
+}
 .header-btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12463,6 +12471,7 @@ textarea.input-site {
 .section-bg {
   position: relative;
   isolation: isolate;
+  overflow: hidden;
 }
 .section-bg_image {
   position: absolute;
@@ -12632,11 +12641,6 @@ textarea.input-site {
 
 /***info-box***/
 /***section-functionsMARVI***/
-.section-functionsMARVI {
-  min-height: 100vh;
-  overflow: hidden;
-}
-
 /***section-functionsMARVI***/
 /***bn***/
 .banners {
@@ -12646,14 +12650,27 @@ textarea.input-site {
 }
 
 .wrap-banner {
+  width: 100%;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
-  min-width: 70%;
+  min-width: 70vw;
 }
-.wrap-banner:first-child .banner {
-  margin-left: 40px;
+
+#banners {
+  overflow: hidden;
+  position: relative;
+  padding-top: 90px;
+  margin-bottom: 240px;
+}
+#banners-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .banner {
@@ -12664,6 +12681,7 @@ textarea.input-site {
   display: -ms-flexbox;
   display: flex;
   margin: 0 var(--gap-20);
+  gap: var(--border-radius-40);
 }
 .banner.bg-1 {
   background: #36498c;
@@ -12702,6 +12720,9 @@ textarea.input-site {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 57%;
   flex: 0 0 57%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .banner__img img {
   max-width: 100%;
@@ -13390,12 +13411,13 @@ textarea.input-site {
 .advantages-item:not(:last-of-type) {
   padding-bottom: 80px;
 }
-.advantages-item:not(:last-of-type):after {
-  content: "";
+.advantages-item:last-of-type .advantages-item__line {
+  display: none;
+}
+.advantages-item__line {
   position: absolute;
   top: var(--_sizeIcon);
   left: calc(var(--_sizeIcon) / 2 - 1px);
-  height: 100%;
   width: 2px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #02AB6B), color-stop(50%, transparent));
   background-image: -o-linear-gradient(top, #02AB6B 50%, transparent 50%);
@@ -13599,84 +13621,4 @@ textarea.input-site {
 }
 
 /***section-error***/
-.homeTeam {
-  background-color: aliceblue;
-  height: 100vh;
-}
-
-.homeTeam [data-scroll-in-section] {
-  width: 100%;
-}
-
-/*
-|--------------------------------------------------------------------------
-| Person
-|--------------------------------------------------------------------------
-|
-|
-|
-*/
-.homeTeam__person {
-  display: -ms-grid;
-  display: grid;
-  grid-template-areas: "image informations more-informations";
-  -ms-grid-columns: auto 25px 1.1fr 25px 1fr;
-  grid-template-columns: auto 1.1fr 1fr;
-  gap: 25px;
-  width: 75vw;
-  color: red;
-}
-
-.homeTeam__person__image {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: image;
-  width: 350px;
-  height: 440px;
-  background-color: red;
-}
-
-.homeTeam__person__informations {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: informations;
-}
-
-.homeTeam__person__informations > * + * {
-  margin-top: 25px;
-}
-
-.homeTeam__person__name {
-  font-size: 31px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.homeTeam__person__speciality {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.homeTeam__person__moreInformations {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  grid-area: more-informations;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-.homeTeam__person__moreInformations > * + * {
-  margin-top: 30px;
-}
-
-.afterHorizontalScroll {
-  height: 200vh;
-  background-color: green;
-}
-
-.afterHorizontalScroll__title {
-  text-align: center;
-}
 /*# sourceMappingURL=maps/style.css.map */

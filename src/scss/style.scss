@@ -22,11 +22,7 @@
 html {
   min-height: 100%;
   background: #fff;
-  scroll-behavior: smooth;
-
-  &.lenis {
-    height: auto;
-  }
+  //scroll-behavior: smooth;
 }
 
 .lenis.lenis-smooth {
@@ -48,6 +44,11 @@ body {
   position: relative;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  overflow-x: hidden;
+
+  &.hidden {
+    overflow: hidden;
+  }
 
   &.modal-open {
     .header,
@@ -532,7 +533,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 
 /***pagination-site***/
 
@@ -1074,6 +1074,16 @@ textarea.input-site {
             display: block;
             color: $color-text;
             padding: 10px 20px;
+            @media all and (hover: hover) {
+              &:hover,
+              &:focus-visible {
+                color: $color-accent;
+              }
+            }
+
+            &:active {
+              color: $color-accent;
+            }
           }
         }
       }
@@ -1109,6 +1119,7 @@ textarea.input-site {
 .section-bg {
   position: relative;
   isolation: isolate;
+  overflow: hidden;
   &_image {
     position: absolute;
     inset: 0;
@@ -1280,8 +1291,9 @@ textarea.input-site {
 /***section-functionsMARVI***/
 
 .section-functionsMARVI {
-  min-height: 100vh;
-  overflow: hidden;
+  //min-height: 100vh;
+  //overflow: hidden;
+
 }
 /***section-functionsMARVI***/
 
@@ -1292,21 +1304,48 @@ textarea.input-site {
 }
 
 .wrap-banner {
+  width: 100%;
+  overflow: hidden;
   display: flex;
-  width: 70%;
-  min-width: 70%;
-  &:first-child {
-    .banner {
-      margin-left: 40px;
-    }
+  min-width: 70vw;
+}
+
+
+#banners {
+  overflow: hidden;
+  position: relative;
+  padding-top: 90px;
+  margin-bottom: 240px;
+  &-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
   }
 }
+
+
+//#banners #panels-container {
+//  height: 100vh;
+//  display: flex;
+//  flex-wrap: nowrap;
+//  overflow: hidden;
+//}
+//#panels #panels-container .panel {
+//  width: 100%;
+//  //height: 100vh;
+//  overflow: hidden;
+//  display: flex;
+//  min-width: 70vw;
+//  height: fit-content;
+//}
+
 .banner {
   color: $color-white;
   border-radius: var(--border-radius-40);
   padding: 40px;
   display: flex;
   margin: 0 var(--gap-20);
+  gap: var(--border-radius-40);
 
   &.bg-1 {
     background: $bg-2;
@@ -1344,6 +1383,7 @@ textarea.input-site {
 
   &__img {
     flex: 0 0 57%;
+    display: flex;
     img {
       max-width: 100%;
       max-height: 100%;
@@ -2056,24 +2096,30 @@ textarea.input-site {
 
 .advantages-item {
   --_sizeIcon: 120px;
+  $this: &;
   display: flex;
   position: relative;
   overflow: hidden;
 
   &:not(:last-of-type) {
     padding-bottom: 80px;
-    &:after {
-      content: '';
-      position: absolute;
-      top: var(--_sizeIcon);
-      left: calc( (var(--_sizeIcon) / 2) - 1px) ;
-      height: 100%;
-      width: 2px;
-      background-image: linear-gradient(to bottom, #02AB6B 50%, transparent 50%);
-      background-position: left;
-      background-size: 2px 30px;
-      background-repeat: repeat-y;
+  }
+  &:last-of-type {
+    #{$this}__line {
+      display: none;
     }
+  }
+
+  &__line {
+    position: absolute;
+    top: var(--_sizeIcon);
+    left: calc( (var(--_sizeIcon) / 2) - 1px) ;
+    //height: 100%;
+    width: 2px;
+    background-image: linear-gradient(to bottom, #02AB6B 50%, transparent 50%);
+    background-position: left;
+    background-size: 2px 30px;
+    background-repeat: repeat-y;
   }
 
   &__icon {
@@ -2323,99 +2369,3 @@ textarea.input-site {
 
 
 
-
-
-
-.homeTeam {
-  background-color: aliceblue;
-  //padding-top: 125px;
-  height: 100vh;
-}
-.homeTeam [data-scroll-in-section] {
-  //display: inline-flex;
-  //padding-right: 50px;
-  width: 100%;
-}
-.homeTeam [data-scroll-in-section] > * + * {
-  //margin-left: 120px;
-}
-
-/*
-|--------------------------------------------------------------------------
-| Person
-|--------------------------------------------------------------------------
-|
-|
-|
-*/
-
-.homeTeam__person {
-  display: grid;
-  grid-template-areas: 'image informations more-informations';
-  grid-template-columns: auto 1.1fr 1fr;
-  gap: 25px;
-  width: 75vw;
-  color: red;
-}
-
-// =============================================
-// Image
-// =============================================
-
-.homeTeam__person__image {
-  grid-area: image;
-  width: 350px;
-  height: 440px;
-  background-color: red;
-}
-
-// =============================================
-// Informations
-// =============================================
-
-.homeTeam__person__informations {
-  grid-area: informations;
-}
-.homeTeam__person__informations > * + * {
-  margin-top: 25px;
-}
-
-// Name
-// ================================
-
-.homeTeam__person__name {
-  font-size: 31px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-// Speciality
-// ================================
-
-.homeTeam__person__speciality {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-// =============================================
-// More informations
-// =============================================
-
-.homeTeam__person__moreInformations {
-  grid-area: more-informations;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
-}
-.homeTeam__person__moreInformations > * + * {
-  margin-top: 30px;
-}
-
-.afterHorizontalScroll {
-  height: 200vh;
-  background-color: green;
-}
-.afterHorizontalScroll__title {
-  text-align: center;
-}

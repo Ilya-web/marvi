@@ -1,4 +1,4 @@
-<section class="section-functionsMARVI section">
+<section class="section-functionsMARVI" id="banners">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -6,14 +6,16 @@
       </div>
     </div>
   </div>
-
   <div class="container-fluid px-0">
     <div class="row">
       <div class="col-12">
-        <div class="banners" data-scroll-in-section>
-          @@loop('../../components/bn/index.html', 'components/bn/bn.json')
+        <div class="banners" id="banners-container" style="width: 800%;">
+          @@loop('../../components/banner/index.html',
+          'components/banner/bd.json')
         </div>
       </div>
     </div>
   </div>
 </section>
+
+

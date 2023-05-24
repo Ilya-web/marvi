@@ -1,4 +1,4 @@
-const developmentBuild = true;
+const developmentBuild = false;
 const bundleCssFileName = "styles.min.css";
 
 const { src, dest, parallel, series, watch } = require("gulp");
@@ -102,15 +102,15 @@ function BuildHtml() {
     .pipe(
       gulpif(
         !developmentBuild,
-        replace('<link rel="stylesheet" href="src/css/plugins.css">', "")
+        replace('<link rel="stylesheet" href="src/css/plugins.css" />', "")
       )
     )
     .pipe(
       gulpif(
         !developmentBuild,
         replace(
-          '<link rel="stylesheet" href="src/css/style.css">',
-          `<link rel="stylesheet" href="css/${bundleCssFileName}">`
+          '<link rel="stylesheet" href="src/css/style.css" />',
+          `<link rel="stylesheet" href="css/${bundleCssFileName}" />`
         )
       )
     )

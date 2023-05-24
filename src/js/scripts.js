@@ -1,171 +1,272 @@
 import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import "bootstrap/js/dist/modal";
-import "bootstrap/js/dist/tab";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
 import { Accordion } from 'bootstrap';
 import lottie from "lottie-web";
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
 
+  let panelsSection = document.querySelector("#banners");
+  let panelsContainer = document.querySelector("#banners-container");
+  if(panelsSection) {
+    const panels = gsap.utils.toArray("#banners-container .wrap-banner");
+    const bannersBox =gsap.to(panels, {
+      xPercent: -100 * ( panels.length - 1 ),
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#banners",
+        pin: true,
+        start: "top top",
+        scrub: 1,
+        snap: {
+          snapTo: 1 / (panels.length - 1),
+          inertia: false,
+          duration: {min: 0.1, max: 0.1}
+        },
+        end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
+      }
+    });
 
+    panels.forEach((banner) => {
+        const imgAnimate = banner.querySelector('.banner__lottie')
+        let bannerImg = banner.querySelectorAll(".banner__img");
+        const urlJson = banner.querySelector('.banner__lottie').getAttribute('data-json');
 
+        if(bannerImg.length === 0)  return;
+
+        const lottieAnimates = lottie.loadAnimation({
+          container: imgAnimate,
+          renderer: 'svg',
+          loop: false,
+          autoplay: false,
+          path: urlJson
+        })
+        gsap.to(bannerImg, {
+          duration: 3,
+          scrollTrigger: {
+            trigger: banner,
+            containerAnimation: bannersBox,
+            start: "left center",
+            // toggleActions: 'play none none reverse',
+          },
+          onStart: () => {
+            lottieAnimates.play()
+          },
+        });
+      });
+  }
+
+  //--------------------------------------------------------------------
+  const advantagesItem = gsap.utils.toArray('.advantages-item');
+  if(advantagesItem.length !== 0) {
+    advantagesItem.forEach((item) => {
+
+      const tlAdvantagesItem = gsap.timeline({
+        scrollTrigger: {
+          trigger: item,
+          start: "top bottom",
+        },
+      });
+
+      tlAdvantagesItem.fromTo(
+        item,
+        {
+          y: 90,
+          opacity: 0,
+
+        },
+        {
+          y:0,
+          opacity:1,
+          duration: 0.5,
+          onComplete() {
+            gsap.to(item.querySelector('.advantages-item__line'), {
+              bottom: 0, duration: .2
+            })
+          },
+        }
+      );
+      // tlAdvantagesItem.to(
+      //   item.querySelector('.advantages-item__line'),
+      //   {
+      //     bottom: 0
+      //   }
+      // );
+    });
+  }
 
   //content-box_row----------------------------------------------------
-  const sectionAbout = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".section-about",
-      scrub: true,
-      start: "top center",
-      end: "bottom center",
-    },
-  });
-
   const contentBoxRow = gsap.utils.toArray('.section-about_itemAnimate');
-  contentBoxRow.forEach((item) => {
-    sectionAbout.fromTo(
-      item,
+  if(contentBoxRow.length !== 0) {
+    contentBoxRow.forEach((item) => {
+      const sectionAbout = gsap.timeline({
+        scrollTrigger: {
+          trigger: item,
+          start: "top bottom",
+          // toggleActions: "play none none reverse",
+          duration: 0.5,
+        },
+      });
+
+      sectionAbout.fromTo(
+        item,
+        {
+          y: 90,
+          opacity: 0,
+        },
+        {
+          y:0,
+          opacity:1,
+
+        }
+      );
+    });
+  }
+
+  //--------------------------------------------------------------------
+  const sectionAboutSystemImg = document.querySelector('.zoomImg');
+  if(sectionAboutSystemImg) {
+    const sectionAboutSystem = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".parentZoomImg",
+        start: () => -(innerHeight/2) + ' top',
+      },
+    });
+    sectionAboutSystem.fromTo(
+      sectionAboutSystemImg,
       {
-        y: 90,
-        opacity: 0,
+        scale: 0.5,
       },
       {
-        y:0,
-        opacity:1
+        scale: 1,
       }
     );
-  });
+  }
 
-
-  const sectionAboutSystem = gsap.timeline({
+  //--------------------------------------------------------------------
+  const serviceItems = gsap.utils.toArray('.service-item');
+  const tlServiceItems = gsap.timeline({
     scrollTrigger: {
-      trigger: ".section-aboutSystem",
+      trigger: '.section-service',
+      start: "top center",
+      // toggleActions: "play none none reverse",
+    },
+  });
+  if(serviceItems.length !== 0) {
+    serviceItems.forEach((item) => {
+
+      tlServiceItems.fromTo(
+        item,
+        {
+          y: 90,
+          opacity: 0,
+        },
+        {
+          y:0,
+          opacity:1,
+        }
+      );
+    });
+  }
+
+
+  //--------------------------------------------------------------------
+  const infoBoxAnimate = gsap.utils.toArray('.info-boxAnimate');
+  if(infoBoxAnimate.length !== 0) {
+    infoBoxAnimate.forEach((item) => {
+      const tlInfoBoxAnimate = gsap.timeline({
+        scrollTrigger: {
+          trigger: item,
+          start: "top bottom",
+        },
+      });
+
+      tlInfoBoxAnimate.fromTo(
+        item,
+        {
+          y: 90,
+          opacity: 0,
+        },
+        {
+          y:0,
+          opacity:1,
+        }
+      );
+    });
+  }
+
+  //--------------------------------------------------------------------
+  const imageParallax = document.querySelector('.imageParallax img');
+  const parentImageParallax = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".parentImageParallax",
       scrub: true,
-      start: () => -(innerHeight/2) + ' top',
-      end: "bottom bottom",
+      start: "top top",
     },
   });
 
-  sectionAboutSystem.fromTo(
-    '.section-aboutSystem__img',
+  parentImageParallax.to(
+    imageParallax,
     {
-      scale: 0.5,
-    },
-    {
-      scale: 1,
+      y: 300,
     }
   );
 
-
-  const sectionSmartMARVI = gsap.timeline({
+  const smartMARVIItemAnimate = gsap.utils.toArray('.smartMARVI-item--animate');
+  const tlSectionSmartMARVI = gsap.timeline({
     scrollTrigger: {
-      trigger: ".section-smartMARVI",
-      scrub: true,
-      start: 'top center',
-      end: "bottom bottom",
-      markers: true,
+      trigger: '.section-smartMARVI',
+      start: "top center",
+      // toggleActions: "play none none reverse",
     },
   });
 
+  if(smartMARVIItemAnimate.length !== 0) {
+    smartMARVIItemAnimate.forEach((item) => {
 
-  const smartMARVIItemAnimate = gsap.utils.toArray('.smartMARVI-item--animate');
-
-  smartMARVIItemAnimate.forEach((item) => {
-    sectionSmartMARVI.fromTo(
-      item,
-      {
-        y: 150,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-      }
-    );
-  });
-
-
-  //section-functionsMARVI animate on scroll---------------------------
-
-  const container = document.querySelector(".section-functionsMARVI");
-  const sectionsMARVI = gsap.utils.toArray(".section-functionsMARVI .wrap-banner");
-
-  let scrollTween = gsap.to(sectionsMARVI, {
-    xPercent: -100 * (sectionsMARVI.length - 1),
-    ease: "none",
-    horizontal: true,
-    scrollTrigger: {
-      trigger: container,
-      pin: true,
-      scrub: 1,
-      snap: 1 / (sectionsMARVI.length - 1),
-      start: "top top",
-      end: () =>
-          "+=" +
-      document.querySelector(".section-functionsMARVI").offsetWidth + 1,
-      markers: true
-
-    }
-  });
-
-  sectionsMARVI.forEach((section, index) => {
-    const imgAnimate = section.querySelector('.banner__lottie')
-    let text = section.querySelectorAll(".banner__img");
-
-    if(text.length === 0)  return;
-
-    const lottieAnimates = lottie.loadAnimation({
-      container: imgAnimate,
-      renderer: 'svg',
-      loop: false,
-      autoplay: false,
-      path: `jsonAnimate/${index + 1}.json`
-    })
-
-    gsap.to(text, {
-      duration: 3,
-      scrollTrigger: {
-        trigger: section,
-        containerAnimation: scrollTween,
-        start: "left center",
-        toggleActions: 'play none none reverse',
-        markers: true,
-      },
-      onStart: () => {
-        lottieAnimates.play()
-      },
+      tlSectionSmartMARVI.fromTo(
+        item,
+        {
+          y: 90,
+          opacity: 0,
+        },
+        {
+          y:0,
+          opacity:1,
+        }
+      );
     });
-  });
+  }
 
+  //lenis init --------------------------------------------------------
 
-
-
-  // gsap.to(sections, {
-  //   xPercent: -100 * (sections.length - 1),
-  //   ease: "none",
-  //   scrollTrigger: {
-  //     trigger: ".section-functionsMARVI",
-  //     pin: true,
-  //     scrub: 1,
-  //     snap: 1 / (sections.length - 1),
-  //     start: "top top",
-  //     end: () =>
-  //       "+=" +
-  //       document.querySelector(".section-functionsMARVI").offsetWidth +
-  //       1,
-  //   },
+  // const lenis = new Lenis({
+  //   duration: 3,
+  //   easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
+  //   direction: "vertical",
+  //   smooth: true,
+  //   smoothTouch: false,
   // });
-
-
-
-
-
-
-
-
-
+  // // lenis.on('scroll', ScrollTrigger.update)
+  //
+  // function raf(time) {
+  //   lenis.raf(time);
+  //   requestAnimationFrame(raf);
+  // }
+  // requestAnimationFrame(raf);
+  //
+  // document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  //   anchor.addEventListener("click", function (e) {
+  //     e.preventDefault();
+  //     lenis.scrollTo(this.getAttribute("href"));
+  //   });
+  // });
 
 
 
@@ -197,8 +298,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-
-
   //header fixed -----------------------------------------------
   let lastScroll = 0;
   const defaultOffset = 700;
@@ -227,54 +326,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const totalSections = sections.length + "";
   const counts = document.querySelectorAll(".banner__count_all");
 
-  counts.forEach((i) => {
-    i.textContent = totalSections;
-  });
-
-  sections.forEach((i, index) => {
-    const current = index + 1;
-    i.querySelector(".banner__count_current").textContent = "0" + current;
-    if (current >= 10) {
-      i.querySelector(".banner__count_current").textContent = "" + current;
-    }
-  });
-
-
-  //lenis init --------------------------------------------------------
-
-  const lenis = new Lenis({
-    duration: 3,
-    easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
-    direction: "vertical",
-    smooth: true,
-    smoothTouch: false,
-  });
-
-  // let lastScroll = 0;
-  // const defaultOffset = 800;
-  // const headerFixed = document.querySelector(".header-fixed");
-  // lenis.on("scroll", (e) => {
-  //   if (
-  //     (e.animatedScroll > lastScroll && e.animatedScroll > defaultOffset) ||
-  //     lastScroll < defaultOffset
-  //   ) {
-  //     headerFixed.classList.remove("show");
-  //   } else if (e.animatedScroll < lastScroll) {
-  //     headerFixed.classList.add("show");
-  //   }
-  //   lastScroll = e.animatedScroll;
-  // });
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      lenis.scrollTo(this.getAttribute("href"));
+  if(counts) {
+    counts.forEach((i) => {
+      i.textContent = totalSections;
     });
-  });
+  }
+
+  if(sections) {
+    sections.forEach((i, index) => {
+      const current = index + 1;
+      i.querySelector(".banner__count_current").textContent = "0" + current;
+      if (current >= 10) {
+        i.querySelector(".banner__count_current").textContent = "" + current;
+      }
+    });
+  }
 });
