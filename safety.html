@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvi</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+
+  <link rel="stylesheet" href="css/styles.min.css" />
+</head>
+
+<body class="hidden">
+
+
+  <header class="header header-fixed">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto">
+          <div class="header-logo">
+            <a href="index.html">
+              <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35.0366 33.3311L32.4379 13.1595L26.7895 33.3311H20.4814L14.8296 13.1595L12.231 33.3311H6.74416L10.5782 6.66668H17.6303L23.6085 26.9217L29.6305 6.66668H36.6826L40.5166 33.3311H35.0366Z" />
+                <path d="M86.1715 24.3085H80.9742V33.3345H75.612V6.67002H87.2016C94.0045 6.67002 97.5524 9.6931 97.5524 15.5293C97.5524 19.8156 95.6539 22.552 91.8603 23.6953L98.0877 33.3311H91.8199L86.1715 24.3085ZM80.9742 19.9389H86.4173C90.1301 19.9389 91.9849 18.429 91.9849 15.446C91.9849 12.5062 90.1301 11.0363 86.4173 11.0363H80.9742V19.9389Z" />
+                <path d="M127.986 6.66668L118.254 33.3311H110.953L101.262 6.66668H106.789L114.625 29.2081L122.462 6.66668H127.986Z" />
+                <path d="M64.8403 33.3311L57.0039 10.7897L49.1676 33.3311H43.6404L53.3315 6.66668H60.6326L70.3641 33.3311H64.8403Z" />
+                <path d="M138.256 33.3311H132.894V6.66668H138.256V33.3311Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-auto d-flex justify-content-end">
+          <ul class="header-menu">
+            <li class="drop-li"><!--current page class="active" for li-->
+              <span>Продукт</span>
+              <ul class="drop-menu">
+                <li>
+                  <a href="optical.html">Для магазинів оптики</a>
+                </li>
+                <li>
+                  <a href="clinics.html">Для офтальмологічних клінік</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="prices.html">Ціни та плани</a>
+            </li>
+            <li class="drop-li">
+              <span>О компанії</span>
+              <ul class="drop-menu">
+                <li>
+                  <a href="about.html">Про MARVI</a>
+                </li>
+                <li>
+                  <a href="safety.html">Безпека</a>
+                </li>
+                <li>
+                  <a href="fag.html">FAQ</a>
+                </li>
+                <li>
+                  <a href="contacts.html">Контакти</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="blog.html">Блог</a>
+            </li>
+          </ul>
+
+          <div class="header-btns">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#entranceModal" class="btn-site-2 click-animation header-btns__btn" id="login">
+              <span>Увійти</span>
+            </button>
+            <a href="#" class="btn-site click-animation header-btns__btn">
+              <span>Отримати демо</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="loader loading">
+    <svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <g clip-path="url(#clip0_368_6531)">
+        <path d="M1040.18 539.414H1091.69C1126.82 539.414 1144.37 524.919 1144.37 496.281C1144.37 468.059 1126.82 453.949 1091.69 453.949H1040.18V539.414Z" fill="#FBF9FB" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 0H0V1080H1920V0ZM580.93 474.331L605.518 667.979H657.371L621.093 412H554.366L497.385 606.448L440.819 412H374.092L337.814 667.979H389.73L414.319 474.331L467.796 667.979H527.484L580.93 474.331ZM1089.36 581.362H1040.18V668.011H989.446V412.032H1099.11C1163.48 412.032 1197.05 441.054 1197.05 497.081C1197.05 538.23 1179.08 564.499 1143.19 575.474L1202.11 667.979H1142.81L1089.36 581.362ZM1392.93 667.979L1485.01 412H1432.74L1358.59 628.398L1284.45 412H1232.15L1323.85 667.979H1392.93ZM887.523 667.979L813.375 451.581L739.227 667.979H686.928L778.626 412H847.71L939.79 667.979H887.523ZM1531.45 667.979H1582.19V412H1531.45V667.979Z" fill="#FBF9FB" />
+        <path class="loader-logo" d="M605.518 667.979L580.93 474.331L527.484 667.979H467.796L414.319 474.331L389.73 667.979H337.814L374.092 412H440.819L497.385 606.448L554.366 412H621.093L657.371 667.979H605.518Z" />
+        <path class="loader-logo" d="M1089.36 581.362H1040.18V668.011H989.446V412.032H1099.11C1163.48 412.032 1197.05 441.054 1197.05 497.081C1197.05 538.23 1179.08 564.499 1143.19 575.474L1202.11 667.979H1142.81L1089.36 581.362ZM1040.18 539.414H1091.69C1126.82 539.414 1144.37 524.919 1144.37 496.281C1144.37 468.059 1126.82 453.949 1091.69 453.949H1040.18V539.414Z" />
+        <path class="loader-logo" d="M1485.01 412L1392.93 667.979H1323.85L1232.15 412H1284.45L1358.59 628.398L1432.74 412H1485.01Z" />
+        <path class="loader-logo" d="M887.523 667.979L813.375 451.581L739.227 667.979H686.928L778.626 412H847.71L939.79 667.979H887.523Z" />
+        <path class="loader-logo" d="M1582.19 667.979H1531.45V412H1582.19V667.979Z" />
+      </g>
+      <defs>
+        <clipPath id="clip0_368_6531">
+          <rect width="100%" height="100%" />
+        </clipPath>
+      </defs>
+    </svg>
+    <style>
+      .loader {
+        position: fixed;
+        z-index: 999;
+        inset: 0;
+        transition: all ease 0.3s;
+      }
+
+      .loader svg {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .loader.loading .loader-logo {
+        fill: #86368c;
+      }
+    </style>
+    <script>
+    //loader-------------------------------------------------------------------
+    function startLoader() {
+      const loader = document.querySelector(".loader");
+
+      setTimeout(function() {
+        loader.style.scale = "4.5";
+        loader.style.opacity = "0";
+        loader.classList.remove('loading')
+      }, 1000);
+
+      window.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+          loader.style.visibility = 'hidden'
+          document.body.classList.remove('hidden')
+        }, 1000);
+      });
+    }
+    startLoader();
+
+  </script>
+  </div>
+  <div class="wrapper">
+    <main class="main">
+      <section class="section-main section-main-small section section-bg parentImageParallax">
+        <div class="section-bg_image imageParallax">
+          <picture>
+            <source srcset="images/bg/safety-bg.webp" />
+            <img src="images/bg/safety-bg.jpg" loading="lazy" alt="" />
+          </picture>
+        </div>
+        <header class="header ">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <div class="header-logo">
+                  <a href="index.html">
+                    <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M35.0366 33.3311L32.4379 13.1595L26.7895 33.3311H20.4814L14.8296 13.1595L12.231 33.3311H6.74416L10.5782 6.66668H17.6303L23.6085 26.9217L29.6305 6.66668H36.6826L40.5166 33.3311H35.0366Z" />
+                      <path d="M86.1715 24.3085H80.9742V33.3345H75.612V6.67002H87.2016C94.0045 6.67002 97.5524 9.6931 97.5524 15.5293C97.5524 19.8156 95.6539 22.552 91.8603 23.6953L98.0877 33.3311H91.8199L86.1715 24.3085ZM80.9742 19.9389H86.4173C90.1301 19.9389 91.9849 18.429 91.9849 15.446C91.9849 12.5062 90.1301 11.0363 86.4173 11.0363H80.9742V19.9389Z" />
+                      <path d="M127.986 6.66668L118.254 33.3311H110.953L101.262 6.66668H106.789L114.625 29.2081L122.462 6.66668H127.986Z" />
+                      <path d="M64.8403 33.3311L57.0039 10.7897L49.1676 33.3311H43.6404L53.3315 6.66668H60.6326L70.3641 33.3311H64.8403Z" />
+                      <path d="M138.256 33.3311H132.894V6.66668H138.256V33.3311Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="col-auto d-flex justify-content-end">
+                <ul class="header-menu">
+                  <li class="drop-li"><!--current page class="active" for li-->
+                    <span>Продукт</span>
+                    <ul class="drop-menu">
+                      <li>
+                        <a href="optical.html">Для магазинів оптики</a>
+                      </li>
+                      <li>
+                        <a href="clinics.html">Для офтальмологічних клінік</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="prices.html">Ціни та плани</a>
+                  </li>
+                  <li class="drop-li">
+                    <span>О компанії</span>
+                    <ul class="drop-menu">
+                      <li>
+                        <a href="about.html">Про MARVI</a>
+                      </li>
+                      <li>
+                        <a href="safety.html">Безпека</a>
+                      </li>
+                      <li>
+                        <a href="fag.html">FAQ</a>
+                      </li>
+                      <li>
+                        <a href="contacts.html">Контакти</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="blog.html">Блог</a>
+                  </li>
+                </ul>
+
+                <div class="header-btns">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#entranceModal" class="btn-site-2 click-animation header-btns__btn" id="login">
+                    <span>Увійти</span>
+                  </button>
+                  <a href="#" class="btn-site click-animation header-btns__btn">
+                    <span>Отримати демо</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="section-main__content">
+                <h1 class="h1">Безпека</h1>
+                <div class="section-main__desc">
+                  Безпека даних наших клієнтів — найвищий пріоритет для нас
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-8 offset-lg-2">
+              <div class="safety-items">
+                <div class="safety-item">
+                  <div class="safety-item__title h1">Різні рівні доступу</div>
+                  <div class="safety-item__desc h3">Можливість встановлювати різні рівні доступу співробітників до функцій системи.Система MARVI дає змогу гнучко налаштовувати доступи до різних функцій / блоків системи для різних співробітників вашого бізнесу. Власник бізнесу має доступ до всіх функцій системи та може змінювати доступи й паролі. Якщо ваш співробітник звільнився — його можна видалити із системи</div>
+                  <div class="safety-item__img">
+                    <picture>
+                      <source srcset="images/safety/image-1.webp" type="image/webp">
+                      <img src="images/safety/image-1.jpg" class="w-100" alt="">
+                    </picture>
+                  </div>
+                </div>
+                <div class="safety-item">
+                  <div class="safety-item__title h1">Автоматичне резервування даних</div>
+                  <div class="safety-item__desc h3">Усі дані зберігаються у захищеному хмарному сховищі, до якого у вас та ваших співробітників є доступ з будь-якої точки планети. Також власники бізнесу можуть заходити в систему та бачити результати роботи в режимі онлайн, не виходячи з власного будинку. Система автоматично робить резервне копіювання 2 рази на добу</div>
+                  <div class="safety-item__img">
+                    <picture>
+                      <source srcset="images/safety/image-2.webp" type="image/webp">
+                      <img src="images/safety/image-2.jpg" class="w-100" alt="">
+                    </picture>
+                  </div>
+                </div>
+                <div class="safety-item">
+                  <div class="safety-item__title h1">Униікальний код шифрування</div>
+                  <div class="safety-item__desc h3">Завдяки унікальному коду шифрування, ваші дані завжди перебуватимуть у безпеці.Ми (Компанія MARVI, розробники тощо) не маємо доступу до ваших даних</div>
+                  <div class="safety-item__img">
+                    <picture>
+                      <source srcset="images/safety/image-3.webp" type="image/webp">
+                      <img src="images/safety/image-3.jpg" class="w-100" alt="">
+                    </picture>
+                  </div>
+                </div>
+                <div class="safety-item">
+                  <div class="safety-item__title h1">Розміщення на власному сервері</div>
+                  <div class="safety-item__desc h3">Індивідуальна можливість розмістити систему на власному сервері. Така нестандартна опція можлива за вашим запитом. Зв’яжіться з нами для отримання інформації.</div>
+                  <div class="safety-item__img">
+                    <picture>
+                      <source srcset="images/safety/image-4.webp" type="image/webp">
+                      <img src="images/safety/image-4.jpg" class="w-100" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 offset-lg-1">
+              <div class="h3">Спробувати демо-версію</div>
+              <div class="footer_form">
+                <form action="#">
+                  <div class="row g-2">
+                    <div class="col-6">
+                      <div class="wrap-input-site">
+                        <input type="text" class="input-site" placeholder="Ім’я" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="wrap-input-site">
+                        <input type="text" class="input-site" placeholder="Прізвище" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="wrap-input-site">
+                        <input type="email" class="input-site error" placeholder="example@mail.com" />
+                        <div class="input-site_error">Невірний формат даних.</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <select class="input-site js-choice">
+                        <option>Для магазинів оптики 1</option>
+                        <option>Для магазинів оптики 2</option>
+                        <option>Для магазинів оптики 3</option>
+                      </select>
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="submit" class="btn-site click-animation">
+                        Замовити демо
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-3 offset-lg-1">
+              <div class="footer_top__item">
+                <div class="h3">Навігація</div>
+                <ul class="footer-menu">
+                  <li>
+                    <a href="#">О компанії</a>
+                  </li>
+                  <li>
+                    <a href="#">Для магазинів оптики</a>
+                  </li>
+                  <li>
+                    <a href="#">Для офтальмологічних клінік</a>
+                  </li>
+                  <li>
+                    <a href="#">Ціни та плани</a>
+                  </li>
+                  <li>
+                    <a href="#">Безпека</a>
+                  </li>
+                  <li>
+                    <a href="#">Блог</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакти</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footer_top__item">
+                <div class="h3">Конфіденційність</div>
+                <ul class="footer-menu">
+                  <li>
+                    <a href="#">Політика конфіденційності</a>
+                  </li>
+                  <li>
+                    <a href="#">Правила та умови користування</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_top__item">
+                <div class="h3">Проконсультуватись</div>
+                <ul class="footer-menu">
+                  <li>
+                    <a href="tel:+380123456789">+380 (12) 345 67 89</a>
+                  </li>
+                  <li>
+                    <a href="mailto:marvi@help.com">marvi@help.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center flex-column">
+              <div class="footer_logo">
+                <img src="images/logo.svg" alt="" />
+              </div>
+              <div class="social">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg>
+                    <use xlink:href="images/icons/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="copyRight">© MARVI. 2023. Всі права захищені</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div class="modal fade" id="entranceModal" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal-body">
+          <ul class="entrance entrance-nav" id="entranceTabs" role="tablist">
+            <li class="entrance-item" role="presentation">
+              <button class="entrance-link active click-animation" id="registration-item-tab" data-bs-toggle="tab" data-bs-target="#registration-item" type="button" role="tab" aria-controls="registration-item" aria-selected="true">
+                Реєстрація
+              </button>
+            </li>
+            <li class="entrance-item" role="presentation">
+              <button class="entrance-link click-animation" id="login-item-tab" data-bs-toggle="tab" data-bs-target="#login-item" type="button" role="tab" aria-controls="login-item" aria-selected="false">
+                Увійти
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content entrance-content" id="entranceTabsContent">
+            <div class="tab-pane fade show active" id="registration-item" role="tabpanel" aria-labelledby="registration-item-tab">
+              <div class="entrance-content_item">
+                <form action="#">
+                  <div class="row gy-2">
+                    <div class="col-12">
+                      <div class="wrap-input-site">
+                        <input type="text" class="input-site" placeholder="Ім’я" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="wrap-input-site">
+                        <input type="email" class="input-site error" placeholder="example@mail.com" />
+                        <div class="input-site_error">Невірний формат даних.</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="wrap-input-site">
+                        <input type="password" class="input-site" placeholder="Придумайте пароль" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="wrap-input-site">
+                        <input type="password" class="input-site" placeholder="Повторити пароль" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <select class="input-site js-choice">
+                        <option>Для магазинів оптики 1</option>
+                        <option>Для магазинів оптики 2</option>
+                        <option>Для магазинів оптики 3</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-error">
+                        Сталась помилка. Перевірте правильність введених данних та
+                        спробуйте щє
+                      </div>
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="submit" disabled class="btn-site click-animation mt-2">
+                        Зареєструватись
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="login-item" role="tabpanel" aria-labelledby="login-item-tab">
+              <div class="entrance-content_item">
+                <form action="#">
+                  <div class="row gy-2">
+                    <div class="col-12">
+                      <div class="wrap-input-site">
+                        <input type="email" class="input-site" placeholder="example@mail.com" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="wrap-input-site">
+                        <input type="password" class="input-site" placeholder="Введіть пароль" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-error">
+                        Сталась помилка. Перевірте правильність введених данних та
+                        спробуйте щє
+                      </div>
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="submit" disabled class="btn-site click-animation mt-2">
+                        Увійти
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+  <script src="js/main.min.js"></script>
+
+
+</body>
+
+</html>

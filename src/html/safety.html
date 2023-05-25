@@ -1,0 +1,72 @@
+@@include('components/head/index.html', {'title': 'Marvi'})
+@@include('components/header/index.html', {'fixed' : true})
+@@include('components/loader/index.html')
+<div class="wrapper">
+  <main class="main">
+    <section class="section-main section-main-small section section-bg parentImageParallax">
+      <div class="section-bg_image imageParallax">
+        <picture>
+          <source srcset="images/bg/safety-bg.webp" />
+          <img src="images/bg/safety-bg.jpg" loading="lazy" alt="" />
+        </picture>
+      </div>
+      @@include('components/header/index.html')
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-main__content">
+              <h1 class="h1">Безпека</h1>
+              <div class="section-main__desc">
+                Безпека даних наших клієнтів — найвищий пріоритет для нас
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 offset-lg-2">
+            <div class="safety-items">
+              <div class="safety-item">
+                <div class="safety-item__title h1">Різні рівні доступу</div>
+                <div class="safety-item__desc h3">Можливість встановлювати різні рівні доступу співробітників до функцій системи.Система MARVI дає змогу гнучко налаштовувати доступи до різних функцій / блоків системи для різних співробітників вашого бізнесу. Власник бізнесу має доступ до всіх функцій системи та може змінювати доступи й паролі. Якщо ваш співробітник звільнився — його можна видалити із системи</div>
+                <div class="safety-item__img">
+                  <img src="images/safety/image-1.jpg" class="w-100" alt="">
+                </div>
+              </div>
+              <div class="safety-item">
+                <div class="safety-item__title h1">Автоматичне резервування даних</div>
+                <div class="safety-item__desc h3">Усі дані зберігаються у захищеному хмарному сховищі, до якого у вас та ваших співробітників є доступ з будь-якої точки планети. Також власники бізнесу можуть заходити в систему та бачити результати роботи в режимі онлайн, не виходячи з власного будинку. Система автоматично робить резервне копіювання 2 рази на добу</div>
+                <div class="safety-item__img">
+                  <img src="images/safety/image-2.jpg" class="w-100" alt="">
+                </div>
+              </div>
+              <div class="safety-item">
+                <div class="safety-item__title h1">Униікальний код шифрування</div>
+                <div class="safety-item__desc h3">Завдяки унікальному коду шифрування, ваші дані завжди перебуватимуть у безпеці.Ми (Компанія MARVI, розробники тощо) не маємо доступу до ваших даних</div>
+                <div class="safety-item__img">
+                  <img src="images/safety/image-3.jpg" class="w-100" alt="">
+                </div>
+              </div>
+              <div class="safety-item">
+                <div class="safety-item__title h1">Розміщення на власному сервері</div>
+                <div class="safety-item__desc h3">Індивідуальна можливість розмістити систему на власному сервері. Така нестандартна опція можлива за вашим запитом. Зв’яжіться з нами для отримання інформації.</div>
+                <div class="safety-item__img">
+                  <img src="images/safety/image-4.jpg" class="w-100" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include('components/footer/index.html')
+</div>
+
+@@include('components/modal/index.html')
+@@include('components/scripts/index.html')

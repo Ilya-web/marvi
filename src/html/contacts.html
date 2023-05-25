@@ -17,24 +17,6 @@
             <div class="section-main__content">
               <h1 class="h1">Контакти</h1>
               @@include('components/social/index.html')
-              <div class="section-main__btns">
-                <a href="#" class="social-btn click-animation">
-                  <span class="social-btn__icon">
-                    <svg>
-                      <use xlink:href="images/icons/sprite.svg#telegram"></use>
-                    </svg>
-                  </span>
-                  <span>Чат у Telegram</span>
-                </a>
-                <a href="#" class="social-btn click-animation">
-                  <span class="social-btn__icon">
-                    <svg>
-                      <use xlink:href="images/icons/sprite.svg#viber"></use>
-                    </svg>
-                  </span>
-                  <span>Чат у Viber</span>
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -44,57 +26,96 @@
     <section class="section section-contacts">
       <div class="container">
         <div class="row mb-4 contacts-items">
-          <div class="col-3">
-            <a href="tel:+380123456789" class="contacts-item click-animation">
-              <div class="contacts-item__icon">
-                <svg>
-                  <use xlink:href="images/icons/sprite.svg#phone"></use>
-                </svg>
+          <div class="col-4">
+            <div class="contacts-item">
+              <div class="contacts-item__title">Відділ продажів</div>
+              <div class="contacts-item__phone contacts-item__link">
+                <a href="tel:+380123456789">
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#phone"></use>
+                  </svg>
+                  <span>+380 (12) 345 67 89</span>
+                </a>
               </div>
-              <div class="contacts-item__desc">
-                <div class="contacts-item__title">Відділ продажів</div>
-                <div class="contacts-item__link">+380 (12) 345 67 89</div>
+              <div class="contacts-item__email contacts-item__link">
+                <a href="mailto:sales@marvi.com.ua">
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#email"></use>
+                  </svg>
+                  <span>sales@marvi.com.ua</span>
+                </a>
               </div>
-            </a>
+              <div class="contacts-item__socials">
+                <div class="contacts-item__link">
+                  <a href="#">
+                    <svg class="icon">
+                      <use xlink:href="images/icons/sprite.svg#telegram"></use>
+                    </svg>
+                    <span>Чат Telegram</span>
+                  </a>
+                </div>
+                <div class="contacts-item__link">
+                  <a href="#">
+                    <svg class="icon">
+                      <use xlink:href="images/icons/sprite.svg#viber"></use>
+                    </svg>
+                    <span>Чат Viber</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-3">
-            <a href="tel:+380123334455" class="contacts-item click-animation">
-              <div class="contacts-item__icon">
-                <svg>
-                  <use xlink:href="images/icons/sprite.svg#phone"></use>
-                </svg>
+          <div class="col-4">
+            <div class="contacts-item">
+              <div class="contacts-item__title">Технічна підтримка</div>
+              <div class="contacts-item__phone contacts-item__link">
+                <a href="tel:+380123334455">
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#phone"></use>
+                  </svg>
+                  <span>+380 (12) 333 44 55</span>
+                </a>
               </div>
-              <div class="contacts-item__desc">
-                <div class="contacts-item__title">Існуючим клієнтам</div>
-                <div class="contacts-item__link">+380 (12) 333 44 55</div>
+              <div class="contacts-item__email contacts-item__link">
+                <a href="mailto:support@marvi.com.ua">
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#email"></use>
+                  </svg>
+                  <span>support@marvi.com.ua</span>
+                </a>
               </div>
-            </a>
+              <div class="contacts-item__socials">
+                <div class="contacts-item__link">
+                  <a href="#">
+                    <svg class="icon">
+                      <use xlink:href="images/icons/sprite.svg#telegram"></use>
+                    </svg>
+                    <span>Чат Telegram</span>
+                  </a>
+                </div>
+                <div class="contacts-item__link">
+                  <a href="#">
+                    <svg class="icon">
+                      <use xlink:href="images/icons/sprite.svg#viber"></use>
+                    </svg>
+                    <span>Чат Viber</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-3">
-            <a href="tel:+380126667788" class="contacts-item click-animation">
-              <div class="contacts-item__icon">
-                <svg>
-                  <use xlink:href="images/icons/sprite.svg#phone"></use>
-                </svg>
+          <div class="col-4">
+            <div class="contacts-item">
+              <div class="contacts-item__title">Інші питання</div>
+              <div class="contacts-item__email contacts-item__link">
+                <a href="mailto:help@marvi.com.ua">
+                  <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#email"></use>
+                  </svg>
+                  <span>help@marvi.com.ua</span>
+                </a>
               </div>
-              <div class="contacts-item__desc">
-                <div class="contacts-item__title">Технічна підтримка</div>
-                <div class="contacts-item__link">+380 (12) 666 77 88</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-3">
-            <a href="mailto:marvi@help.com" class="contacts-item click-animation">
-              <div class="contacts-item__icon">
-                <svg>
-                  <use xlink:href="images/icons/sprite.svg#phone"></use>
-                </svg>
-              </div>
-              <div class="contacts-item__desc">
-                <div class="contacts-item__title">Написати нам</div>
-                <div class="contacts-item__link">marvi@help.com</div>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
         <div class="row">

@@ -1,0 +1,225 @@
+@@include('components/head/index.html', {'title': 'Marvi'})
+@@include('components/header/index.html', {'fixed' : true})
+
+@@include('components/loader/index.html')
+
+<div class="wrapper">
+  <main class="main">
+    <section class="section-main section section-bg parentImageParallax">
+      <div class="section-bg_image imageParallax">
+        <picture>
+          <source srcset="images/bg/optical.webp" />
+          <img src="images/bg/optical.jpg" loading="lazy" alt="" />
+        </picture>
+      </div>
+      @@include('components/header/index.html')
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-main__content">
+              <h1 class="h1">Інноваційна система управління офтальмологічними клініками</h1>
+              <div class="section-main__desc">
+                Зручне керування всіма ключовими процесами бізнесу в одному місці
+              </div>
+              <div class="section-main__btns">
+                <a href="#" class="btn-site-2 click-animation">Відеоогляд</a>
+                <a
+                  href="#"
+                  class="btn-site click-animation green"
+                >Отримати демо</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="madeInUkraine">
+        <div class="madeInUkraine_icon">
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#flagForUkraine"></use>
+          </svg>
+        </div>
+        Made in Ukraine
+      </div>
+    </section>
+
+    <section class="section-about section">
+      <div class="container">
+        <div class="row align-items-start position-relative">
+          <div class="col-7 sticky-desktop">
+            <div class="section-about__img">
+              <img src="images/dogs/dog_2.svg" class="mw-100" alt="" />
+            </div>
+          </div>
+          <div class="col-5 content-box">
+            <div class="content-box_row section-about_itemAnimate">
+              <h2 class="h1 mb-80">Рішення для офтальмологічних клінік</h2>
+              <h3 class="h3 mb-80">
+                MARVI створено саме для офтальмологічних клінік та повністю враховує специфіку їхньої діяльності
+              </h3>
+            </div>
+            <div class="content-box_row section-about_itemAnimate">
+              <h3 class="h3">Графік роботи лікарів</h3>
+              <ul>
+                @@loop('components/lists/index.html','components/lists/list-5.json')
+              </ul>
+            </div>
+            <div class="content-box_row section-about_itemAnimate">
+              <h3 class="h3">Календар</h3>
+              <ul>
+                @@loop('components/lists/index.html','components/lists/list-6.json')
+              </ul>
+            </div>
+            <div class="content-box_row section-about_itemAnimate">
+              <h3 class="h3">Візити пацієнтів</h3>
+              <ul>
+                @@loop('components/lists/index.html','components/lists/list-7.json')
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-system section parentZoomImg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-80 text-center">Так виглядає система</h2>
+          </div>
+          <div class="col-12 parentZoomImg">
+            <div class="system_img zoomImg">
+              <img src="images/bg/image-2.png" class="mw-100 mx-auto" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 info-boxAnimate">
+          <div class="col-6 offset-lg-1">
+            <div class="info-box3__content content-box">
+              <div class="info-box3__title h1 text-center">Зручність</div>
+              <div class="info-box3__desc">
+                <ul>
+                  <li>Функціонал, розроблений саме під особливості бізнесу магазинів оптики та офтальмологічних клінік, дає змогу просто та ефективно керувати бізнесом</li>
+                  <li>Інтуїтивно зрозумілий та зручний інтерфейс значно спрощує робочий процес та навчання працівників</li>
+                  <li>Можливість працювати із системою онлайн із будь-якого місця та будь-якого девайсу</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 info-boxAnimate">
+          <div class="col-6 offset-lg-5">
+            <div class="info-box3__content content-box">
+              <div class="info-box3__title h1 text-center">Безпека</div>
+              <div class="info-box3__desc">
+                <ul>
+                  <li>Можливість виставляти різні рівні доступу співробітників до функцій системи</li>
+                  <li>Система здійснює автоматичне резервування даних на сервері 2 рази на добу</li>
+                  <li>Завдяки унікальному коду шифрування, ваші дані завжди перебуватимутьзнаходяться в безпеці</li>
+                </ul>
+              </div>
+              <div class="info-box3__btn">
+                <a href="#" class="btn-site click-animation green">Безпека</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 info-boxAnimate">
+          <div class="col-6 offset-lg-3">
+            <div class="info-box3__content content-box">
+              <div class="info-box3__title h1 text-center">Сервіс</div>
+              <div class="info-box3__desc">
+                <ul>
+                  <li>Надаємо технічну підтримку запо будь-якими питаннями по системі через чат, Е-мейл та телефонні консультації з менеджером. Все пояснимо, допоможемо та виправимо!</li>
+                  <li>Забезпечимо перенесення бази клієнтів із вашої наявноїіснуючої системи до MARVI. Вам не потрібно буде вносити інформацію самому та витрачати на це багато часу</li>
+                </ul>
+              </div>
+              <div class="info-box3__btn">
+                <a href="#" class="btn-site click-animation green">Детальніше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('components/section-functionsMARVI/index.html')
+
+    <section class="section-advantages section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12"><h2 class="h1 text-center mb-80">Переваги від впровадження MARVI</h2></div>
+        </div>
+        <div class="row advantages-items position-relative">
+          <div class="col-6 offset-lg-3">
+            @@loop('components/advantages-item/index.html',
+            'components/advantages-item/bd.json')
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="info-box-2 bg-blue">
+              <div class="info-box-2_title h3 text-center">
+                Дізнайся більше про плани та тарифи або спробуй демо-версію
+              </div>
+              <div class="info-box-2_btn">
+                <a href="#" class="btn-site-2 click-animation"
+                >Плани та тарифи</a
+                >
+                <a href="#" class="btn-site click-animation green"
+                >Замовити демо</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-reviews section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-80 text-center">Відгуки про MARVI</h2>
+          </div>
+          <div class="col-12">
+            <div class="swiper reviews-slider">
+              <div class="swiper-wrapper">
+                @@loop('components/reviews-item/index.html',
+                'components/reviews-item/bd-3.json')
+              </div>
+              <div class="slider-pagination"></div>
+
+              <div class="slider-navigation">
+                <div class="slider-navigation-prev reviews-slider-prev"></div>
+                <a href="#" class="btn-site click-animation green">Відгуки</a>
+                <div class="slider-navigation-next reviews-slider-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            @@include('components/info-box/index.html', {'green': true})
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('components/footer/index.html')
+</div>
+
+@@include('components/modal/index.html')
+@@include('components/scripts/index.html')

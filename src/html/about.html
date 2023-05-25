@@ -1,0 +1,144 @@
+@@include('components/head/index.html', {'title': 'Marvi'})
+@@include('components/header/index.html', {'fixed' : true})
+@@include('components/loader/index.html')
+<div class="wrapper">
+  <main class="main">
+    <section class="section-main section-main-small section section-bg parentImageParallax">
+      <div class="section-bg_image imageParallax">
+        <picture>
+          <source srcset="images/bg/about-bg.webp" />
+          <img src="images/bg/about-bg.jpg" loading="lazy" alt="" />
+        </picture>
+      </div>
+      @@include('components/header/index.html')
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-main__content">
+              <h1 class="h1">Безпека</h1>
+              <div class="section-main__desc">
+                Безпека даних наших клієнтів — найвищий пріоритет для нас
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-strengths section">
+      <div class="container">
+        <div class="row">
+          @@loop('components/strengths/index.html',
+          'components/strengths/bd.json')
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-items">
+        @@loop('components/about-item/index.html',
+        'components/about-item/bd.json')
+      </div>
+    </section>
+
+    <section class="clients-section section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 text-center mb-80">Вже стали клієнтами MARVI</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8 offset-lg-2">
+            <div class="clients-logo">
+              <div class="clients-logo__item">
+                <img src="images/clients-logo/logo-1.png" alt="">
+              </div>
+              <div class="clients-logo__item">
+                <img src="images/clients-logo/logo-2.png" alt="">
+              </div>
+              <div class="clients-logo__item">
+                <img src="images/clients-logo/logo-3.png" alt="">
+              </div>
+              <div class="clients-logo__item">
+                <img src="images/clients-logo/logo-4.png" alt="">
+              </div>
+              <div class="clients-logo__item">
+                <img src="images/clients-logo/logo-3.png" alt="">
+              </div>
+
+              <div class="clients-logo__item">
+                <img src="images/clients-logo/logo-1.png" alt="">
+              </div>
+              <div class="clients-logo__item">
+                <img src="images/clients-logo/logo-2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 offset-lg-3 text-center mb-80">
+            <h2 class="h1">Наша команда</h2>
+            <div class="h4">Основна команда – це кілька засновників. Кожен з групи має досвід у своїй сфері відповідальності в проекті MARVI: управлінський досвід, досвід складних IT-розробок, бізнес-процесів, саппорту, розвитку продуктів</div>
+          </div>
+        </div>
+        <div class="row g-1 g-lg-2 g-xl-3">
+          @@loop('components/team/index.html',
+          'components/team/bd.json')
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 text-center mb-80">Наші офіси</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9051.30227676945!2d30.504641306501565!3d50.46092104645963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce69bbb3b325%3A0x4509070793bf8462!2z0YPQuy4g0JLQvtC30LTQstC40LbQtdC90YHQutCw0Y8sIDEw0JEsINCa0LjQtdCyLCAwNDA3MQ!5e0!3m2!1sru!2sua!4v1684998267794!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="wrap-contact-box">
+              <div class="contact-box bg-green">
+                <div class="contact-box__city h3">м. Київ</div>
+                <div class="contact-box__address">вул. Воздвиженська, 10Б, офіс 12</div>
+                <div class="contact-box__phone h4">
+                  <a href="tel:+380442288071">+ 38 (044) 228-8071</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1131.4057977381121!2d30.508388162370277!3d50.46121311882166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce69bbb3b325%3A0x4509070793bf8462!2z0YPQuy4g0JLQvtC30LTQstC40LbQtdC90YHQutCw0Y8sIDEw0JEsINCa0LjQtdCyLCAwNDA3MQ!5e0!3m2!1sru!2sua!4v1684997783345!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="wrap-contact-box">
+              <div class="contact-box bg-blue">
+                <div class="contact-box__city h3">м. Вінниця</div>
+                <div class="contact-box__address">вул. Миколи Оводова, 51</div>
+                <div class="contact-box__phone h4">
+                  <a href="tel:+380122288071">+ 38 (012) 228-8071</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include('components/footer/index.html')
+</div>
+
+@@include('components/modal/index.html')
+@@include('components/scripts/index.html')

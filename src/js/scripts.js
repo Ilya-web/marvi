@@ -66,7 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const advantagesItem = gsap.utils.toArray('.advantages-item');
   if(advantagesItem.length !== 0) {
     advantagesItem.forEach((item) => {
-
       const tlAdvantagesItem = gsap.timeline({
         scrollTrigger: {
           trigger: item,
@@ -84,20 +83,14 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           y:0,
           opacity:1,
-          duration: 0.5,
+          duration: 0.4,
           onComplete() {
             gsap.to(item.querySelector('.advantages-item__line'), {
-              bottom: 0, duration: .2
+              bottom: 0, duration: .3
             })
           },
         }
       );
-      // tlAdvantagesItem.to(
-      //   item.querySelector('.advantages-item__line'),
-      //   {
-      //     bottom: 0
-      //   }
-      // );
     });
   }
 
@@ -150,17 +143,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   //--------------------------------------------------------------------
-  const serviceItems = gsap.utils.toArray('.service-item');
+  const serviceItems = gsap.utils.toArray('.service-item--animate');
   const tlServiceItems = gsap.timeline({
     scrollTrigger: {
-      trigger: '.section-service',
-      start: "top center",
+      // scrub: true,
+      trigger: '.service-item--animate',
+      start: "top bottom",
       // toggleActions: "play none none reverse",
     },
   });
   if(serviceItems.length !== 0) {
     serviceItems.forEach((item) => {
-
       tlServiceItems.fromTo(
         item,
         {
@@ -244,29 +237,49 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  //lenis init --------------------------------------------------------
+  //------------------------------------------------------------------
+  const imageAnimate = gsap.utils.toArray('.imageAnimate img');
 
-  // const lenis = new Lenis({
-  //   duration: 3,
-  //   easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
-  //   direction: "vertical",
-  //   smooth: true,
-  //   smoothTouch: false,
-  // });
-  // // lenis.on('scroll', ScrollTrigger.update)
-  //
-  // function raf(time) {
-  //   lenis.raf(time);
-  //   requestAnimationFrame(raf);
-  // }
-  // requestAnimationFrame(raf);
-  //
-  // document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  //   anchor.addEventListener("click", function (e) {
-  //     e.preventDefault();
-  //     lenis.scrollTo(this.getAttribute("href"));
-  //   });
-  // });
+  if(imageAnimate.length !== 0) {
+    imageAnimate.forEach(item => {
+      const tlImageAnimate = gsap.timeline( {
+        scrollTrigger: {
+          trigger:item,
+          start: "top bottom",
+          scrub:true
+        }
+      })
+      tlImageAnimate.to(item,
+        {
+          scale: 1.3
+        }
+      )
+    })
+  }
+
+  //lenis init --------------------------------------------------------
+  const lenis = new Lenis({
+    duration: 2,
+    easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
+    direction: "vertical",
+    smooth: true,
+    smoothTouch: false,
+  });
+  lenis.on('scroll', ScrollTrigger.update)
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
+
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      lenis.scrollTo(this.getAttribute("href"));
+    });
+  });
 
 
 
