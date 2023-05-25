@@ -12643,6 +12643,10 @@ textarea.input-site {
 
 /***info-box***/
 /***section-functionsMARVI***/
+.section-functionsMARVI {
+  height: 100vh;
+}
+
 /***section-functionsMARVI***/
 /***bn***/
 .banners {
