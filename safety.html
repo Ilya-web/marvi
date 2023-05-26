@@ -143,7 +143,7 @@
       <section class="section-main section-main-small section section-bg parentImageParallax">
         <div class="section-bg_image imageParallax">
           <picture>
-            <source srcset="images/bg/safety-bg.webp" />
+            <source srcset="images/bg/safety-bg.webp" type="image/webp" />
             <img src="images/bg/safety-bg.jpg" loading="lazy" alt="" />
           </picture>
         </div>
@@ -236,7 +236,7 @@
                 <div class="safety-item">
                   <div class="safety-item__title h1">Різні рівні доступу</div>
                   <div class="safety-item__desc h3">Можливість встановлювати різні рівні доступу співробітників до функцій системи.Система MARVI дає змогу гнучко налаштовувати доступи до різних функцій / блоків системи для різних співробітників вашого бізнесу. Власник бізнесу має доступ до всіх функцій системи та може змінювати доступи й паролі. Якщо ваш співробітник звільнився — його можна видалити із системи</div>
-                  <div class="safety-item__img">
+                  <div class="safety-item__img imageAnimate">
                     <picture>
                       <source srcset="images/safety/image-1.webp" type="image/webp">
                       <img src="images/safety/image-1.jpg" class="w-100" alt="">
@@ -246,7 +246,7 @@
                 <div class="safety-item">
                   <div class="safety-item__title h1">Автоматичне резервування даних</div>
                   <div class="safety-item__desc h3">Усі дані зберігаються у захищеному хмарному сховищі, до якого у вас та ваших співробітників є доступ з будь-якої точки планети. Також власники бізнесу можуть заходити в систему та бачити результати роботи в режимі онлайн, не виходячи з власного будинку. Система автоматично робить резервне копіювання 2 рази на добу</div>
-                  <div class="safety-item__img">
+                  <div class="safety-item__img imageAnimate">
                     <picture>
                       <source srcset="images/safety/image-2.webp" type="image/webp">
                       <img src="images/safety/image-2.jpg" class="w-100" alt="">
@@ -256,7 +256,7 @@
                 <div class="safety-item">
                   <div class="safety-item__title h1">Униікальний код шифрування</div>
                   <div class="safety-item__desc h3">Завдяки унікальному коду шифрування, ваші дані завжди перебуватимуть у безпеці.Ми (Компанія MARVI, розробники тощо) не маємо доступу до ваших даних</div>
-                  <div class="safety-item__img">
+                  <div class="safety-item__img imageAnimate">
                     <picture>
                       <source srcset="images/safety/image-3.webp" type="image/webp">
                       <img src="images/safety/image-3.jpg" class="w-100" alt="">
@@ -266,7 +266,7 @@
                 <div class="safety-item">
                   <div class="safety-item__title h1">Розміщення на власному сервері</div>
                   <div class="safety-item__desc h3">Індивідуальна можливість розмістити систему на власному сервері. Така нестандартна опція можлива за вашим запитом. Зв’яжіться з нами для отримання інформації.</div>
-                  <div class="safety-item__img">
+                  <div class="safety-item__img imageAnimate">
                     <picture>
                       <source srcset="images/safety/image-4.webp" type="image/webp">
                       <img src="images/safety/image-4.jpg" class="w-100" alt="">
@@ -284,7 +284,7 @@
       <div class="footer_top">
         <div class="container">
           <div class="row">
-            <div class="col-4 offset-lg-1">
+            <div class="col-4 offset-xxl-1">
               <div class="h3">Спробувати демо-версію</div>
               <div class="footer_form">
                 <form action="#">
@@ -321,7 +321,7 @@
                 </form>
               </div>
             </div>
-            <div class="col-3 offset-lg-1">
+            <div class="col-3 offset-xxl-1">
               <div class="footer_top__item">
                 <div class="h3">Навігація</div>
                 <ul class="footer-menu">
@@ -510,6 +510,41 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="callBack" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h2 class="h2 text-center">Зворотній зв’язок</h2>
+          <form action="#">
+            <div class="row gy-2">
+              <div class="col-12">
+                <div class="wrap-input-site">
+                  <input type="text" class="input-site" placeholder="Ім’я" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="wrap-input-site">
+                  <input type="tel" class="input-site " placeholder="+380979999999" />
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" disabled class="btn-site click-animation mt-2">
+                  Відправити
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

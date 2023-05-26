@@ -1,17 +1,34 @@
+//$grid-breakpoints: (
+//  xs: 0,
+//  sm: 576px,
+//  md: 768px,
+//  lg: 992px,
+//  xl: 1100px,
+//);
+//$container-max-widths: (
+//  sm: 540px,
+//  md: 720px,
+//  lg: 1320px,
+//  xl: 1880px,
+//);
+//
+
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1400px,
-);
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 1320px,
-  xl: 1880px,
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1100px,
+    xxl: 1400px
 );
 
+$container-max-widths: (
+    sm: 100%,
+    md: 100%,
+    lg: 100%,
+    xl: 1320px,
+    xxl: 1880px
+);
 $grid-columns: 12 !default; //12
 $grid-gutter-width: 40px; //30
 

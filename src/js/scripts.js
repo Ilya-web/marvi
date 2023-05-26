@@ -14,24 +14,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let panelsSection = document.querySelector("#banners");
   let panelsContainer = document.querySelector("#banners-container");
+
   if(panelsSection) {
     const panels = gsap.utils.toArray("#banners-container .wrap-banner");
-    const bannersBox =gsap.to(panels, {
-      xPercent: -100 * ( panels.length - 1 ),
+
+    //скролл по секциям с доводкой секции до начала экрана
+    // const bannersBox = gsap.to(panels, {
+    //   xPercent: -100 * ( panels.length - 1 ),
+    //   ease: "none",
+    //   scrollTrigger: {
+    //     trigger: "#banners",
+    //     pin: true,
+    //     start: "top top",
+    //     scrub: 1,
+    //     snap: {
+    //       snapTo: 1 / (panels.length - 1),
+    //       inertia: false,
+    //       duration: {min: 0.1, max: 0.1}
+    //     },
+    //     end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
+    //   }
+    // });
+
+    const bannersBox = gsap.to(panelsContainer, {
+      x: () => -(panelsContainer.scrollWidth - document.documentElement.clientWidth) + "px",
       ease: "none",
       scrollTrigger: {
-        trigger: "#banners",
-        pin: true,
+        trigger: panelsSection,
+        invalidateOnRefresh: true,
         start: "top top",
+        pin: true,
         scrub: 1,
-        snap: {
-          snapTo: 1 / (panels.length - 1),
-          inertia: false,
-          duration: {min: 0.1, max: 0.1}
-        },
-        end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
+        end: () => "+=" + (panelsContainer.offsetWidth - innerWidth)
       }
-    });
+    })
 
     panels.forEach((banner) => {
         const imgAnimate = banner.querySelector('.banner__lottie')
@@ -354,4 +370,39 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+
+
+
+
+  const counter = document.querySelectorAll('.counter');
+
+  function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      obj.innerHTML = Math.floor(progress * (end - start) + start);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+  counter.forEach(item => {
+    const count = item.getAttribute('data-count')
+    animateValue(item, 0, count, 1500);
+  })
+
+
+
+
+
+
+
+
+
+
+
+
 });

@@ -2,9 +2,11 @@
 import Swiper, { Navigation, Pagination } from "swiper";
 
 document.addEventListener("DOMContentLoaded", () => {
+
   new Swiper(".reviews-slider", {
     slidesPerView: 1,
     spaceBetween: 40,
+    loop: true,
     modules: [Navigation, Pagination],
     pagination: {
       el: ".slider-pagination",
@@ -34,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new Swiper(".blog-slider", {
     slidesPerView: 1,
     spaceBetween: 40,
+    loop: true,
     modules: [Navigation, Pagination],
     pagination: {
       el: ".slider-pagination",
@@ -55,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
       1024: {
         slidesPerView: 4,
         spaceBetween: 40,
+        loop: true,
       },
     },
   });

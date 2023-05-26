@@ -220,7 +220,7 @@
               <div class="section-main__content">
                 <h1 class="h1">Ціни та плани</h1>
                 <div class="section-main__btns">
-                  <a href="#" class="btn-site click-animation green">Дізнатись більше</a>
+                  <a href="#pricesSection" class="btn-site click-animation green">Дізнатись більше</a>
                 </div>
               </div>
             </div>
@@ -358,7 +358,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="pricesSection">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -1383,7 +1383,7 @@
         <div class="container">
           <div class="row">
             <div class="col-5 offset-lg-1">
-              <div class="info-box3__content content-box">
+              <div class="info-box3__content content-box info-boxAnimate">
                 <div class="info-box3__title h1 text-center">Умови демо-версії</div>
                 <div class="info-box3__desc">
                   <ul>
@@ -1411,7 +1411,7 @@
               </picture>
             </div>
             <div class="col-5">
-              <div class="info-box3__content content-box">
+              <div class="info-box3__content content-box info-boxAnimate">
                 <div class="info-box3__title h1 text-center">Кастомні рішення</div>
                 <div class="info-box3__desc">
                   <p>Можлива повна кастомізація системи під Ваш окремий випадок і специфіку бізнеса.
@@ -1506,7 +1506,7 @@
                     <a href="tel:+380112223344">+380 (11) 222 33 44</a>
                   </div>
                   <div class="info-box4__content--btn">
-                    <a href="#" class="btn-site-2 click-animation">Зворотній зв’язок</a>
+                    <button type="button" class="btn-site-2 click-animation" data-bs-toggle="modal" data-bs-target="#callBack">Зворотній зв’язок</button>
                   </div>
                 </div>
               </div>
@@ -1710,7 +1710,7 @@
       <div class="footer_top">
         <div class="container">
           <div class="row">
-            <div class="col-4 offset-lg-1">
+            <div class="col-4 offset-xxl-1">
               <div class="h3">Спробувати демо-версію</div>
               <div class="footer_form">
                 <form action="#">
@@ -1747,7 +1747,7 @@
                 </form>
               </div>
             </div>
-            <div class="col-3 offset-lg-1">
+            <div class="col-3 offset-xxl-1">
               <div class="footer_top__item">
                 <div class="h3">Навігація</div>
                 <ul class="footer-menu">
@@ -1936,6 +1936,41 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="callBack" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h2 class="h2 text-center">Зворотній зв’язок</h2>
+          <form action="#">
+            <div class="row gy-2">
+              <div class="col-12">
+                <div class="wrap-input-site">
+                  <input type="text" class="input-site" placeholder="Ім’я" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="wrap-input-site">
+                  <input type="tel" class="input-site " placeholder="+380979999999" />
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" disabled class="btn-site click-animation mt-2">
+                  Відправити
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
