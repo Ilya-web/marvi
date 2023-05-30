@@ -150,16 +150,7 @@
 
     <section class="section-system section parentZoomImg">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="h1 mb-80 text-center">Так виглядає система</h2>
-          </div>
-          <div class="col-12 parentZoomImg">
-            <div class="system_img zoomImg">
-              <img src="images/bg/image-2.png" class="mw-100 mx-auto" alt="">
-            </div>
-          </div>
-        </div>
+        @@include('components/systemAnimate/index.html')
         <div class="row mt-4 info-boxAnimate">
           <div class="col-6 offset-lg-1">
             <div class="info-box3__content content-box">
@@ -257,5 +248,6 @@
   @@include('components/footer/index.html')
 </div>
 
+@@include('components/chatButton/index.html')
 @@include('components/modal/index.html')
 @@include('components/scripts/index.html')

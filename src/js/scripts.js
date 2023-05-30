@@ -48,6 +48,21 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
+  //-------------------------------------------------------------------
+
+  const chatButton = document.getElementById('chatButton')
+
+  if(chatButton) {
+    const urlJson = chatButton.getAttribute('data-json');
+    const lottieCustomServices = lottie.loadAnimation({
+      container: chatButton,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: urlJson
+    })
+  }
+
 
   mm.add("(min-width: 1100px)", () => {
     let panelsSection = document.querySelector("#banners");
@@ -119,9 +134,9 @@ document.addEventListener("DOMContentLoaded", () => {
     //-------------------------------------------------------------------
 
     const lottieCustomServicesImg = document.getElementById('lottieCustomServices')
-    const urlJson = lottieCustomServicesImg.getAttribute('data-json');
 
     if(lottieCustomServicesImg) {
+      const urlJson = lottieCustomServicesImg.getAttribute('data-json');
       const lottieCustomServices = lottie.loadAnimation({
         container: lottieCustomServicesImg,
         renderer: 'svg',
@@ -139,8 +154,6 @@ document.addEventListener("DOMContentLoaded", () => {
           lottieCustomServices.play()
         },
       });
-
-
     }
 
     //-------------------------------------------------------------------
@@ -185,9 +198,12 @@ document.addEventListener("DOMContentLoaded", () => {
             opacity:1,
             duration: 0.4,
             onComplete() {
-              gsap.to(item.querySelector('.advantages-item__line'), {
-                bottom: 0, duration: .3
-              })
+              gsap.fromTo(item.querySelector('.advantages-item__line'), {
+                bottom: 100, duration: .3
+              },
+                {
+                  bottom: 0, duration: .3
+                })
             },
           }
         );
@@ -257,6 +273,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
       serviceItems.forEach((item) => {
         tlServiceItems.fromTo(
+          item,
+          {
+            y: 90,
+            opacity: 0,
+          },
+          {
+            y:0,
+            opacity:1,
+          }
+        );
+      });
+    }
+
+    //--------------------------------------------------------------------
+    const bestInMARVIItems = gsap.utils.toArray('.bestInMARVI-item--animate');
+
+    if(bestInMARVIItems.length !== 0) {
+      const tlBestInMARVIItems = gsap.timeline({
+        scrollTrigger: {
+          // scrub: true,
+          trigger: '.bestInMARVI-item--animate',
+          start: "top bottom",
+          // toggleActions: "play none none reverse",
+        },
+      });
+
+      bestInMARVIItems.forEach((item) => {
+        tlBestInMARVIItems.fromTo(
           item,
           {
             y: 90,
@@ -373,7 +417,6 @@ document.addEventListener("DOMContentLoaded", () => {
       smoothTouch: false,
     });
     lenis.on('scroll', () => {
-      console.log('cscs')
       ScrollTrigger.update
     })
 

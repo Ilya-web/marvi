@@ -57,7 +57,7 @@
                   <a href="safety.html">Безпека</a>
                 </li>
                 <li>
-                  <a href="fag.html">FAQ</a>
+                  <a href="faq.html">FAQ</a>
                 </li>
                 <li>
                   <a href="contacts.html">Контакти</a>
@@ -207,7 +207,7 @@
             <a href="safety.html">Безпека</a>
           </li>
           <li>
-            <a href="fag.html">FAQ</a>
+            <a href="faq.html">FAQ</a>
           </li>
           <li>
             <a href="blog.html">Блог</a>
@@ -243,7 +243,28 @@
 
   <div class="wrapper">
     <main class="main">
-      <section class="section-main section" style="background-image: url('images/bg/section-main.webp')">
+      <section class="section-main section-bg section">
+        <div class="section-bg_image">
+          <picture>
+            <source srcset="images/bg/section-main.webp" type="image/webp" />
+            <img src="images/bg/section-main.jpg" loading="lazy" alt="" />
+          </picture>
+        </div>
+
+        <!--      <div class="section-bg_video">-->
+        <!--        <video autoplay>-->
+        <!--          <source src="video/video.mp4" type="video/mp4">-->
+        <!--          <source src="" type="video/ogg">-->
+        <!--          <source src="" type="video/webm">-->
+        <!--        </video>-->
+        <!--      </div>-->
+        <!--      <div class="section-bg_image section-bg_mobile">-->
+        <!--        <picture>-->
+        <!--          <source srcset="images/bg/section-main.webp" type="image/webp" />-->
+        <!--          <img src="images/bg/section-main.jpg" loading="lazy" alt="" />-->
+        <!--        </picture>-->
+        <!--      </div>-->
+
         <header class="header ">
           <div class="container">
             <div class="row justify-content-between align-items-center">
@@ -286,7 +307,7 @@
                         <a href="safety.html">Безпека</a>
                       </li>
                       <li>
-                        <a href="fag.html">FAQ</a>
+                        <a href="faq.html">FAQ</a>
                       </li>
                       <li>
                         <a href="contacts.html">Контакти</a>
@@ -463,6 +484,10 @@
                 </picture>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
             <div class="col-12">
               <div class="info-box">
                 <div class="info-box__content">
@@ -947,7 +972,7 @@
       <section class="section-review section">
         <div class="section-review_img">
           <picture>
-            <source srcset="images/doctor.webp" />
+            <source srcset="images/doctor.webp" type="image/webp" />
             <img src="images/doctor.jpg" loading="lazy" alt="" />
           </picture>
         </div>
@@ -988,37 +1013,37 @@
             <div class="col-xl-6 offset-xl-1">
               <div class="row g-1 g-lg-2 g-xxl-3">
                 <div class="col-sm-6">
-                  <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item bestInMARVI-item--animate">
                     <div class="bestInMARVI-item_title h4">РРО</div>
                     <div class="bestInMARVI-item_text">Синхронізація з касовим апаратом або підключення РРО (CheckBox, ПриватБанк)</div>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item bestInMARVI-item--animate">
                     <div class="bestInMARVI-item_title h4">Вчасне до-замовлення</div>
                     <div class="bestInMARVI-item_text">Підказка про товари, що закінчуються з рекомендацією, скільки потрібно замовити</div>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item bestInMARVI-item--animate">
                     <div class="bestInMARVI-item_title h4">Управління персоналом</div>
                     <div class="bestInMARVI-item_text">Керування робочим графіком і доступами до системи персоналу. Нарахування зарплати і бонусів персоналу по результатах роботи</div>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item bestInMARVI-item--animate">
                     <div class="bestInMARVI-item_title h4">Тарифні плани</div>
                     <div class="bestInMARVI-item_text">Можливість обрати потрібний пакет послуг та платити лише за те, що дійсно необхідно для оптимізації робочого процесу</div>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item bestInMARVI-item--animate">
                     <div class="bestInMARVI-item_title h4">Повна історія</div>
                     <div class="bestInMARVI-item_text">Ведення повної історії клієнту із встановленням його статусу (лояльний, VIP, та інше)</div>
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="bestInMARVI-item">
+                  <div class="bestInMARVI-item bestInMARVI-item--animate">
                     <div class="bestInMARVI-item_title h4">Безпека</div>
                     <div class="bestInMARVI-item_text">Доступ як до функцій системи, так і до філіалів, персоналізований для кожного співробітника</div>
                   </div>
@@ -1342,6 +1367,7 @@
 
   </div>
 
+  <button type="button" id="chatButton" data-json="jsonAnimate/chatButton.json"></button>
 
   <!--Modal callBack-->
   <div class="modal fade" id="callBack" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">

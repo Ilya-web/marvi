@@ -1356,6 +1356,7 @@ textarea.input-site {
   flex-direction: column;
   min-height: 100vh;
   @include transition(0.15s);
+  overflow: hidden;
 }
 
 /***wrapper***/
@@ -1384,6 +1385,37 @@ textarea.input-site {
     }
   }
 
+  &_video {
+    position: absolute;
+    inset: 0;
+    isolation: isolate;
+
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(13, 20, 28, 0.35), rgba(13, 20, 28, 0.35));
+      z-index: 1;
+    }
+  }
+
+  &_mobile {
+    display: none;
+    @include media-breakpoint-down(xl) {
+      display: block;
+    }
+  }
+
 }
 
 .section-main {
@@ -1395,6 +1427,10 @@ textarea.input-site {
   align-items: center;
   position: relative;
   z-index: 9;
+
+  & > .container{
+    z-index: 2;
+  }
 
   &-small {
     min-height: 72vh;
@@ -2518,7 +2554,7 @@ textarea.input-site {
     position: absolute;
     top: var(--_sizeIcon);
     left: calc( (var(--_sizeIcon) / 2) - 1px) ;
-    //height: 100%;
+    bottom: 0;
     width: 2px;
     background-image: linear-gradient(to bottom, #02AB6B 50%, transparent 50%);
     background-position: left;
@@ -3039,6 +3075,32 @@ textarea.input-site {
 }
 
 /***thanks***/
+
+
+/***chatButton***/
+
+#chatButton {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  z-index: 9;
+  width: 80px;
+  height: 80px;
+  border: 0;
+  background: transparent;
+
+  @include media-breakpoint-down(lg) {
+    width: 40px;
+    height: 40px;
+    left: 20px;
+    bottom: 20px;
+  }
+  @include media-breakpoint-down(sm) {
+    left: 10px;
+    bottom: 10px;
+  }
+}
+/***chatButton***/
 
 
 

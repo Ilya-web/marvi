@@ -5,10 +5,28 @@
 
 <div class="wrapper">
   <main class="main">
-    <section
-      class="section-main section"
-      style="background-image: url('images/bg/section-main.webp')"
-    >
+    <section class="section-main section-bg section">
+      <div class="section-bg_image">
+        <picture>
+          <source srcset="images/bg/section-main.webp" type="image/webp" />
+          <img src="images/bg/section-main.jpg" loading="lazy" alt="" />
+        </picture>
+      </div>
+
+<!--      <div class="section-bg_video">-->
+<!--        <video autoplay>-->
+<!--          <source src="video/video.mp4" type="video/mp4">-->
+<!--          <source src="" type="video/ogg">-->
+<!--          <source src="" type="video/webm">-->
+<!--        </video>-->
+<!--      </div>-->
+<!--      <div class="section-bg_image section-bg_mobile">-->
+<!--        <picture>-->
+<!--          <source srcset="images/bg/section-main.webp" type="image/webp" />-->
+<!--          <img src="images/bg/section-main.jpg" loading="lazy" alt="" />-->
+<!--        </picture>-->
+<!--      </div>-->
+
       @@include('components/header/index.html')
       <div class="container">
         <div class="row">
@@ -130,15 +148,10 @@
 
     <section class="section-aboutSystem section d-none d-sm-block">
       <div class="container">
+        @@include('components/systemAnimate/index.html')
+      </div>
+      <div class="container">
         <div class="row">
-          <div class="col-12">
-            <h2 class="h1 text-center mb-80">Як виглядає система</h2>
-          </div>
-          <div class="col-12 parentZoomImg">
-            <div class="section-aboutSystem__img zoomImg">
-              <img src="images/systems-img.png" class="mw-100 mh-100 m-auto" alt="" />
-            </div>
-          </div>
           <div class="col-12">
             @@include('components/info-box/index.html')
           </div>
@@ -208,5 +221,6 @@
   @@include('components/footer/index.html')
 </div>
 
+@@include('components/chatButton/index.html')
 @@include('components/modal/index.html')
 @@include('components/scripts/index.html')

@@ -13791,6 +13791,7 @@ textarea.input-site {
   -webkit-transition: all ease-in-out 0.15s;
   -o-transition: all ease-in-out 0.15s;
   transition: all ease-in-out 0.15s;
+  overflow: hidden;
 }
 
 /***wrapper***/
@@ -13820,6 +13821,39 @@ textarea.input-site {
   background: linear-gradient(0deg, rgba(13, 20, 28, 0.35), rgba(13, 20, 28, 0.35));
   z-index: 1;
 }
+.section-bg_video {
+  position: absolute;
+  inset: 0;
+  isolation: isolate;
+}
+@media (max-width: 1099.98px) {
+  .section-bg_video {
+    display: none;
+  }
+}
+.section-bg_video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.section-bg_video:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(13, 20, 28, 0.35)), to(rgba(13, 20, 28, 0.35)));
+  background: -o-linear-gradient(bottom, rgba(13, 20, 28, 0.35), rgba(13, 20, 28, 0.35));
+  background: linear-gradient(0deg, rgba(13, 20, 28, 0.35), rgba(13, 20, 28, 0.35));
+  z-index: 1;
+}
+.section-bg_mobile {
+  display: none;
+}
+@media (max-width: 1099.98px) {
+  .section-bg_mobile {
+    display: block;
+  }
+}
 
 .section-main {
   background-size: cover;
@@ -13835,6 +13869,9 @@ textarea.input-site {
   align-items: center;
   position: relative;
   z-index: 9;
+}
+.section-main > .container {
+  z-index: 2;
 }
 .section-main-small {
   min-height: 72vh;
@@ -14959,6 +14996,7 @@ textarea.input-site {
   position: absolute;
   top: var(--_sizeIcon);
   left: calc(var(--_sizeIcon) / 2 - 1px);
+  bottom: 0;
   width: 2px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #02AB6B), color-stop(50%, transparent));
   background-image: -o-linear-gradient(top, #02AB6B 50%, transparent 50%);
@@ -15428,4 +15466,31 @@ textarea.input-site {
 }
 
 /***thanks***/
+/***chatButton***/
+#chatButton {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  z-index: 9;
+  width: 80px;
+  height: 80px;
+  border: 0;
+  background: transparent;
+}
+@media (max-width: 991.98px) {
+  #chatButton {
+    width: 40px;
+    height: 40px;
+    left: 20px;
+    bottom: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  #chatButton {
+    left: 10px;
+    bottom: 10px;
+  }
+}
+
+/***chatButton***/
 /*# sourceMappingURL=maps/style.css.map */

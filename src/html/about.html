@@ -7,7 +7,7 @@
     <section class="section-main section-main-small section section-bg parentImageParallax">
       <div class="section-bg_image imageParallax">
         <picture>
-          <source srcset="images/bg/about-bg.webp" />
+          <source srcset="images/bg/about-bg.webp" type="image/webp"/>
           <img src="images/bg/about-bg.jpg" loading="lazy" alt="" />
         </picture>
       </div>
@@ -53,10 +53,13 @@
           <div class="col-xxl-8 offset-xxl-2">
             <div class="clients-logo">
               <div class="clients-logo__item">
-                <img src="images/clients-logo/logo-1.png" alt="">
+                <img src="images/clients-logo/logo-1.svg" alt="">
               </div>
               <div class="clients-logo__item">
-                <img src="images/clients-logo/logo-2.png" alt="">
+                <img src="images/clients-logo/logo-02.svg" alt="">
+              </div>
+              <div class="clients-logo__item">
+                <img src="images/clients-logo/logo-03.svg" alt="">
               </div>
               <div class="clients-logo__item">
                 <img src="images/clients-logo/logo-3.png" alt="">
@@ -64,10 +67,6 @@
               <div class="clients-logo__item">
                 <img src="images/clients-logo/logo-4.png" alt="">
               </div>
-              <div class="clients-logo__item">
-                <img src="images/clients-logo/logo-3.png" alt="">
-              </div>
-
               <div class="clients-logo__item">
                 <img src="images/clients-logo/logo-1.png" alt="">
               </div>
@@ -87,6 +86,7 @@
             <h2 class="h1">Наша команда</h2>
             <div class="h4">Основна команда – це кілька засновників. Кожен з групи має досвід у своїй сфері відповідальності в проекті MARVI: управлінський досвід, досвід складних IT-розробок, бізнес-процесів, саппорту, розвитку продуктів</div>
           </div>
+
         </div>
         <div class="row g-1 g-lg-2 g-xxl-3">
           @@loop('components/team/index.html',
