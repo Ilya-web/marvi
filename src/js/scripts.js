@@ -2,8 +2,9 @@ import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
-import { Accordion } from 'bootstrap';
+import { Accordion} from 'bootstrap';
 import lottie from "lottie-web";
+import { Modal } from "bootstrap";
 
 
 
@@ -46,8 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   }
-
-
 
 
   mm.add("(min-width: 1100px)", () => {
@@ -321,7 +320,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //lenis init --------------------------------------------------------
     let lenis = new Lenis({
-      duration: 1,
+      duration: 2,
       easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
       orientation: "vertical",
       smoothWheel: true,
@@ -363,15 +362,10 @@ document.addEventListener("DOMContentLoaded", () => {
       animateValue(item, 0, count, 1500);
     })
 
-    return () => { // optional
-      // custom cleanup code here (runs when it STOPS matching)
+    return () => {
+      lenis.destroy();
     };
   });
-
-
-
-
-
 
 
   //more-btn----------------------------------------------------
@@ -386,20 +380,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   //clear all inputs from modal ---------------------------------
-  const entranceModal = document.getElementById("entranceModal");
-  if(entranceModal) {
-    entranceModal.addEventListener("hidden.bs.modal", function (event) {
-      entranceModal.querySelectorAll("input").forEach((input) => {
-        input.value = "";
-      });
-    });
 
-    //visible current tab for modal ---------------------------------
-    entranceModal.addEventListener("show.bs.modal", (e) => {
-      const currentModalBtnId = e.relatedTarget.attributes.id.value;
-      document.getElementById(`${currentModalBtnId}-item-tab`).click();
-    });
-  }
+  const orderBtn = document.querySelectorAll('.orderBtn');
+  const priceLinks  = document.querySelectorAll('.prices-nav__link ');
+
+  orderBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const price = btn.getAttribute('data-price');
+      const packageType = btn.getAttribute('data-packageType');
+      let packagePeriod = ''
+
+      priceLinks.forEach(link => {
+       if(link.classList.contains('active')) {
+         packagePeriod =  link.textContent.toLowerCase();
+       }
+      })
+
+      document.querySelector('.orderPackage_price').textContent = price;
+      document.querySelector('.orderPackage_type').textContent = packageType;
+      document.querySelector('.orderPackage_period').textContent = packagePeriod;
+    })
+
+  })
 
 
   //header fixed -----------------------------------------------

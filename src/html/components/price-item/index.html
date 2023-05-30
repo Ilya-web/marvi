@@ -4,7 +4,10 @@
     <div class="price-item__price h3 text-center">@@package</div>
     <div class="price-item__desc">@@desc</div>
     <div class="price-item__btn">
-      <a href="#" class="btn-site click-animation green w-100">Замовити</a>
+      <button type="button" class="btn-site click-animation green w-100 orderBtn"
+              data-price="@@price"
+              data-packageType="@@package"
+              data-bs-toggle="modal" data-bs-target="#order">Замовити</button>
     </div>
   </div>
 </div>

@@ -70,12 +70,12 @@
           </ul>
 
           <div class="header-btns">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#entranceModal" class="btn-site-2 click-animation header-btns__btn" id="login">
+            <a href="#" class="btn-site-2 click-animation header-btns__btn">
               <span>Увійти</span>
-            </button>
-            <a href="#" class="btn-site click-animation header-btns__btn">
-              <span>Отримати демо</span>
             </a>
+            <button type="button" class="btn-site click-animation header-btns__btn" data-bs-toggle="modal" data-bs-target="#checkOutDemo">
+              <span>Отримати демо</span>
+            </button>
           </div>
 
           <button class="btn-menu" type="button">
@@ -198,6 +198,9 @@
             <a href="clinics.html">Для офтальмологічних клінік</a>
           </li>
           <li>
+            <a href="prices.html">Ціни та плани</a>
+          </li>
+          <li>
             <a href="about.html">Про MARVI</a>
           </li>
           <li>
@@ -215,7 +218,7 @@
         </ul>
         <div class="mobile-menu__btns d-flex flex-column gap-1">
           <button type="button" class="btn-site-2 click-animation w-100">Увійти</button>
-          <a href="#" class="btn-site click-animation w-100">Отримати демо</a>
+          <a href="#" class="btn-site click-animation w-100" data-bs-toggle="modal" data-bs-target="#checkOutDemo">Отримати демо</a>
         </div>
         <div class="social">
           <a href="#">
@@ -301,12 +304,12 @@
                 </ul>
 
                 <div class="header-btns">
-                  <button type="button" data-bs-toggle="modal" data-bs-target="#entranceModal" class="btn-site-2 click-animation header-btns__btn" id="login">
+                  <a href="#" class="btn-site-2 click-animation header-btns__btn">
                     <span>Увійти</span>
-                  </button>
-                  <a href="#" class="btn-site click-animation header-btns__btn">
-                    <span>Отримати демо</span>
                   </a>
+                  <button type="button" class="btn-site click-animation header-btns__btn" data-bs-toggle="modal" data-bs-target="#checkOutDemo">
+                    <span>Отримати демо</span>
+                  </button>
                 </div>
 
                 <button class="btn-menu" type="button">
@@ -618,7 +621,7 @@
                     </div>
                     <div class="col-12 text-center">
                       <button type="submit" class="btn-site click-animation">
-                        Замовити демо
+                        Отримати демо
                       </button>
                     </div>
                   </div>
@@ -715,111 +718,8 @@
 
   </div>
 
-  <div class="modal fade" id="entranceModal" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          <svg>
-            <use xlink:href="images/icons/sprite.svg#close"></use>
-          </svg>
-        </button>
-        <div class="modal-body">
-          <ul class="entrance entrance-nav" id="entranceTabs" role="tablist">
-            <li class="entrance-item" role="presentation">
-              <button class="entrance-link active click-animation" id="registration-item-tab" data-bs-toggle="tab" data-bs-target="#registration-item" type="button" role="tab" aria-controls="registration-item" aria-selected="true">
-                Реєстрація
-              </button>
-            </li>
-            <li class="entrance-item" role="presentation">
-              <button class="entrance-link click-animation" id="login-item-tab" data-bs-toggle="tab" data-bs-target="#login-item" type="button" role="tab" aria-controls="login-item" aria-selected="false">
-                Увійти
-              </button>
-            </li>
-          </ul>
-          <div class="tab-content entrance-content" id="entranceTabsContent">
-            <div class="tab-pane fade show active" id="registration-item" role="tabpanel" aria-labelledby="registration-item-tab">
-              <div class="entrance-content_item">
-                <form action="#">
-                  <div class="row gy-2">
-                    <div class="col-12">
-                      <div class="wrap-input-site">
-                        <input type="text" class="input-site" placeholder="Ім’я" />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="wrap-input-site">
-                        <input type="email" class="input-site error" placeholder="example@mail.com" />
-                        <div class="input-site_error">Невірний формат даних.</div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="wrap-input-site">
-                        <input type="password" class="input-site" placeholder="Придумайте пароль" />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="wrap-input-site">
-                        <input type="password" class="input-site" placeholder="Повторити пароль" />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <select class="input-site js-choice">
-                        <option>Для магазинів оптики 1</option>
-                        <option>Для магазинів оптики 2</option>
-                        <option>Для магазинів оптики 3</option>
-                      </select>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-error">
-                        Сталась помилка. Перевірте правильність введених данних та
-                        спробуйте щє
-                      </div>
-                    </div>
-                    <div class="col-12 text-center">
-                      <button type="submit" disabled class="btn-site click-animation mt-2">
-                        Зареєструватись
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="login-item" role="tabpanel" aria-labelledby="login-item-tab">
-              <div class="entrance-content_item">
-                <form action="#">
-                  <div class="row gy-2">
-                    <div class="col-12">
-                      <div class="wrap-input-site">
-                        <input type="email" class="input-site" placeholder="example@mail.com" />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="wrap-input-site">
-                        <input type="password" class="input-site" placeholder="Введіть пароль" />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-error">
-                        Сталась помилка. Перевірте правильність введених данних та
-                        спробуйте щє
-                      </div>
-                    </div>
-                    <div class="col-12 text-center">
-                      <button type="submit" disabled class="btn-site click-animation mt-2">
-                        Увійти
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-
+  <!--Modal callBack-->
   <div class="modal fade" id="callBack" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -829,7 +729,7 @@
           </svg>
         </button>
         <div class="modal-body">
-          <h2 class="h2 text-center">Зворотній зв’язок</h2>
+          <h4 class="h4 text-center modal_title">Зворотній зв’язок</h4>
           <form action="#">
             <div class="row gy-2">
               <div class="col-12">
@@ -839,16 +739,173 @@
               </div>
               <div class="col-12">
                 <div class="wrap-input-site">
-                  <input type="tel" class="input-site " placeholder="+380979999999" />
+                  <input type="email" class="input-site" placeholder="example@mail.com" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="wrap-input-site">
+                  <input type="tel" class="input-site" placeholder="+380 (__) _ _ _ - _ _ - _ _" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="wrap-input-site">
+
+                  <textarea class="input-site" placeholder="Залиште коментар"></textarea>
                 </div>
               </div>
               <div class="col-12 text-center">
                 <button type="submit" disabled class="btn-site click-animation mt-2">
-                  Відправити
+                  Надіслати запит
                 </button>
               </div>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Modal checkOutDemo-->
+  <div class="modal fade" id="checkOutDemo" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h4 class="h4 text-center modal_title">Залишити заявку</h4>
+          <form action="#">
+            <div class="row gy-2">
+              <div class="col-12">
+                <div class="wrap-input-site">
+                  <input type="text" class="input-site" placeholder="Ім’я" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="wrap-input-site">
+                  <input type="email" class="input-site" placeholder="example@mail.com" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="wrap-input-site">
+                  <input type="tel" class="input-site" placeholder="+380 (__) _ _ _ - _ _ - _ _" />
+                </div>
+              </div>
+              <div class="col-12">
+                <select class="input-site js-choice">
+                  <option>Для магазинів оптики 1</option>
+                  <option>Для магазинів оптики 2</option>
+                  <option>Для магазинів оптики 3</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <div class="wrap-input-site">
+
+                  <textarea class="input-site" placeholder="Залиште коментар"></textarea>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" disabled class="btn-site click-animation mt-2">
+                  Отримати демо
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal order-->
+  <div class="modal fade" id="order" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h4 class="h4 text-center modal_title">Залишити заявку</h4>
+          <form action="#">
+            <div class="row gy-2">
+              <div class="col-12">
+                <div class="orderPackage">
+                  <div class="orderPackage_type">Smart</div>
+                  <div class="orderPackage_info">
+                    <span class="orderPackage_price">$360</span>
+                    <div class="orderPackage_period">на рік</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="wrap-input-site">
+                  <input type="text" class="input-site" placeholder="Ім’я" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="wrap-input-site">
+                  <input type="email" class="input-site" placeholder="example@mail.com" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="wrap-input-site">
+                  <input type="tel" class="input-site" placeholder="+380 (__) _ _ _ - _ _ - _ _" />
+                </div>
+              </div>
+              <div class="col-12">
+                <select class="input-site js-choice">
+                  <option>Для магазинів оптики 1</option>
+                  <option>Для магазинів оптики 2</option>
+                  <option>Для магазинів оптики 3</option>
+                </select>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" disabled class="btn-site click-animation mt-2">
+                  Замовити
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--Modal thanks-->
+  <!--Open modal via js-->
+  <!--const thanks = new Modal('#thanks');-->
+  <!--thanks.show()-->
+  <div class="modal fade" id="thanks" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal-body">
+          <div class="row align-items-center g-2">
+            <div class="col-lg-5">
+              <div class="thanks_img">
+                <img src="images/dogs/dog_8.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="thanks_desc text-center">
+                <h4 class="thanks_title h4">Дякуємо за ваш запит!</h4>
+                <div class="thanks_desc">Найближчім часом наші менеджери зв’яжуться з вами для уточнення вашого запиту або питаннь</div>
+                <div class="thanks_btn">
+                  <a href="index.html" class="btn-site click-animation">На головну</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
