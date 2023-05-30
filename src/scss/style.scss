@@ -1626,13 +1626,13 @@ textarea.input-site {
 .wrap-banner {
   overflow: hidden;
   display: flex;
-  width: 70vw;
+  min-width: 70vw;
 
   @media screen and (max-height: 800px) {
-    width: 80vw;
+    min-width: 80vw;
   }
   @media screen and (max-height: 650px) {
-    width: 90vw;
+    min-width: 90vw;
   }
 }
 

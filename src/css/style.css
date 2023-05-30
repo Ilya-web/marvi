@@ -14069,16 +14069,16 @@ textarea.input-site {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70vw;
+  min-width: 70vw;
 }
 @media screen and (max-height: 800px) {
   .wrap-banner {
-    width: 80vw;
+    min-width: 80vw;
   }
 }
 @media screen and (max-height: 650px) {
   .wrap-banner {
-    width: 90vw;
+    min-width: 90vw;
   }
 }
 
