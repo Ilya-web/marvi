@@ -95,8 +95,18 @@
       <div class="container">
         <div class="row align-items-start position-relative">
           <div class="col-lg-6 col-xl-7 sticky-desktop">
-            <div class="section-about__img">
+            <div class="section-about__img section-about__parallax">
               <img src="images/imac.png" class="mw-100" alt="" />
+
+              <div class="section-about__parallax--img img-1" data-speed="2">
+                <img src="images/parallax/img-1.jpg" class="mw-100"  width="305px" alt="" />
+              </div>
+              <div class="section-about__parallax--img img-2" data-speed="-1.5">
+                <img src="images/parallax/img-2.jpg" class="mw-100"  width="200px" alt="" />
+              </div>
+              <div class="section-about__parallax--img img-3" data-speed="0.8">
+                <img src="images/parallax/img-3.jpg" class="mw-100"  width="240px" alt="" />
+              </div>
             </div>
           </div>
           <div class="col-lg-6 col-xl-5 content-box">
@@ -159,7 +169,9 @@
       </div>
     </section>
 
-    @@include('components/section-functionsMARVI/index.html')
+    <div class="section-wrapper">
+      @@include('components/section-functionsMARVI/index.html')
+    </div>
 
     <section class="section-reviews section">
       <div class="container">

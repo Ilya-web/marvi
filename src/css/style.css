@@ -13791,6 +13791,9 @@ textarea.input-site {
   -webkit-transition: all ease-in-out 0.15s;
   -o-transition: all ease-in-out 0.15s;
   transition: all ease-in-out 0.15s;
+}
+
+.section-wrapper {
   overflow: hidden;
 }
 
@@ -14018,16 +14021,36 @@ textarea.input-site {
 
 /***section-help***/
 /***section-about***/
-@media (min-width: 992px) {
-  .sticky-desktop {
-    position: sticky;
-    top: 90px;
-  }
+.sticky-desktop {
+  position: sticky;
+  top: 90px;
 }
 
 .section-about__dogImg img {
   margin: auto;
   max-width: 100%;
+}
+.section-about__parallax {
+  position: relative;
+}
+.section-about__parallax--img {
+  position: absolute;
+  overflow: hidden;
+  border-radius: var(--border-radius-16-allMedia);
+  -webkit-box-shadow: 0 0 60px rgba(134, 54, 140, 0.45);
+  box-shadow: 0 0 60px rgba(134, 54, 140, 0.45);
+}
+.section-about__parallax--img.img-1 {
+  right: 64px;
+  top: 60px;
+}
+.section-about__parallax--img.img-2 {
+  top: 170px;
+  left: 90px;
+}
+.section-about__parallax--img.img-3 {
+  top: 389px;
+  right: 239px;
 }
 
 /***section-about***/

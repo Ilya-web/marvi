@@ -1356,6 +1356,9 @@ textarea.input-site {
   flex-direction: column;
   min-height: 100vh;
   @include transition(0.15s);
+}
+
+.section-wrapper {
   overflow: hidden;
 }
 
@@ -1568,10 +1571,12 @@ textarea.input-site {
 /***section-about***/
 
 .sticky-desktop {
-  @include media-breakpoint-up(lg) {
-    position: sticky;
-    top: 90px;
-  }
+  position: sticky;
+  top: 90px;
+  //@include media-breakpoint-up(lg) {
+  //  position: sticky;
+  //  top: 90px;
+  //}
 }
 
 .section-about {
@@ -1580,6 +1585,29 @@ textarea.input-site {
      margin: auto;
      max-width: 100%;
    }
+  }
+  
+  &__parallax {
+    position: relative;
+
+    &--img {
+      position: absolute;
+      overflow: hidden;
+      border-radius: var(--border-radius-16-allMedia);
+      box-shadow: 0 0 60px rgba(134, 54, 140, 0.45);
+      &.img-1 {
+        right: 64px;
+        top: 60px;
+      }
+      &.img-2 {
+        top: 170px;
+        left: 90px;
+      }
+      &.img-3 {
+        top: 389px;
+        right: 239px;
+      }
+    }
   }
 }
 

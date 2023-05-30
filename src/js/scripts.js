@@ -541,4 +541,45 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  let bg = document.querySelectorAll('.img');
+
+  // for (let i = 0; i < bg.length + 1; i++){
+  //
+  //   document.querySelector('.section-about').addEventListener('mousemove', function(e) {
+  //     if(bg[i]) {
+  //       let x = e.clientX / window.innerWidth;
+  //       let y = e.clientY / window.innerHeight;
+  //       let index = i + 2
+  //       bg[i].style.transform = 'translate(-' + x * index * 35 + 'px, -' + y * index * 35 + 'px)';
+  //     }
+  //
+  //   });
+  // }
+
+
+  const mainParallax = document.querySelector('.section-about');
+
+  if(mainParallax) {
+    mainParallax.addEventListener('mousemove', parallax);
+
+    let parallaxImgs = document.querySelectorAll('.section-about__parallax--img');
+
+    function parallax(e) {
+      parallaxImgs.forEach(img => {
+
+        const speed = img.getAttribute('data-speed');
+
+        const x = (window.innerWidth - e.pageX * speed ) / 100;
+        const y = (window.innerHeight - e.pageY * speed ) / 100;
+
+        console.log(window.innerHeight)
+
+        img.style.transform = `translateX(${x}px) translateY(${y}px)`
+
+      })
+    }
+  }
+
+
+
 });
