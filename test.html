@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
 
-
-  <link rel="stylesheet" href="css/styles.min.css" />
+  <link rel="stylesheet" href="src/css/plugins.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
 </head>
 
 <body class="hidden">
@@ -77,10 +77,19 @@
               <span>Отримати демо</span>
             </a>
           </div>
+
+          <button class="btn-menu" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </div>
   </header>
+
+
+
 
   <div class="loader loading">
     <svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
@@ -104,7 +113,11 @@
         position: fixed;
         z-index: 999;
         inset: 0;
-        transition: all ease 0.3s;
+        animation: load 2s linear forwards;
+      }
+
+      .loader.loaded {
+        display: none;
       }
 
       .loader svg {
@@ -112,8 +125,44 @@
         height: 100vh;
       }
 
-      .loader.loading .loader-logo {
+      .loader .loader-logo {
         fill: #86368c;
+        animation: svgTransparent 2s linear forwards;
+        animation-delay: 0.7s
+      }
+
+      @keyframes svgTransparent {
+        0% {
+          fill: #86368c;
+        }
+
+        50% {
+          fill: transparent;
+        }
+
+        100% {
+          fill: transparent;
+        }
+      }
+
+      @keyframes load {
+        0% {
+          filter: blur(6px);
+        }
+
+        40% {
+          filter: blur(0);
+        }
+
+        70% {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        100% {
+          transform: scale(3);
+          opacity: 0;
+        }
       }
     </style>
     <script>
@@ -121,17 +170,12 @@
     function startLoader() {
       const loader = document.querySelector(".loader");
 
-      setTimeout(function() {
-        loader.style.scale = "4.5";
-        loader.style.opacity = "0";
-        loader.classList.remove('loading')
-      }, 1000);
-
       window.addEventListener("DOMContentLoaded", function() {
         setTimeout(function() {
           loader.style.visibility = 'hidden'
           document.body.classList.remove('hidden')
-        }, 1000);
+          loader.classList.add('loaded')
+        }, 2000);
       });
     }
     startLoader();

@@ -1,10 +1,14 @@
-<section
-  class="section-review section"
-  style="background-image: url('images/doctor.webp')"
->
+<section class="section-review section">
+  <div class="section-review_img">
+    <picture>
+      <source srcset="images/doctor.webp" />
+      <img src="images/doctor.jpg" loading="lazy" alt="" />
+    </picture>
+  </div>
+
   <div class="container position-relative">
     <div class="row">
-      <div class="col-5 offset-lg-1">
+      <div class="col-md-6 col-lg-5 offset-lg-1">
         <div class="review_content @@if(context.green){green} p-1 p-lg-2 p-xl-3">
           <div class="review_text h3">
             “Це справжній крок вперед у сфері організації роботи, що сприяє

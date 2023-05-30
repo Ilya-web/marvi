@@ -8,48 +8,87 @@ import lottie from "lottie-web";
 
 
 
+
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
+  let mm = gsap.matchMedia();
 
+  let lenis = null;
 
-  let panelsSection = document.querySelector("#banners");
-  let panelsContainer = document.querySelector("#banners-container");
+  //menu mobile ----------------------------------------------
+  const btnMenu = document.querySelectorAll('.btn-menu');
+  const menu = document.querySelector('.mobile-menu');
+  const closeMenu = document.querySelector('.mobile-menu__close');
 
-  if(panelsSection) {
-    const panels = gsap.utils.toArray("#banners-container .wrap-banner");
+  if(menu) {
+    btnMenu.forEach(item => {
+      item.addEventListener('click',  () => {
+        menu.classList.add('active');
+        document.body.classList.add('hidden');
 
-    //скролл по секциям с доводкой секции до начала экрана
-    // const bannersBox = gsap.to(panels, {
-    //   xPercent: -100 * ( panels.length - 1 ),
-    //   ease: "none",
-    //   scrollTrigger: {
-    //     trigger: "#banners",
-    //     pin: true,
-    //     start: "top top",
-    //     scrub: 1,
-    //     snap: {
-    //       snapTo: 1 / (panels.length - 1),
-    //       inertia: false,
-    //       duration: {min: 0.1, max: 0.1}
-    //     },
-    //     end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
-    //   }
-    // });
-
-    const bannersBox = gsap.to(panelsContainer, {
-      x: () => -(panelsContainer.scrollWidth - document.documentElement.clientWidth) + "px",
-      ease: "none",
-      scrollTrigger: {
-        trigger: panelsSection,
-        invalidateOnRefresh: true,
-        start: "top top",
-        pin: true,
-        scrub: 1,
-        end: () => "+=" + (panelsContainer.offsetWidth - innerWidth)
-      }
+        if(lenis !== null) {
+          lenis.stop();
+        }
+      })
     })
 
-    panels.forEach((banner) => {
+  }
+
+  if(closeMenu) {
+    closeMenu.addEventListener('click', () => {
+      btnMenu.forEach(i => {
+        menu.classList.remove('active');
+        document.body.classList.remove('hidden');
+        if(lenis !== null) {
+          lenis.start();
+        }
+
+      })
+    })
+  }
+
+
+
+
+  mm.add("(min-width: 1100px)", () => {
+    let panelsSection = document.querySelector("#banners");
+    let panelsContainer = document.querySelector("#banners-container");
+
+    if(panelsSection) {
+      const panels = gsap.utils.toArray("#banners-container .wrap-banner");
+
+      //скролл по секциям с доводкой секции до начала экрана
+      // const bannersBox = gsap.to(panels, {
+      //   xPercent: -100 * ( panels.length - 1 ),
+      //   ease: "none",
+      //   scrollTrigger: {
+      //     trigger: "#banners",
+      //     pin: true,
+      //     start: "top top",
+      //     scrub: 1,
+      //     snap: {
+      //       snapTo: 1 / (panels.length - 1),
+      //       inertia: false,
+      //       duration: {min: 0.1, max: 0.1}
+      //     },
+      //     end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
+      //   }
+      // });
+
+      const bannersBox = gsap.to(panelsContainer, {
+        x: () => -(panelsContainer.scrollWidth - document.documentElement.clientWidth) + "px",
+        ease: "none",
+        scrollTrigger: {
+          trigger: panelsSection,
+          invalidateOnRefresh: true,
+          start: "top top",
+          pin: true,
+          scrub: 1,
+          end: () => "+=" + (panelsContainer.offsetWidth - innerWidth)
+        }
+      })
+
+      panels.forEach((banner) => {
         const imgAnimate = banner.querySelector('.banner__lottie')
         let bannerImg = banner.querySelectorAll(".banner__img");
         const urlJson = banner.querySelector('.banner__lottie').getAttribute('data-json');
@@ -76,226 +115,262 @@ document.addEventListener("DOMContentLoaded", () => {
           },
         });
       });
-  }
+    }
 
-  //--------------------------------------------------------------------
-  const advantagesItem = gsap.utils.toArray('.advantages-item');
-  if(advantagesItem.length !== 0) {
-    advantagesItem.forEach((item) => {
-      const tlAdvantagesItem = gsap.timeline({
+    //--------------------------------------------------------------------
+    const advantagesItem = gsap.utils.toArray('.advantages-item');
+    if(advantagesItem.length !== 0) {
+      advantagesItem.forEach((item) => {
+        const tlAdvantagesItem = gsap.timeline({
+          scrollTrigger: {
+            trigger: item,
+            start: "top bottom",
+          },
+        });
+
+        tlAdvantagesItem.fromTo(
+          item,
+          {
+            y: 90,
+            opacity: 0,
+
+          },
+          {
+            y:0,
+            opacity:1,
+            duration: 0.4,
+            onComplete() {
+              gsap.to(item.querySelector('.advantages-item__line'), {
+                bottom: 0, duration: .3
+              })
+            },
+          }
+        );
+      });
+    }
+
+    //content-box_row----------------------------------------------------
+    const contentBoxRow = gsap.utils.toArray('.section-about_itemAnimate');
+    if(contentBoxRow.length !== 0) {
+      contentBoxRow.forEach((item) => {
+        const sectionAbout = gsap.timeline({
+          scrollTrigger: {
+            trigger: item,
+            start: "top bottom",
+            // toggleActions: "play none none reverse",
+            duration: 0.5,
+          },
+        });
+
+        sectionAbout.fromTo(
+          item,
+          {
+            y: 90,
+            opacity: 0,
+          },
+          {
+            y:0,
+            opacity:1,
+
+          }
+        );
+      });
+    }
+
+    //--------------------------------------------------------------------
+    const sectionAboutSystemImg = document.querySelector('.zoomImg');
+    if(sectionAboutSystemImg) {
+      const sectionAboutSystem = gsap.timeline({
         scrollTrigger: {
-          trigger: item,
-          start: "top bottom",
+          trigger: ".parentZoomImg",
+          start: () => -(innerHeight/2) + ' top',
         },
       });
-
-      tlAdvantagesItem.fromTo(
-        item,
+      sectionAboutSystem.fromTo(
+        sectionAboutSystemImg,
         {
-          y: 90,
-          opacity: 0,
-
+          scale: 0.5,
         },
         {
-          y:0,
-          opacity:1,
-          duration: 0.4,
-          onComplete() {
-            gsap.to(item.querySelector('.advantages-item__line'), {
-              bottom: 0, duration: .3
-            })
-          },
+          scale: 1,
         }
       );
-    });
-  }
+    }
 
-  //content-box_row----------------------------------------------------
-  const contentBoxRow = gsap.utils.toArray('.section-about_itemAnimate');
-  if(contentBoxRow.length !== 0) {
-    contentBoxRow.forEach((item) => {
-      const sectionAbout = gsap.timeline({
+    //--------------------------------------------------------------------
+    const serviceItems = gsap.utils.toArray('.service-item--animate');
+
+    if(serviceItems.length !== 0) {
+      const tlServiceItems = gsap.timeline({
         scrollTrigger: {
-          trigger: item,
+          // scrub: true,
+          trigger: '.service-item--animate',
           start: "top bottom",
           // toggleActions: "play none none reverse",
-          duration: 0.5,
         },
       });
 
-      sectionAbout.fromTo(
-        item,
-        {
-          y: 90,
-          opacity: 0,
-        },
-        {
-          y:0,
-          opacity:1,
-
-        }
-      );
-    });
-  }
-
-  //--------------------------------------------------------------------
-  const sectionAboutSystemImg = document.querySelector('.zoomImg');
-  if(sectionAboutSystemImg) {
-    const sectionAboutSystem = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".parentZoomImg",
-        start: () => -(innerHeight/2) + ' top',
-      },
-    });
-    sectionAboutSystem.fromTo(
-      sectionAboutSystemImg,
-      {
-        scale: 0.5,
-      },
-      {
-        scale: 1,
-      }
-    );
-  }
-
-  //--------------------------------------------------------------------
-  const serviceItems = gsap.utils.toArray('.service-item--animate');
-  const tlServiceItems = gsap.timeline({
-    scrollTrigger: {
-      // scrub: true,
-      trigger: '.service-item--animate',
-      start: "top bottom",
-      // toggleActions: "play none none reverse",
-    },
-  });
-  if(serviceItems.length !== 0) {
-    serviceItems.forEach((item) => {
-      tlServiceItems.fromTo(
-        item,
-        {
-          y: 90,
-          opacity: 0,
-        },
-        {
-          y:0,
-          opacity:1,
-        }
-      );
-    });
-  }
-
-
-  //--------------------------------------------------------------------
-  const infoBoxAnimate = gsap.utils.toArray('.info-boxAnimate');
-  if(infoBoxAnimate.length !== 0) {
-    infoBoxAnimate.forEach((item) => {
-      const tlInfoBoxAnimate = gsap.timeline({
-        scrollTrigger: {
-          trigger: item,
-          start: "top bottom",
-        },
+      serviceItems.forEach((item) => {
+        tlServiceItems.fromTo(
+          item,
+          {
+            y: 90,
+            opacity: 0,
+          },
+          {
+            y:0,
+            opacity:1,
+          }
+        );
       });
-
-      tlInfoBoxAnimate.fromTo(
-        item,
-        {
-          y: 90,
-          opacity: 0,
-        },
-        {
-          y:0,
-          opacity:1,
-        }
-      );
-    });
-  }
-
-  //--------------------------------------------------------------------
-  const imageParallax = document.querySelector('.imageParallax img');
-  const parentImageParallax = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".parentImageParallax",
-      scrub: true,
-      start: "top top",
-    },
-  });
-
-  parentImageParallax.to(
-    imageParallax,
-    {
-      y: 300,
     }
-  );
 
-  const smartMARVIItemAnimate = gsap.utils.toArray('.smartMARVI-item--animate');
-  const tlSectionSmartMARVI = gsap.timeline({
-    scrollTrigger: {
-      trigger: '.section-smartMARVI',
-      start: "top center",
-      // toggleActions: "play none none reverse",
-    },
-  });
 
-  if(smartMARVIItemAnimate.length !== 0) {
-    smartMARVIItemAnimate.forEach((item) => {
+    //--------------------------------------------------------------------
+    const infoBoxAnimate = gsap.utils.toArray('.info-boxAnimate');
+    if(infoBoxAnimate.length !== 0) {
+      infoBoxAnimate.forEach((item) => {
+        const tlInfoBoxAnimate = gsap.timeline({
+          scrollTrigger: {
+            trigger: item,
+            start: "top bottom",
+          },
+        });
 
-      tlSectionSmartMARVI.fromTo(
-        item,
-        {
-          y: 90,
-          opacity: 0,
+        tlInfoBoxAnimate.fromTo(
+          item,
+          {
+            y: 90,
+            opacity: 0,
+          },
+          {
+            y:0,
+            opacity:1,
+          }
+        );
+      });
+    }
+
+    //--------------------------------------------------------------------
+    const imageParallax = gsap.utils.toArray('.imageParallax img');
+
+    if(imageParallax.length !== 0) {
+      const parentImageParallax = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".parentImageParallax",
+          scrub: true,
+          start: "top top",
         },
+      });
+      parentImageParallax.to(
+        imageParallax,
         {
-          y:0,
-          opacity:1,
+          y: 300,
         }
       );
-    });
-  }
+    }
 
-  //------------------------------------------------------------------
-  const imageAnimate = gsap.utils.toArray('.imageAnimate img');
+    //------------------------------------------------------------------
+    const smartMARVIItemAnimate = gsap.utils.toArray('.smartMARVI-item--animate');
 
-  if(imageAnimate.length !== 0) {
-    imageAnimate.forEach(item => {
-      const tlImageAnimate = gsap.timeline( {
+    if(smartMARVIItemAnimate.length !== 0) {
+      const tlSectionSmartMARVI = gsap.timeline({
         scrollTrigger: {
-          trigger:item,
-          start: "top bottom",
-          scrub:true
-        }
+          trigger: '.section-smartMARVI',
+          start: "top center",
+          // toggleActions: "play none none reverse",
+        },
+      });
+
+      smartMARVIItemAnimate.forEach((item) => {
+
+        tlSectionSmartMARVI.fromTo(
+          item,
+          {
+            y: 90,
+            opacity: 0,
+          },
+          {
+            y:0,
+            opacity:1,
+          }
+        );
+      });
+    }
+
+
+    //------------------------------------------------------------------
+    const imageAnimate = gsap.utils.toArray('.imageAnimate img');
+
+    if(imageAnimate.length !== 0) {
+      imageAnimate.forEach(item => {
+        const tlImageAnimate = gsap.timeline( {
+          scrollTrigger: {
+            trigger:item,
+            start: "top bottom",
+            scrub:true
+          }
+        })
+        tlImageAnimate.to(item,
+          {
+            scale: 1.3
+          }
+        )
       })
-      tlImageAnimate.to(item,
-        {
-          scale: 1.3
-        }
-      )
-    })
-  }
+    }
 
-  //lenis init --------------------------------------------------------
-  const lenis = new Lenis({
-    duration: 2,
-    easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
-    direction: "vertical",
-    smooth: true,
-    smoothTouch: false,
-  });
-  lenis.on('scroll', ScrollTrigger.update)
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-
-
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      lenis.scrollTo(this.getAttribute("href"));
+    //lenis init --------------------------------------------------------
+    let lenis = new Lenis({
+      duration: 1,
+      easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
+      orientation: "vertical",
+      smoothWheel: true,
+      smoothTouch: false,
     });
+    lenis.on('scroll', ScrollTrigger.update)
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        lenis.scrollTo(this.getAttribute("href"));
+      });
+    });
+
+    //counter--------------------------------------------------
+    const counter = document.querySelectorAll('.counter');
+
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+    counter.forEach(item => {
+      const count = item.getAttribute('data-count')
+      animateValue(item, 0, count, 1500);
+    })
+
+    return () => { // optional
+      // custom cleanup code here (runs when it STOPS matching)
+    };
   });
+
+
+
+
 
 
 
@@ -342,6 +417,7 @@ document.addEventListener("DOMContentLoaded", () => {
       lastScroll < defaultOffset
     ) {
       header.classList.remove("show");
+
       accordionHeaderSticky ? accordionHeaderSticky.style.top = '0' : null
     } else if (scrollPosition() < lastScroll) {
       header.classList.add("show");
@@ -370,39 +446,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
-
-
-
-
-  const counter = document.querySelectorAll('.counter');
-
-  function animateValue(obj, start, end, duration) {
-    let startTimestamp = null;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      obj.innerHTML = Math.floor(progress * (end - start) + start);
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
-  }
-  counter.forEach(item => {
-    const count = item.getAttribute('data-count')
-    animateValue(item, 0, count, 1500);
-  })
-
-
-
-
-
-
-
-
-
-
-
 
 });

@@ -1,6 +1,7 @@
 @@include('components/head/index.html', {'title': 'Marvi'})
 @@include('components/header/index.html', {'fixed' : true})
 @@include('components/loader/index.html')
+@@include('components/mobile-menu/index.html')
 <div class="wrapper">
   <main class="main">
     <section class="section-main section-main-small section section-bg parentImageParallax">
@@ -446,10 +447,10 @@
                 @@loop('components/reviews-item/index.html',
                 'components/reviews-item/bd-2.json')
               </div>
-              <div class="slider-pagination"></div>
+
               <div class="slider-navigation">
                 <div class="slider-navigation-prev reviews-slider-prev"></div>
-                <a href="#" class="btn-site click-animation green">Відгуки</a>
+                <div class="slider-pagination"></div>
                 <div class="slider-navigation-next reviews-slider-next"></div>
               </div>
             </div>

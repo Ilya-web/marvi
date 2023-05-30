@@ -1,6 +1,7 @@
 @@include('components/head/index.html', {'title': 'Marvi'})
 @@include('components/header/index.html', {'fixed' : true})
 @@include('components/loader/index.html')
+@@include('components/mobile-menu/index.html')
 <div class="wrapper">
   <main class="main">
     <section class="section-main section-main-small section section-bg parentImageParallax">
@@ -114,11 +115,11 @@
                 'components/blog-item/bd.json')
               </div>
 
-              <div class="slider-pagination"></div>
+              <div class="slider-pagination justify-content-center d-sm-none w-100 mx-auto mt-2"></div>
 
               <div class="slider-navigation">
                 <div class="slider-navigation-prev blog-slider-prev"></div>
-
+                <a href="blog.html" class="btn-site click-animation">Блог</a>
                 <div class="slider-navigation-next blog-slider-next"></div>
               </div>
             </div>

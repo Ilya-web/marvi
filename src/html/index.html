@@ -1,6 +1,8 @@
 @@include('components/head/index.html', {'title': 'Marvi'})
 @@include('components/header/index.html', {'fixed' : true})
 @@include('components/loader/index.html')
+@@include('components/mobile-menu/index.html')
+
 <div class="wrapper">
   <main class="main">
     <section
@@ -42,8 +44,8 @@
 
     <section class="section-help section">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-5 offset-md-1">
+        <div class="row align-items-center g-3">
+          <div class="col-xl-5 col-lg-7 offset-xl-1 order-1 order-lg-0">
             <h2 class="h1">Ваш помічник MARVI</h2>
             <div class="section-help__desc">
               <p>
@@ -67,9 +69,9 @@
               >
             </div>
           </div>
-          <div class="col-5">
-            <div class="section-help__img">
-              <img src="images/dogs/dog_4.svg" class="mw-100" alt="" />
+          <div class="col-lg-5 order-0 order-lg-1">
+            <div class="section-help__img d-flex">
+              <img src="images/dogs/dog_4.svg" class="mx-auto" alt="" />
             </div>
           </div>
         </div>
@@ -79,14 +81,14 @@
     <section class="section-about section">
       <div class="container">
         <div class="row align-items-start position-relative">
-          <div class="col-7 sticky-desktop">
+          <div class="col-lg-6 col-xl-7 sticky-desktop">
             <div class="section-about__img">
               <img src="images/imac.png" class="mw-100" alt="" />
             </div>
           </div>
-          <div class="col-5 content-box">
+          <div class="col-lg-6 col-xl-5 content-box">
             <div class="content-box_row section-about_itemAnimate">
-              <h2 class="h1">Що може MARVI?</h2>
+              <h2 class="h1 text-center text-lg-start">Що може MARVI?</h2>
               <h4 class="h4">
                 Система управління MARVI для магазинів оптики та
                 офтальмологічних клінік об’єднує в собі багато функцій та
@@ -95,39 +97,43 @@
               <ul>
                 @@loop('components/lists/index.html','components/lists/list-1.json')
               </ul>
-              @@include('components/btn/index.html', {'text': 'Ціни та плани'})
+              <div class="section-about_btn text-center text-lg-start">
+                <a href="prices.html" class="btn-site click-animation">Ціни та плани</a>
+              </div>
+
             </div>
 
             <div class="content-box_row section-about_itemAnimate">
-              <h2 class="h1">Зручність</h2>
+              <h2 class="h1 text-center text-lg-start">Зручність</h2>
               <ul>
                 @@loop('components/lists/index.html','components/lists/list-2.json')
               </ul>
             </div>
 
             <div class="content-box_row section-about_itemAnimate">
-              <h2 class="h1">Безпека</h2>
+              <h2 class="h1 text-center text-lg-start">Безпека</h2>
               <ul>
                 @@loop('components/lists/index.html',
                 'components/lists/list-3.json')
               </ul>
-              @@include('components/btn/index.html', {'text': 'Безпека'})
+              <div class="section-about_btn text-center text-lg-start">
+                <a href="safety.html" class="btn-site click-animation">Безпека</a>
+              </div>
             </div>
 
             <div class="content-box_row section-about_itemAnimate">
-              <h2 class="h1">Сервіс</h2>
+              <h2 class="h1 text-center text-lg-start">Сервіс</h2>
               <ul>
                 @@loop('components/lists/index.html',
                 'components/lists/list-4.json')
               </ul>
-              @@include('components/btn/index.html', {'text': 'Детальніше'})
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-aboutSystem section ">
+    <section class="section-aboutSystem section d-none d-sm-block">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -160,13 +166,9 @@
                 'components/reviews-item/bd.json')
               </div>
 
-              <!-- If we need pagination -->
-              <div class="slider-pagination"></div>
-
-              <!-- If we need navigation buttons -->
               <div class="slider-navigation">
                 <div class="slider-navigation-prev reviews-slider-prev"></div>
-                <a href="#" class="btn-site click-animation">Відгуки</a>
+                <div class="slider-pagination"></div>
                 <div class="slider-navigation-next reviews-slider-next"></div>
               </div>
             </div>
@@ -194,11 +196,11 @@
                 'components/blog-item/bd.json')
               </div>
 
-              <div class="slider-pagination"></div>
+              <div class="slider-pagination justify-content-center d-sm-none w-100 mx-auto mt-2"></div>
 
               <div class="slider-navigation">
                 <div class="slider-navigation-prev blog-slider-prev"></div>
-                @@include('components/btn/index.html', {'text': 'Відгуки'})
+                <a href="blog.html" class="btn-site click-animation">Блог</a>
                 <div class="slider-navigation-next blog-slider-next"></div>
               </div>
             </div>

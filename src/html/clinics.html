@@ -2,6 +2,7 @@
 @@include('components/header/index.html', {'fixed' : true})
 
 @@include('components/loader/index.html')
+@@include('components/mobile-menu/index.html')
 
 <div class="wrapper">
   <main class="main">
@@ -168,7 +169,7 @@
                 Дізнайся більше про плани та тарифи або спробуй демо-версію
               </div>
               <div class="info-box-2_btn">
-                <a href="#" class="btn-site-2 click-animation"
+                <a href="prices.html.html" class="btn-site-2 click-animation"
                 >Плани та тарифи</a
                 >
                 <a href="#" class="btn-site click-animation green"
@@ -193,11 +194,11 @@
                 @@loop('components/reviews-item/index.html',
                 'components/reviews-item/bd-3.json')
               </div>
-              <div class="slider-pagination"></div>
+
 
               <div class="slider-navigation">
                 <div class="slider-navigation-prev reviews-slider-prev"></div>
-                <a href="#" class="btn-site click-animation green">Відгуки</a>
+                <div class="slider-pagination"></div>
                 <div class="slider-navigation-next reviews-slider-next"></div>
               </div>
             </div>

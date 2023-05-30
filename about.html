@@ -77,10 +77,19 @@
               <span>Отримати демо</span>
             </a>
           </div>
+
+          <button class="btn-menu" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </div>
   </header>
+
+
+
 
   <div class="loader loading">
     <svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
@@ -104,7 +113,11 @@
         position: fixed;
         z-index: 999;
         inset: 0;
-        transition: all ease 0.3s;
+        animation: load 2s linear forwards;
+      }
+
+      .loader.loaded {
+        display: none;
       }
 
       .loader svg {
@@ -112,8 +125,44 @@
         height: 100vh;
       }
 
-      .loader.loading .loader-logo {
+      .loader .loader-logo {
         fill: #86368c;
+        animation: svgTransparent 2s linear forwards;
+        animation-delay: 0.7s
+      }
+
+      @keyframes svgTransparent {
+        0% {
+          fill: #86368c;
+        }
+
+        50% {
+          fill: transparent;
+        }
+
+        100% {
+          fill: transparent;
+        }
+      }
+
+      @keyframes load {
+        0% {
+          filter: blur(6px);
+        }
+
+        40% {
+          filter: blur(0);
+        }
+
+        70% {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        100% {
+          transform: scale(3);
+          opacity: 0;
+        }
       }
     </style>
     <script>
@@ -121,22 +170,72 @@
     function startLoader() {
       const loader = document.querySelector(".loader");
 
-      setTimeout(function() {
-        loader.style.scale = "4.5";
-        loader.style.opacity = "0";
-        loader.classList.remove('loading')
-      }, 1000);
-
       window.addEventListener("DOMContentLoaded", function() {
         setTimeout(function() {
           loader.style.visibility = 'hidden'
           document.body.classList.remove('hidden')
-        }, 1000);
+          loader.classList.add('loaded')
+        }, 2000);
       });
     }
     startLoader();
 
   </script>
+  </div>
+  <div class="mobile-menu">
+    <button type="button" class="mobile-menu__close">
+      <svg>
+        <use xlink:href="images/icons/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu__overlay">
+      <div class="mobile-menu__content">
+        <ul class="mobile-menu__list">
+          <li>
+            <a href="optical.html">Для магазинів оптики</a>
+          </li>
+          <li>
+            <a href="clinics.html">Для офтальмологічних клінік</a>
+          </li>
+          <li>
+            <a href="about.html">Про MARVI</a>
+          </li>
+          <li>
+            <a href="safety.html">Безпека</a>
+          </li>
+          <li>
+            <a href="fag.html">FAQ</a>
+          </li>
+          <li>
+            <a href="blog.html">Блог</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакти</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__btns d-flex flex-column gap-1">
+          <button type="button" class="btn-site-2 click-animation w-100">Увійти</button>
+          <a href="#" class="btn-site click-animation w-100">Отримати демо</a>
+        </div>
+        <div class="social">
+          <a href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="wrapper">
     <main class="main">
@@ -209,10 +308,19 @@
                     <span>Отримати демо</span>
                   </a>
                 </div>
+
+                <button class="btn-menu" type="button">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
             </div>
           </div>
         </header>
+
+
+
 
         <div class="container position-relative">
           <div class="row">
@@ -528,9 +636,9 @@
     <footer class="footer">
       <div class="footer_top">
         <div class="container">
-          <div class="row">
-            <div class="col-4 offset-xxl-1">
-              <div class="h3">Спробувати демо-версію</div>
+          <div class="row g-2 g-md-3">
+            <div class="col-xl-5 col-xxl-4 offset-xxl-1">
+              <div class="h3 text-center">Спробувати демо-версію</div>
               <div class="footer_form">
                 <form action="#">
                   <div class="row g-2">
@@ -566,7 +674,7 @@
                 </form>
               </div>
             </div>
-            <div class="col-3 offset-xxl-1">
+            <div class="col-md-6 col-xl-3 offset-xxl-1">
               <div class="footer_top__item">
                 <div class="h3">Навігація</div>
                 <ul class="footer-menu">
@@ -594,7 +702,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xl-4 col-xxl-3 ">
               <div class="footer_top__item">
                 <div class="h3">Конфіденційність</div>
                 <ul class="footer-menu">
