@@ -116,6 +116,52 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
+    //-------------------------------------------------------------------
+
+    const lottieCustomServicesImg = document.getElementById('lottieCustomServices')
+    const urlJson = lottieCustomServicesImg.getAttribute('data-json');
+
+    if(lottieCustomServicesImg) {
+      const lottieCustomServices = lottie.loadAnimation({
+        container: lottieCustomServicesImg,
+        renderer: 'svg',
+        loop: true,
+        autoplay: false,
+        path: urlJson
+      })
+      gsap.to(lottieCustomServicesImg, {
+        duration: 3,
+        scrollTrigger: {
+          trigger: lottieCustomServicesImg,
+          start: "top center",
+        },
+        onStart: () => {
+          lottieCustomServices.play()
+        },
+      });
+
+
+    }
+
+    //-------------------------------------------------------------------
+
+    const accordionBtn = document.querySelectorAll('.accordion-btn');
+
+    if(accordionBtn.length !== 0) {
+      accordionBtn.forEach(accordion => {
+        accordion.addEventListener('click', e => {
+          const time = 500;
+          setTimeout(() => {
+            ScrollTrigger.refresh();
+          }, time);// <- This time is in milliseconds
+
+          gsap.delayedCall(time, () => ScrollTrigger.refresh()); // <- This time is in seconds
+        })
+      });
+    }
+
+
+
     //--------------------------------------------------------------------
     const advantagesItem = gsap.utils.toArray('.advantages-item');
     if(advantagesItem.length !== 0) {
@@ -326,7 +372,10 @@ document.addEventListener("DOMContentLoaded", () => {
       smoothWheel: true,
       smoothTouch: false,
     });
-    lenis.on('scroll', ScrollTrigger.update)
+    lenis.on('scroll', () => {
+      console.log('cscs')
+      ScrollTrigger.update
+    })
 
     function raf(time) {
       lenis.raf(time);
