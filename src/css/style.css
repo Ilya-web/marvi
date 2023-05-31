@@ -14662,10 +14662,33 @@ textarea.input-site {
   box-shadow: 0 0 5px rgba(25, 15, 25, 0.15);
   display: block;
 }
+@media all and (hover: hover) {
+  .blog-item:hover .blog-item_img img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .blog-item:hover .link-read-more {
+    color: #86368c;
+  }
+  .blog-item:hover .link-read-more span {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-size: 100% 1px;
+    background-position-x: left;
+  }
+}
+.blog-item_img {
+  overflow: hidden;
+}
 .blog-item_img img {
   width: 100%;
   max-width: 100%;
   max-height: 100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 .blog-item_desc {
   padding: 20px;
