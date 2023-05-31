@@ -12350,6 +12350,7 @@ input[type=number] {
 
 /*****Common*****/
 :root {
+  --app-height: 100%;
   --border-radius-40: 40px;
   --border-radius-16: 16px;
   --border-radius-16-allMedia: 16px;
@@ -12391,6 +12392,10 @@ html.lenis {
   pointer-events: none;
 }
 
+.hidden-body.hidden {
+  overflow: hidden;
+}
+
 body {
   font-size: 20px;
   font-family: "Gotham", sans-serif;
@@ -12411,6 +12416,14 @@ body {
 @media (max-width: 991.98px) {
   body {
     font-size: 15px;
+  }
+}
+@media (max-width: 575.98px) {
+  body .container {
+    --bs-gutter-x: 20px;
+  }
+  body .container > .row {
+    --bs-gutter-x: 20px;
   }
 }
 body.hidden {
@@ -12467,6 +12480,11 @@ body.modal-open .wrapper {
   position: relative;
   padding-left: 34px;
 }
+@media (max-width: 991.98px) {
+  .content-box ul li {
+    padding-left: 25px;
+  }
+}
 .content-box ul li:before {
   content: "";
   position: absolute;
@@ -12479,6 +12497,12 @@ body.modal-open .wrapper {
   background: #190f19;
   width: 24px;
   height: 24px;
+}
+@media (max-width: 991.98px) {
+  .content-box ul li:before {
+    width: 20px;
+    height: 20px;
+  }
 }
 .content-box ul li:not(:last-child) {
   margin-bottom: 10px;
@@ -12902,9 +12926,9 @@ body.modal-open .wrapper {
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .btn-site-2, .systemMARVI-nav__link:not(.active), .prices-nav__link:not(.active), .entrance-link:not(.active) {
-    font-size: 15px;
+    padding: 15px 30px;
   }
 }
 .btn-site-2:disabled, .systemMARVI-nav__link:disabled:not(.active), .prices-nav__link:disabled:not(.active), .entrance-link:disabled:not(.active) {
@@ -13574,7 +13598,7 @@ textarea.input-site {
 
 .mobile-menu {
   background: #f6eef7;
-  padding: 90px 20px 20px;
+  padding: 90px 20px 100px;
   max-width: 320px;
   position: fixed;
   right: -100%;
@@ -13934,7 +13958,7 @@ textarea.input-site {
 
 .section-main {
   background-size: cover;
-  min-height: 100vh;
+  min-height: var(--app-height);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14095,9 +14119,11 @@ textarea.input-site {
 
 /***section-help***/
 /***section-about***/
-.sticky-desktop {
-  position: sticky;
-  top: 90px;
+@media (min-width: 992px) {
+  .sticky-desktop {
+    position: sticky;
+    top: 90px;
+  }
 }
 
 .section-about__dogImg img {
@@ -14374,6 +14400,7 @@ textarea.input-site {
 /***reviews-slider***/
 .reviews-slider {
   padding: 10px;
+  margin: 0 -10px;
 }
 
 /***reviews-slider***/
