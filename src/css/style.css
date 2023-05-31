@@ -13598,7 +13598,7 @@ textarea.input-site {
 
 .mobile-menu {
   background: #f6eef7;
-  padding: 90px 20px 20px;
+  padding: 55px 20px 80px;
   max-width: 320px;
   position: fixed;
   right: -100%;
@@ -14897,6 +14897,9 @@ textarea.input-site {
 
 /***entrance***/
 /***section-prices***/
+.section-prices {
+  overflow: hidden;
+}
 .section-prices__title {
   margin-bottom: 0;
 }
@@ -14935,7 +14938,7 @@ textarea.input-site {
 
 @media (max-width: 767.98px) {
   .prices-tabContent__overflow {
-    overflow: hidden;
+    overflow: auto;
     padding: 0 10px;
     margin: 0 -10px;
   }
@@ -14943,7 +14946,6 @@ textarea.input-site {
     width: 100%;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    overflow: auto;
     padding-bottom: 8px;
     padding-top: 8px;
   }

@@ -1154,7 +1154,7 @@ textarea.input-site {
 
 .mobile-menu {
   background: $color-light;
-  padding: 90px 20px 20px;
+  padding: 55px 20px 80px;
   max-width: 320px;
   position: fixed;
   right: -100%;
@@ -2411,6 +2411,7 @@ textarea.input-site {
 /***section-prices***/
 
 .section-prices {
+  overflow: hidden;
   &__title {
     margin-bottom: 0;
   }
@@ -2453,13 +2454,12 @@ textarea.input-site {
 .prices-tabContent {
   @include media-breakpoint-down(md) {
     &__overflow {
-      overflow: hidden;
+      overflow: auto;
       padding: 0 10px;
       margin: 0 -10px;
       & > .row {
         width: 100%;
         flex-wrap: nowrap;
-        overflow: auto;
         padding-bottom: 8px;
         padding-top: 8px;
       }
