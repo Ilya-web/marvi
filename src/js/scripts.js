@@ -576,8 +576,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const x = (window.innerWidth - e.pageX * speed ) / 100;
         const y = (window.innerHeight - e.pageY * speed ) / 100;
 
-        console.log(window.innerHeight)
-
         img.style.transform = `translateX(${x}px) translateY(${y}px)`
 
       })

@@ -70,9 +70,9 @@ body {
   }
   @include media-breakpoint-down(lg) {
     font-size: 15px;
-    .container {
-      --bs-gutter-x: 20px;
-    }
+  }
+  @include media-breakpoint-down(sm) {
+
   }
 
   &.hidden {
@@ -2035,19 +2035,18 @@ textarea.input-site {
         object-position: right 25% top 0;
       }
     }
-  }
-
-  &:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      180deg,
-      #fbf9fb 0%,
-      rgba(251, 249, 251, 0) 27.42%,
-      rgba(251, 249, 251, 0) 53.47%,
-      #fbf9fb 100%
-    );
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+          180deg,
+          #fbf9fb 0%,
+          rgba(251, 249, 251, 0) 27.42%,
+          rgba(251, 249, 251, 0) 53.47%,
+          #fbf9fb 100%
+      );
+    }
   }
 }
 

@@ -12412,9 +12412,6 @@ body {
   body {
     font-size: 15px;
   }
-  body .container {
-    --bs-gutter-x: 20px;
-  }
 }
 body.hidden {
   overflow: hidden;
@@ -14529,7 +14526,7 @@ textarea.input-site {
     object-position: right 25% top 0;
   }
 }
-.section-review:before {
+.section-review_img:before {
   content: "";
   position: absolute;
   inset: 0;
