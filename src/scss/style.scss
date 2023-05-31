@@ -1154,11 +1154,12 @@ textarea.input-site {
 
 .mobile-menu {
   background: $color-light;
-  padding: 90px 20px 100px;
+  padding: 90px 20px 20px;
   max-width: 320px;
   position: fixed;
   right: -100%;
   top: 0;
+  height: 100vh;
   min-height: 100vh;
   display: flex;
   z-index: 10;
