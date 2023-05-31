@@ -1654,6 +1654,9 @@ textarea.input-site {
       overflow: hidden;
       border-radius: var(--border-radius-16-allMedia);
       box-shadow: 0 0 60px rgba(134, 54, 140, 0.45);
+      img {
+        width: 100%;
+      }
       &.img-1 {
         right: 1.47%;
         top: 6.71%;

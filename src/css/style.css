@@ -14117,6 +14117,9 @@ textarea.input-site {
   -webkit-box-shadow: 0 0 60px rgba(134, 54, 140, 0.45);
   box-shadow: 0 0 60px rgba(134, 54, 140, 0.45);
 }
+.section-about__parallax--img img {
+  width: 100%;
+}
 .section-about__parallax--img.img-1 {
   right: 1.47%;
   top: 6.71%;
