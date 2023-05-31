@@ -480,6 +480,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener('click', () => {
       const price = btn.getAttribute('data-price');
       const packageType = btn.getAttribute('data-packageType');
+      const formOrder = document.getElementById('formOrder');
       let packagePeriod = ''
 
       priceLinks.forEach(link => {
@@ -488,9 +489,12 @@ document.addEventListener("DOMContentLoaded", () => {
        }
       })
 
-      document.querySelector('.orderPackage_price').textContent = price;
-      document.querySelector('.orderPackage_type').textContent = packageType;
-      document.querySelector('.orderPackage_period').textContent = packagePeriod;
+      formOrder.querySelector('.orderPackage_price').textContent = price;
+      formOrder.querySelector('[name="price"]').value = price;
+      formOrder.querySelector('.orderPackage_type').textContent = packageType;
+      formOrder.querySelector('[name="type"]').value = packageType;
+      formOrder.querySelector('.orderPackage_period').textContent = packagePeriod;
+      formOrder.querySelector('[name="period"]').value = packagePeriod;
     })
 
   })

@@ -40,14 +40,14 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="row align-items-center">
-              <div class="col-3">
-                <div class="section-prices__title h4">
+            <div class="row align-items-center g-2 g-xl-3">
+              <div class="col-xxl-3">
+                <div class="section-prices__title h4 text-center text-xxl-start">
                   MARVI надає можливість обрати тарифний план, залежно від того, які
                   функції дійсно необхідні для оптимізації робочого процесу
                 </div>
               </div>
-              <div class="col-9">
+              <div class="col-xxl-9">
                 <ul class="nav prices-nav" id="pricesTab" role="tablist">
                   <li class="prices-nav__item" role="presentation">
                     <button class="prices-nav__link active click-animation green" id="year-tab" data-bs-toggle="tab" data-bs-target="#year" type="button" role="tab" aria-controls="year" aria-selected="true">На рік</button>
@@ -58,15 +58,20 @@
                 </ul>
                 <div class="tab-content prices-tabContent" id="pricesTabContent">
                   <div class="tab-pane fade show active" id="year" role="tabpanel" aria-labelledby="year-tab">
-                    <div class="row g-1 g-lg-2 g-xl-3">
-                      @@loop('components/price-item/index.html',
-                      'components/price-item/bd.json')
+                    <div class="prices-tabContent__overflow">
+                      <div class="row g-2 g-xl-3">
+                        @@loop('components/price-item/index.html',
+                        'components/price-item/bd.json')
+                      </div>
                     </div>
+
                   </div>
                   <div class="tab-pane fade" id="months" role="tabpanel" aria-labelledby="months-tab">
-                    <div class="row g-1 g-lg-2 g-xl-3">
-                      @@loop('components/price-item/index.html',
-                      'components/price-item/bd-2.json')
+                    <div class="prices-tabContent__overflow">
+                      <div class="row g-2 g-xl-3">
+                        @@loop('components/price-item/index.html',
+                        'components/price-item/bd-2.json')
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -74,7 +79,7 @@
             </div>
 
             <div class="row">
-              <div class="col-9 offset-lg-3">
+              <div class="col-xxl-9 offset-xxl-3">
                 <div class="info-sales">
                   <div class="info-sales__title h3">Отримай знижку в залежності від кількості філій:</div>
                   <div class="info-sales__items">
@@ -301,7 +306,7 @@
     <section class="section-info section" style="background-image: url('images/bg/macbook-bg.webp')">
       <div class="container">
         <div class="row">
-          <div class="col-5 offset-lg-1">
+          <div class="col-sm-7 col-lg-6 col-xxl-5 offset-lg-1">
             <div class="info-box3__content content-box info-boxAnimate">
               <div class="info-box3__title h1 text-center">Умови демо-версії</div>
               <div class="info-box3__desc">
@@ -323,10 +328,13 @@
     <section class="section">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-7">
-            <div class="img" id="lottieCustomServices" data-json="jsonAnimate/customServices.json"></div>
+          <div class="col-lg-7">
+            <div class="img d-none d-xl-block" id="lottieCustomServices" data-json="jsonAnimate/customServices.json"></div>
+            <div class="img-mobile d-block d-xl-none">
+              <img src="images/image-1.png" class="mw-100" alt="">
+            </div>
           </div>
-          <div class="col-5">
+          <div class="col-lg-5">
             <div class="info-box3__content content-box info-boxAnimate">
               <div class="info-box3__title h1 text-center">Кастомні рішення</div>
               <div class="info-box3__desc">
@@ -350,7 +358,7 @@
           <div class="col-12"><h2 class="h1 mb-80 text-center">Додаткові послуги</h2></div>
         </div>
         <div class="row service-items g-1 g-lg-2 g-xl-3">
-          <div class="col-4">
+          <div class="col-sm-6 col-xl-4">
             <div class="service-item service-item--animate bg-1">
               <div class="service-item__header">
                 <div class="service-item__header--icon">
@@ -362,7 +370,7 @@
               <div class="service-item__desc h4">Індивідуальне навчання співробітників роботі з системою</div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-sm-6 col-xl-4">
             <div class="service-item service-item--animate bg-2">
               <div class="service-item__header">
                 <div class="service-item__header--icon">
@@ -374,7 +382,7 @@
               <div class="service-item__desc h4">Продаж сканерів та принтерів штрих-кодів</div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-sm-6 col-xl-4">
             <div class="service-item service-item--animate bg-3">
               <div class="service-item__header">
                 <div class="service-item__header--icon">
@@ -386,7 +394,7 @@
               <div class="service-item__desc h4">Налаштування РРО</div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-sm-6 col-xl-6">
             <div class="service-item service-item--animate bg-4">
               <div class="service-item__header">
                 <div class="service-item__header--icon">
@@ -398,7 +406,7 @@
               <div class="service-item__desc h4">Персоналізовані повідомлення клієнтам через SMS, Viber, Telegram, WhatsApp</div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-xl-6">
             <div class="service-item service-item--animate bg-5">
               <div class="service-item__header">
                 <div class="service-item__header--icon">

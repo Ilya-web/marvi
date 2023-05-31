@@ -871,7 +871,7 @@
         </button>
         <div class="modal-body">
           <h4 class="h4 text-center modal_title">Залишити заявку</h4>
-          <form action="#">
+          <form action="#" id="formOrder">
             <div class="row gy-2">
               <div class="col-12">
                 <div class="orderPackage">
@@ -880,6 +880,9 @@
                     <span class="orderPackage_price">$360</span>
                     <div class="orderPackage_period">на рік</div>
                   </div>
+                  <input type="hidden" name="type">
+                  <input type="hidden" name="price">
+                  <input type="hidden" name="period">
                 </div>
               </div>
               <div class="col-12">
