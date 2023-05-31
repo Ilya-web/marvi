@@ -13603,7 +13603,7 @@ textarea.input-site {
   position: fixed;
   right: -100%;
   top: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
