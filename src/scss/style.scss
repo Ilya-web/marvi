@@ -177,6 +177,7 @@ body {
         top: 0;
         mask: url("../../images/icons/point.svg") ;
         mask-repeat: no-repeat;
+        mask-size: 100%;
         background: $color-text;
         width: 24px;
         height: 24px;
@@ -203,10 +204,10 @@ body {
 }
 
 .li-item {
-  font-size: 32px;
-  line-height: 1.2;
+  @extend .h3;
   position: relative;
   padding-left: 34px;
+  margin-bottom: 0;
   &:before {
     content: "";
     position: absolute;
@@ -215,6 +216,10 @@ body {
     background: url("../../images/icons/point.svg") no-repeat;
     width: 24px;
     height: 24px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 15px !important;
   }
 }
 
@@ -539,6 +544,10 @@ body {
     padding: 17px 30px;
     display: flex;
     align-items: center;
+    line-height: 1;
+    @include media-breakpoint-down(lg) {
+      padding: 15px 30px;
+    }
 
     .chevron {
       mask: url("../../images/icons/chevron.svg");
@@ -837,6 +846,11 @@ textarea.input-site {
 
 /***accordion***/
 
+.section-accordion {
+  position: relative;
+  z-index: 1;
+}
+
 .accordion {
   &-inner {
    &:not(:last-of-type){
@@ -1085,6 +1099,7 @@ textarea.input-site {
     svg {
       max-width: 100%;
       max-height: 100%;
+      fill: $color-white;
     }
     @media all and (hover: hover) {
       &:hover,
@@ -1162,7 +1177,7 @@ textarea.input-site {
   height: 100vh;
   min-height: 100vh;
   display: flex;
-  z-index: 10;
+  z-index: 999999;
   @include transition(0.5s);
 
   @include media-breakpoint-up(xl) {
@@ -1188,7 +1203,6 @@ textarea.input-site {
   }
 
   .social {
-    margin-top: auto;
     margin-bottom: 0;
     svg {
       fill: $color-accent;
@@ -1526,8 +1540,24 @@ textarea.input-site {
   }
 
   &-contacts {
-    .h1,.social {
+    .h1 {
       margin-bottom: 40px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 20px;
+      }
+    }
+    .social {
+      margin-bottom: 0;
+      @include media-breakpoint-down(lg) {
+        gap: 20px;
+      }
+      a {
+        @include media-breakpoint-down(lg) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
     }
   }
 
@@ -1663,9 +1693,16 @@ textarea.input-site {
 
 .section-about {
   &__dogImg {
+    @include media-breakpoint-down(sm) {
+      padding: 0 10px;
+    }
    img {
      margin: auto;
      max-width: 100%;
+     @include media-breakpoint-down(xl) {
+       width: 100%;
+       max-width: 540px;
+     }
    }
   }
   
@@ -2115,6 +2152,9 @@ textarea.input-site {
 
   &_text {
     font-style: italic;
+    @include media-breakpoint-down(lg){
+      font-size: 22px;
+    }
   }
   &_name {
     margin-bottom: 5px;
@@ -2201,6 +2241,9 @@ textarea.input-site {
   overflow: hidden;
   box-shadow: 0 0 5px rgba(25, 15, 25, 0.15);
   display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 
   @media all and (hover: hover) {
     &:hover {
@@ -2232,6 +2275,9 @@ textarea.input-site {
 
   &_desc {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
   &_title {
@@ -2258,6 +2304,7 @@ textarea.input-site {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: auto;
   }
 
   &_date {
@@ -2290,6 +2337,9 @@ textarea.input-site {
     &__item {
       &:not(:last-child) {
         margin-bottom: 60px;
+        @include media-breakpoint-down(md) {
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -2412,6 +2462,8 @@ textarea.input-site {
 
 .section-prices {
   overflow: hidden;
+  padding-bottom: 10px;
+
   &__title {
     margin-bottom: 0;
   }
@@ -2569,20 +2621,39 @@ textarea.input-site {
 
 .section-info {
   min-height: 100vh;
-  background-size: cover;
-  background-position: center bottom;
   position: relative;
   display: flex;
   align-items: center;
   padding: 80px 0;
+  isolation: isolate;
 
-  &:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, #FBF9FB 0%, rgba(251, 249, 251, 0) 19.79%, rgba(251, 249, 251, 0) 73.44%, #FBF9FB 100%);
+  @include media-breakpoint-down(sm) {
+    padding-top: 550px;
+    min-height: auto;
   }
 
+  &_bg {
+    position: absolute;
+    inset: 0;
+    isolation: isolate;
+
+    @include media-breakpoint-down(sm) {
+      transform: translateY(-344px);
+    }
+
+
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, #FBF9FB 0%, rgba(251, 249, 251, 0) 19.79%, rgba(251, 249, 251, 0) 73.44%, #FBF9FB 100%);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
 }
 
@@ -2596,16 +2667,19 @@ textarea.input-site {
     box-shadow: $box-shadow;
     border-radius: var(--border-radius-40);
     padding: var(--gap-40);
+    @include media-breakpoint-down(sm) {
+      padding: 20px 10px;
+    }
   }
 
   &__desc {
-    margin-bottom: 40px;
     li {
       margin-bottom: 20px;
     }
   }
   &__btn {
     text-align: center;
+    margin-top: 40px;
   }
 
 }
@@ -2716,6 +2790,10 @@ textarea.input-site {
   border-radius: var(--border-radius-40);
   color: $color-white;
 
+  @include media-breakpoint-down(xl) {
+    padding: 20px 0;
+  }
+
   &-nav {
     display: flex;
     justify-content: center;
@@ -2727,8 +2805,17 @@ textarea.input-site {
     box-shadow: 0 0 10px rgba(134, 54, 140, 0.25);
     border-radius: 16px;
 
+    @include media-breakpoint-down(sm) {
+      padding: 5px;
+      gap: 0;
+      margin: 0 auto 30px;
+    }
+
     &__link {
       --_paddingLink: 12px 20px;
+      @include media-breakpoint-down(sm) {
+        --_paddingLink: 12px 10px;
+      }
       &.active {
         @extend .btn-site;
         padding: var(--_paddingLink);
@@ -2742,6 +2829,25 @@ textarea.input-site {
         transform: translateY(0) !important;
       }
 
+    }
+  }
+
+  &-tabContent {
+    &__img {
+      img {
+        max-width: 100%;
+        margin: auto;
+        @include media-breakpoint-down(xl) {
+          width: 100%;
+          max-width: 445px;
+        }
+      }
+    }
+
+    &__btn {
+      @include media-breakpoint-down(xl) {
+        text-align: center;
+      }
     }
   }
 }
@@ -2760,7 +2866,11 @@ textarea.input-site {
 
   &:not(:last-of-type) {
     padding-bottom: 80px;
+    @include media-breakpoint-down(xl) {
+      padding-bottom: 40px;
+    }
   }
+
   &:last-of-type {
     #{$this}__line {
       display: none;
@@ -2777,9 +2887,11 @@ textarea.input-site {
     background-size: 2px 30px;
     background-repeat: repeat-y;
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       bottom: 0;
+      background-size: 2px 17px;
     }
+
   }
 
   &__icon {
@@ -2787,6 +2899,10 @@ textarea.input-site {
     height: var(--_sizeIcon);
     flex: 0 0 var(--_sizeIcon);
     border-radius: 16px;
+
+    @include media-breakpoint-down(xl) {
+      --_sizeIcon: 70px;
+    }
     svg {
       max-width: 100%;
       max-height: 100%;
@@ -2796,6 +2912,9 @@ textarea.input-site {
   &__text {
     padding-left: 40px;
     margin: auto 0;
+    @include media-breakpoint-down(xl) {
+      padding-left: 10px;
+    }
   }
 }
 
@@ -2805,12 +2924,25 @@ textarea.input-site {
 /***blogs***/
 
 .blogs-nav {
+  overflow: auto;
+  @include media-breakpoint-down(md) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
   ul {
     @include reset-ul();
     display: flex;
     justify-content: center;
     gap: var(--gap-40);
+
+    @include media-breakpoint-down(md) {
+      justify-content: left;
+      padding: 0 20px;
+    }
+
     li {
+      white-space: nowrap;
       &:not(.active) {
         a {
           &:active {
@@ -2876,16 +3008,32 @@ textarea.input-site {
     color: $color-white;
     height: 100%;
 
+    @media screen and (max-width: 1300px){
+      padding: 40px 20px;
+    }
+    @include media-breakpoint-down(lg) {
+      padding: var(--gap-40);
+    }
+
     &__title {
       margin-bottom: 20px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 10px
+      }
     }
 
     &__link {
       margin-bottom: 20px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 10px
+      }
       a {
         position: relative;
         padding-left: 40px;
         white-space: nowrap;
+        @include media-breakpoint-down(lg) {
+          padding-left: 25px;
+        }
         .icon {
           position: absolute;
           left: 0;
@@ -2893,21 +3041,34 @@ textarea.input-site {
           width: 30px;
           height: 30px;
           margin-top: -15px;
-
+          @include media-breakpoint-down(lg) {
+            width: 20px;
+            height: 20px;
+            margin-top: -10px;
+          }
         }
       }
     }
 
     &__phone {
       @extend .h3;
+      @include media-breakpoint-down(xxl) {
+        font-size: 25px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 21px;
+      }
+
     }
 
     &__socials {
       display: flex;
       justify-content: center;
       padding-top: 20px;
-      gap: 0 80px;
-
+      gap: 0 10%;
+      @include media-breakpoint-down(lg) {
+        padding-top: 10px;
+      }
       .contacts-item__link {
         margin-bottom: 0;
       }
@@ -3321,9 +3482,6 @@ textarea.input-site {
   }
 }
 /***chatButton***/
-
-
-
 
 
 

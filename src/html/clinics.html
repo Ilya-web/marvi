@@ -47,33 +47,33 @@
 
     <section class="section-about section">
       <div class="container">
-        <div class="row align-items-start position-relative">
-          <div class="col-7 sticky-desktop">
+        <div class="row align-items-start position-relative g-3">
+          <div class="col-lg-6 col-xl-7 sticky-desktop">
             <div class="section-about__img section-about__dogImg">
               <img src="images/dogs/dog_2.svg" alt="" />
             </div>
           </div>
-          <div class="col-5 content-box">
+          <div class="col-lg-6 col-xl-5 content-box">
             <div class="content-box_row section-about_itemAnimate">
-              <h2 class="h1 mb-80">Рішення для офтальмологічних клінік</h2>
+              <h2 class="h1 mb-80 text-center text-lg-start">Рішення для офтальмологічних клінік</h2>
               <h3 class="h3 mb-80">
                 MARVI створено саме для офтальмологічних клінік та повністю враховує специфіку їхньої діяльності
               </h3>
             </div>
             <div class="content-box_row section-about_itemAnimate">
-              <h3 class="h3">Графік роботи лікарів</h3>
+              <h3 class="h3 text-center text-lg-start">Графік роботи лікарів</h3>
               <ul>
                 @@loop('components/lists/index.html','components/lists/list-5.json')
               </ul>
             </div>
             <div class="content-box_row section-about_itemAnimate">
-              <h3 class="h3">Календар</h3>
+              <h3 class="h3 text-center text-lg-start">Календар</h3>
               <ul>
                 @@loop('components/lists/index.html','components/lists/list-6.json')
               </ul>
             </div>
             <div class="content-box_row section-about_itemAnimate">
-              <h3 class="h3">Візити пацієнтів</h3>
+              <h3 class="h3 text-center text-lg-start">Візити пацієнтів</h3>
               <ul>
                 @@loop('components/lists/index.html','components/lists/list-7.json')
               </ul>
@@ -86,8 +86,8 @@
     <section class="section-system section parentZoomImg">
       <div class="container">
         @@include('components/systemAnimate/index.html')
-        <div class="row mt-4 info-boxAnimate">
-          <div class="col-6 offset-lg-1">
+        <div class="row mt-3 mt-xl-4 info-boxAnimate">
+          <div class="col-lg-8 col-xl-6 offset-lg-1 offset-xl-1">
             <div class="info-box3__content content-box">
               <div class="info-box3__title h1 text-center">Зручність</div>
               <div class="info-box3__desc">
@@ -100,8 +100,8 @@
             </div>
           </div>
         </div>
-        <div class="row mt-4 info-boxAnimate">
-          <div class="col-6 offset-lg-5">
+        <div class="row mt-3 mt-xl-4 info-boxAnimate">
+          <div class="col-lg-8 col-xl-6 offset-lg-3 offset-xl-5">
             <div class="info-box3__content content-box">
               <div class="info-box3__title h1 text-center">Безпека</div>
               <div class="info-box3__desc">
@@ -117,8 +117,8 @@
             </div>
           </div>
         </div>
-        <div class="row mt-4 info-boxAnimate">
-          <div class="col-6 offset-lg-3">
+        <div class="row mt-3 mt-xl-4 info-boxAnimate">
+          <div class="col-lg-8 col-xl-6 offset-lg-2 offset-xl-3">
             <div class="info-box3__content content-box">
               <div class="info-box3__title h1 text-center">Сервіс</div>
               <div class="info-box3__desc">
@@ -143,7 +143,7 @@
           <div class="col-12"><h2 class="h1 text-center mb-80">Переваги від впровадження MARVI</h2></div>
         </div>
         <div class="row advantages-items position-relative">
-          <div class="col-6 offset-lg-3">
+          <div class="col-md-8 col-xl-6 offset-md-2 offset-xl-3">
             @@loop('components/advantages-item/index.html',
             'components/advantages-item/bd.json')
           </div>
@@ -163,7 +163,7 @@
                 <a href="prices.html" class="btn-site-2 click-animation"
                 >Плани та тарифи</a
                 >
-                <button type="button" class="btn-site click-animation" data-bs-toggle="modal" data-bs-target="#checkOutDemo">Отримати демо</button>
+                <button type="button" class="btn-site click-animation green" data-bs-toggle="modal" data-bs-target="#checkOutDemo">Отримати демо</button>
 
               </div>
             </div>

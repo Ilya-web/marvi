@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      768: {
+      992: {
         slidesPerView: 2,
         spaceBetween: 20,
       },
-      1100: {
+      1441: {
         slidesPerView: 3,
         spaceBetween: 40,
       },

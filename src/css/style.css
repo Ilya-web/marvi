@@ -108,54 +108,54 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, .content-box h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h5, .h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h4, .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h3, .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h2, .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h1, .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+h6, .h6, .content-box h6:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h6:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h5, .h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h4, .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h3, .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .li-item, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .li-item:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h2, .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h1, .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   margin-top: 0;
   margin-bottom: 40px;
   font-weight: 500;
   line-height: 1.2;
 }
 
-h1, .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+h1, .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
-  h1, .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+  h1, .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 2.5rem;
   }
 }
 
-h2, .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+h2, .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
-  h2, .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+  h2, .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 2rem;
   }
 }
 
-h3, .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+h3, .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .li-item, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .li-item:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-size: calc(1.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
-  h3, .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+  h3, .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .li-item, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .li-item:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 1.75rem;
   }
 }
 
-h4, .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+h4, .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
-  h4, .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+  h4, .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 1.5rem;
   }
 }
 
-h5, .h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+h5, .h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-size: 1.25rem;
 }
 
-h6, .h6, .content-box h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+h6, .h6, .content-box h6:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h6:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-size: 1rem;
 }
 
@@ -12243,7 +12243,7 @@ textarea.form-control-lg {
   tap-highlight-color: transparent !important;
 }
 
-body, div, dl, dt, dd, ul, ol, li, h1, .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h2, .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h3, .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h4, .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h5, .h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h6, .h6, .content-box h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), pre, code, form, fieldset, legend, input, button, textarea, select, p, blockquote, th, td, a {
+body, div, dl, dt, dd, ul, ol, li, h1, .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h2, .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h3, .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .li-item, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .li-item:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h4, .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h5, .h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h6, .h6, .content-box h6:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h6:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), pre, code, form, fieldset, legend, input, button, textarea, select, p, blockquote, th, td, a {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -12298,8 +12298,8 @@ caption, th {
 
 h1,
 .h1,
-.content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6),
-.content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h2, .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h3, .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h4, .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h5, .h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), h6, .h6, .content-box h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+.content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6),
+.content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h2, .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h3, .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .li-item, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .li-item:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h4, .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h5, .h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), h6, .h6, .content-box h6:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .h6:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-size: 100%;
   font-weight: normal;
   margin: 0;
@@ -12494,6 +12494,8 @@ body.modal-open .wrapper {
   mask: url("../../images/icons/point.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
   background: #190f19;
   width: 24px;
   height: 24px;
@@ -12518,10 +12520,9 @@ body.modal-open .wrapper {
 }
 
 .li-item {
-  font-size: 32px;
-  line-height: 1.2;
   position: relative;
   padding-left: 34px;
+  margin-bottom: 0;
 }
 .li-item:before {
   content: "";
@@ -12532,83 +12533,88 @@ body.modal-open .wrapper {
   width: 24px;
   height: 24px;
 }
+@media (max-width: 991.98px) {
+  .li-item {
+    font-size: 15px !important;
+  }
+}
 
-.h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+.h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-weight: normal;
   font-size: 58px;
   line-height: 1.2;
   margin-bottom: var(--gap-20);
 }
 @media (max-width: 1099.98px) {
-  .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+  .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 52px;
   }
 }
 @media (max-width: 991.98px) {
-  .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+  .h1, .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 38px;
   }
 }
 
-.h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+.h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-weight: normal;
   font-size: 40px;
   line-height: 1.2;
   margin-bottom: var(--gap-20);
 }
 @media (max-width: 1099.98px) {
-  .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+  .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 32px;
   }
 }
 @media (max-width: 991.98px) {
-  .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+  .h2, .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h2:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h2:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 30px;
   }
 }
 
-.h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6) {
+.h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .li-item, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .li-item:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-weight: normal;
   font-size: 32px;
   line-height: 1.2;
   margin-bottom: var(--gap-20);
 }
 @media (max-width: 1099.98px) {
-  .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6) {
+  .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .li-item, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .li-item:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 28px;
   }
 }
 @media (max-width: 991.98px) {
-  .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6) {
+  .h3, .contacts-item__phone, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .h3:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .content-box .contacts-item__phone:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .h5, .h6), .li-item, .content-box h3:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6), .content-box .li-item:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 24px;
   }
 }
 
-.h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+.h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-weight: normal;
   font-size: 26px;
   line-height: 1.2;
   margin-bottom: var(--gap-20);
 }
 @media (max-width: 991.98px) {
-  .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+  .h4, .section-main__desc, .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h4:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main__desc:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h4:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 17px;
   }
 }
 
-.h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+.h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-weight: normal;
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: var(--gap-20);
 }
 @media (max-width: 991.98px) {
-  .h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+  .h5, .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h5:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h5:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
     font-size: 17px;
   }
 }
 
-.h6, .content-box h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+.h6, .content-box h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .h6:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box h6:not(.h1, .h2, .h3, .contacts-item__phone, .li-item, .h4, .section-main__desc, .h5, .h6) {
   font-weight: normal;
   font-size: 17px;
   line-height: 1.2;
@@ -12947,6 +12953,12 @@ body.modal-open .wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 1;
+}
+@media (max-width: 991.98px) {
+  .btn-site-2-chevron {
+    padding: 15px 30px;
+  }
 }
 .btn-site-2-chevron .chevron {
   -webkit-mask: url("../../images/icons/chevron.svg");
@@ -13258,6 +13270,11 @@ textarea.input-site {
 
 /***table***/
 /***accordion***/
+.section-accordion {
+  position: relative;
+  z-index: 1;
+}
+
 .accordion-inner:not(:last-of-type) {
   margin-bottom: 40px;
 }
@@ -13529,6 +13546,7 @@ textarea.input-site {
 .social a svg {
   max-width: 100%;
   max-height: 100%;
+  fill: #fbf9fb;
 }
 @media all and (hover: hover) {
   .social a:hover, .social a:focus-visible {
@@ -13608,7 +13626,7 @@ textarea.input-site {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 10;
+  z-index: 999999;
   -webkit-transition: all ease-in-out 0.5s;
   -o-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
@@ -13635,7 +13653,6 @@ textarea.input-site {
   right: 0;
 }
 .mobile-menu .social {
-  margin-top: auto;
   margin-bottom: 0;
 }
 .mobile-menu .social svg {
@@ -13981,8 +13998,27 @@ textarea.input-site {
 .section-main-small.section, .section-main-small.about-item:not(:last-of-type) {
   margin-bottom: 80px;
 }
-.section-main-contacts .h1, .section-main-contacts .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main-contacts h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .section-main-contacts .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main-contacts .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .section-main-contacts .social {
+.section-main-contacts .h1, .section-main-contacts .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main-contacts h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .section-main-contacts .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main-contacts .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
   margin-bottom: 40px;
+}
+@media (max-width: 991.98px) {
+  .section-main-contacts .h1, .section-main-contacts .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main-contacts h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .section-main-contacts .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .section-main-contacts .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+    margin-bottom: 20px;
+  }
+}
+.section-main-contacts .social {
+  margin-bottom: 0;
+}
+@media (max-width: 991.98px) {
+  .section-main-contacts .social {
+    gap: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section-main-contacts .social a {
+    width: 40px;
+    height: 40px;
+  }
 }
 .section-main .header {
   position: absolute;
@@ -14127,9 +14163,20 @@ textarea.input-site {
   }
 }
 
+@media (max-width: 575.98px) {
+  .section-about__dogImg {
+    padding: 0 10px;
+  }
+}
 .section-about__dogImg img {
   margin: auto;
   max-width: 100%;
+}
+@media (max-width: 1099.98px) {
+  .section-about__dogImg img {
+    width: 100%;
+    max-width: 540px;
+  }
 }
 .section-about__parallax {
   position: relative;
@@ -14606,6 +14653,11 @@ textarea.input-site {
 .review_text {
   font-style: italic;
 }
+@media (max-width: 991.98px) {
+  .review_text {
+    font-size: 22px;
+  }
+}
 .review_name {
   margin-bottom: 5px;
 }
@@ -14689,6 +14741,14 @@ textarea.input-site {
   -webkit-box-shadow: 0 0 5px rgba(25, 15, 25, 0.15);
   box-shadow: 0 0 5px rgba(25, 15, 25, 0.15);
   display: block;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 @media all and (hover: hover) {
   .blog-item:hover .blog-item_img img {
@@ -14720,6 +14780,16 @@ textarea.input-site {
 }
 .blog-item_desc {
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 .blog-item_title {
   font-size: 17px;
@@ -14751,6 +14821,7 @@ textarea.input-site {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: auto;
 }
 .blog-item_date {
   font-size: 11px;
@@ -14777,6 +14848,11 @@ textarea.input-site {
 }
 .footer_top__item:not(:last-child) {
   margin-bottom: 60px;
+}
+@media (max-width: 767.98px) {
+  .footer_top__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 .footer_form {
   max-width: 430px;
@@ -14899,6 +14975,7 @@ textarea.input-site {
 /***section-prices***/
 .section-prices {
   overflow: hidden;
+  padding-bottom: 10px;
 }
 .section-prices__title {
   margin-bottom: 0;
@@ -15069,8 +15146,6 @@ textarea.input-site {
 /***section-info***/
 .section-info {
   min-height: 100vh;
-  background-size: cover;
-  background-position: center bottom;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15079,14 +15154,39 @@ textarea.input-site {
   -ms-flex-align: center;
   align-items: center;
   padding: 80px 0;
+  isolation: isolate;
 }
-.section-info:before {
+@media (max-width: 575.98px) {
+  .section-info {
+    padding-top: 550px;
+    min-height: auto;
+  }
+}
+.section-info_bg {
+  position: absolute;
+  inset: 0;
+  isolation: isolate;
+}
+@media (max-width: 575.98px) {
+  .section-info_bg {
+    -webkit-transform: translateY(-344px);
+    -ms-transform: translateY(-344px);
+    transform: translateY(-344px);
+  }
+}
+.section-info_bg:before {
   content: "";
   position: absolute;
   inset: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#FBF9FB), color-stop(19.79%, rgba(251, 249, 251, 0)), color-stop(73.44%, rgba(251, 249, 251, 0)), to(#FBF9FB));
   background: -o-linear-gradient(top, #FBF9FB 0%, rgba(251, 249, 251, 0) 19.79%, rgba(251, 249, 251, 0) 73.44%, #FBF9FB 100%);
   background: linear-gradient(180deg, #FBF9FB 0%, rgba(251, 249, 251, 0) 19.79%, rgba(251, 249, 251, 0) 73.44%, #FBF9FB 100%);
+}
+.section-info_bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 /***section-info***/
@@ -15098,14 +15198,17 @@ textarea.input-site {
   border-radius: var(--border-radius-40);
   padding: var(--gap-40);
 }
-.info-box3__desc {
-  margin-bottom: 40px;
+@media (max-width: 575.98px) {
+  .info-box3__content {
+    padding: 20px 10px;
+  }
 }
 .info-box3__desc li {
   margin-bottom: 20px;
 }
 .info-box3__btn {
   text-align: center;
+  margin-top: 40px;
 }
 
 /***info-box3***/
@@ -15216,6 +15319,11 @@ textarea.input-site {
   border-radius: var(--border-radius-40);
   color: #fbf9fb;
 }
+@media (max-width: 1099.98px) {
+  .systemMARVI {
+    padding: 20px 0;
+  }
+}
 .systemMARVI-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15234,8 +15342,20 @@ textarea.input-site {
   box-shadow: 0 0 10px rgba(134, 54, 140, 0.25);
   border-radius: 16px;
 }
+@media (max-width: 575.98px) {
+  .systemMARVI-nav {
+    padding: 5px;
+    gap: 0;
+    margin: 0 auto 30px;
+  }
+}
 .systemMARVI-nav__link {
   --_paddingLink: 12px 20px;
+}
+@media (max-width: 575.98px) {
+  .systemMARVI-nav__link {
+    --_paddingLink: 12px 10px;
+  }
 }
 .systemMARVI-nav__link.active {
   padding: var(--_paddingLink);
@@ -15247,6 +15367,21 @@ textarea.input-site {
   -webkit-transform: translateY(0) !important;
   -ms-transform: translateY(0) !important;
   transform: translateY(0) !important;
+}
+.systemMARVI-tabContent__img img {
+  max-width: 100%;
+  margin: auto;
+}
+@media (max-width: 1099.98px) {
+  .systemMARVI-tabContent__img img {
+    width: 100%;
+    max-width: 445px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .systemMARVI-tabContent__btn {
+    text-align: center;
+  }
 }
 
 /***systemMARVI***/
@@ -15261,6 +15396,11 @@ textarea.input-site {
 }
 .advantages-item:not(:last-of-type) {
   padding-bottom: 80px;
+}
+@media (max-width: 1099.98px) {
+  .advantages-item:not(:last-of-type) {
+    padding-bottom: 40px;
+  }
 }
 .advantages-item:last-of-type .advantages-item__line {
   display: none;
@@ -15277,9 +15417,10 @@ textarea.input-site {
   background-size: 2px 30px;
   background-repeat: repeat-y;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1099.98px) {
   .advantages-item__line {
     bottom: 0;
+    background-size: 2px 17px;
   }
 }
 .advantages-item__icon {
@@ -15290,6 +15431,11 @@ textarea.input-site {
   flex: 0 0 var(--_sizeIcon);
   border-radius: 16px;
 }
+@media (max-width: 1099.98px) {
+  .advantages-item__icon {
+    --_sizeIcon: 70px;
+  }
+}
 .advantages-item__icon svg {
   max-width: 100%;
   max-height: 100%;
@@ -15298,9 +15444,23 @@ textarea.input-site {
   padding-left: 40px;
   margin: auto 0;
 }
+@media (max-width: 1099.98px) {
+  .advantages-item__text {
+    padding-left: 10px;
+  }
+}
 
 /***advantages-item***/
 /***blogs***/
+.blogs-nav {
+  overflow: auto;
+}
+@media (max-width: 767.98px) {
+  .blogs-nav {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
 .blogs-nav ul {
   list-style: none;
   margin: 0;
@@ -15312,6 +15472,17 @@ textarea.input-site {
   -ms-flex-pack: center;
   justify-content: center;
   gap: var(--gap-40);
+}
+@media (max-width: 767.98px) {
+  .blogs-nav ul {
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    padding: 0 20px;
+  }
+}
+.blogs-nav ul li {
+  white-space: nowrap;
 }
 .blogs-nav ul li:not(.active) a:active {
   color: #190f19;
@@ -15353,16 +15524,41 @@ textarea.input-site {
   color: #fbf9fb;
   height: 100%;
 }
+@media screen and (max-width: 1300px) {
+  .contacts-item {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .contacts-item {
+    padding: var(--gap-40);
+  }
+}
 .contacts-item__title {
   margin-bottom: 20px;
 }
+@media (max-width: 991.98px) {
+  .contacts-item__title {
+    margin-bottom: 10px;
+  }
+}
 .contacts-item__link {
   margin-bottom: 20px;
+}
+@media (max-width: 991.98px) {
+  .contacts-item__link {
+    margin-bottom: 10px;
+  }
 }
 .contacts-item__link a {
   position: relative;
   padding-left: 40px;
   white-space: nowrap;
+}
+@media (max-width: 991.98px) {
+  .contacts-item__link a {
+    padding-left: 25px;
+  }
 }
 .contacts-item__link a .icon {
   position: absolute;
@@ -15372,6 +15568,23 @@ textarea.input-site {
   height: 30px;
   margin-top: -15px;
 }
+@media (max-width: 991.98px) {
+  .contacts-item__link a .icon {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+  }
+}
+@media (max-width: 1449.98px) {
+  .contacts-item__phone {
+    font-size: 25px;
+  }
+}
+@media (max-width: 575.98px) {
+  .contacts-item__phone {
+    font-size: 21px;
+  }
+}
 .contacts-item__socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15380,7 +15593,12 @@ textarea.input-site {
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 20px;
-  gap: 0 80px;
+  gap: 0 10%;
+}
+@media (max-width: 991.98px) {
+  .contacts-item__socials {
+    padding-top: 10px;
+  }
 }
 .contacts-item__socials .contacts-item__link {
   margin-bottom: 0;
