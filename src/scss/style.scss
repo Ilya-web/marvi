@@ -1868,6 +1868,10 @@ textarea.input-site {
   @media screen and (max-height: 650px) {
     min-width: 90vw;
   }
+
+  @include media-breakpoint-down(xxl) {
+    min-width: 90vw;
+  }
 }
 
 
@@ -1883,14 +1887,7 @@ textarea.input-site {
   }
 }
 
-.banner {
-  color: $color-white;
-  border-radius: var(--border-radius-40);
-  padding: 40px;
-  display: flex;
-  margin: 0 var(--gap-20);
-  gap: var(--border-radius-40);
-
+@mixin bg() {
   &.bg-1 {
     background: $bg-2;
   }
@@ -1924,6 +1921,18 @@ textarea.input-site {
   &.bg-11 {
     background: $bg-1;
   }
+}
+
+.banner {
+  color: $color-white;
+  border-radius: var(--border-radius-40);
+  padding: 40px;
+  display: flex;
+  margin: 0 var(--gap-20);
+  gap: var(--border-radius-40);
+
+  @include bg;
+
 
   &__img {
     flex: 0 0 57%;
@@ -1965,6 +1974,47 @@ textarea.input-site {
     }
   }
 }
+
+.banner-mobile {
+  color: $color-white;
+  border-radius: var(--border-radius-40);
+  padding: 10px 15px;
+  gap: var(--border-radius-40);
+  @include bg;
+  height: 100%;
+
+  &__title {
+    padding: 10px 0;
+    margin-bottom: 0;
+  }
+
+  &__img {
+    img {
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+
+  &__button {
+    border: 0;
+    background: transparent;
+    display: block;
+    color: $color-white;
+    width: 100%;
+    @include media-breakpoint-up(sm) {
+      pointer-events: none;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .collapse.collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
+
 /***bn***/
 
 /***reviews-slider***/

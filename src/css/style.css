@@ -14375,6 +14375,11 @@ textarea.input-site {
     min-width: 90vw;
   }
 }
+@media (max-width: 1449.98px) {
+  .wrap-banner {
+    min-width: 90vw;
+  }
+}
 
 #banners {
   overflow: hidden;
@@ -14494,6 +14499,74 @@ textarea.input-site {
   line-height: 0.94;
 }
 
+.banner-mobile {
+  color: #fbf9fb;
+  border-radius: var(--border-radius-40);
+  padding: 10px 15px;
+  gap: var(--border-radius-40);
+  height: 100%;
+}
+.banner-mobile.bg-1 {
+  background: #36498c;
+}
+.banner-mobile.bg-2 {
+  background: #ca8b02;
+}
+.banner-mobile.bg-3 {
+  background: #02ab6b;
+}
+.banner-mobile.bg-4 {
+  background: #8c3655;
+}
+.banner-mobile.bg-5 {
+  background: #007347;
+}
+.banner-mobile.bg-6 {
+  background: #36498c;
+}
+.banner-mobile.bg-7 {
+  background: #02ab6b;
+}
+.banner-mobile.bg-8 {
+  background: #8c3655;
+}
+.banner-mobile.bg-9 {
+  background: #36498c;
+}
+.banner-mobile.bg-10 {
+  background: #007347;
+}
+.banner-mobile.bg-11 {
+  background: #593399;
+}
+.banner-mobile__title {
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+.banner-mobile__img img {
+  max-width: 100%;
+  margin: auto;
+}
+.banner-mobile__button {
+  border: 0;
+  background: transparent;
+  display: block;
+  color: #fbf9fb;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .banner-mobile__button {
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .collapse.collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
 /***bn***/
 /***reviews-slider***/
 .reviews-slider {
