@@ -1,9 +1,9 @@
 [
   {
-    "urlImg": "images/reviews/image-1.jpg",
-    "name": "Мельник Дмитро",
-    "position": " Лікар-офтальмолог",
-    "text": "Est ratione aut qui unde ipsum qui. At nemo blanditiis. Omnis necessitatibus voluptatem enim voluptatem ut quod asperiores tenetur autem. Doloremque odit et et excepturi. Id sequi eos ducimus iure vitae quaerat.",
+    "urlImg": "images/reviews/no-img.svg",
+    "name": "Віталій Бондаренко",
+    "position": "BonOptic, Лікар-офтальмолог",
+    "text": "Користуюсь програмою CRM MARVI близько двох років.\nПодобається. Зручно, легко, швидко. Проста в використанні. Великим плюсом, на мою думку, є можливість консультації 24/7. Хоча потреба в допомозі представників компанії, була вкрай рідко. Система працює добре. На данний момент користуюсь здебільшого медичною частиною (запис пацієнтів та заповнення «огляду офтальмолога»). З нетерпінням чекаю більш повноцінної версії з більшою кількістю опцій.",
     "video": true,
     "countVideo": 1,
     "linkVideo": "https://youtu.be/or047P2NOjc?t=16",
@@ -11,10 +11,10 @@
     "green": true
   },
   {
-    "urlImg": "images/reviews/image-2.jpg",
-    "name": "Ковальчук Оксана",
-    "position": "Власниця офтальмологічної клініки",
-    "text": "Ipsa delectus et perspiciatis rem voluptas nesciunt. Ea architecto nihil suscipit fuga dolorum placeat. Voluptates aperiam maxime accusantium maiores ab fuga laboriosam in. A culpa minima facilis similique ea cumque est eligendi sit. Incidunt quod nesciunt fugit fugit consequuntur dolorum. Et iure qui est in et non corrupti autem ratione.",
+    "urlImg": "images/reviews/no-img.svg",
+    "name": "Сергій Малачков",
+    "position": "Оптимал (центр зору),  Головний лікар",
+    "text": "Недосконалість попередньої програми та ненадійність партнерів-розробників змусило мене перейти на CRM/ERP систему MARVI.Наразі я не стикаюсь з типовими проблемами інших систем на ринку, а саме: втрата даних при передачі, постійний ріст вартості обслуговування та недосконалість системи обліку товару. У MARVI більш надійна програма обліку при передачі даних , та простіша в користуванні. Головна цінність MARVI - це її розробники, а саме реагування на зауваження від користувачів та внесення корективів у систему. Хочу порекомендувати особисто CRM/ERP систему MARVI для всіх офтальмологічних клінік та магазинів оптик в Україні. ",
     "video": true,
     "countVideo": 2,
     "linkVideo": "https://youtu.be/yZdpqBT7hw0?t=7",

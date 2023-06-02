@@ -45,14 +45,14 @@ html.lenis {
   pointer-events: none;
 }
 
-//::-webkit-scrollbar { /* chrome based */
-//  width: 0;  /* ширина scrollbar'a */
-//  background: transparent;  /* опционально */
-//}
-//html {
-//  -ms-overflow-style: none;  /* IE 10+ */
-//  scrollbar-width: none; /* Firefox */
-//}
+::-webkit-scrollbar { /* chrome based */
+  width: 0;  /* ширина scrollbar'a */
+  background: transparent;  /* опционально */
+}
+html {
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
 
 .hidden-body {
   &.hidden {
@@ -804,6 +804,11 @@ textarea.input-site {
   td {
     padding: 20px;
 
+    @include media-breakpoint-down(xxl) {
+      &.h3 {
+        font-size: 20px;
+      }
+    }
     @include media-breakpoint-down(lg) {
       font-size: 15px;
     }
@@ -930,6 +935,13 @@ textarea.input-site {
 }
 
 /***accordion***/
+/***teamSlider***/
+
+.teamSlider {
+  padding-bottom: 40px;
+}
+
+/***teamSlider***/
 
 .slider-navigation {
   display: flex;
@@ -937,6 +949,12 @@ textarea.input-site {
   justify-content: center;
   margin-top: 40px;
   gap: 40px;
+  @include media-breakpoint-down(sm) {
+    margin-top: 20px;
+    a {
+      width: 100%;
+    }
+  }
   &-prev,
   &-next {
     width: 40px;
@@ -945,6 +963,9 @@ textarea.input-site {
     mask-repeat: no-repeat;
     background: $color-text;
     cursor: pointer;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
     &.swiper-button-disabled {
       pointer-events: none;
       opacity: 0.5;
@@ -963,8 +984,8 @@ textarea.input-site {
   &-prev {
     transform: rotate(-180deg);
   }
-  &-next {
-  }
+
+
 }
 
 .slider-pagination {
@@ -1800,6 +1821,12 @@ textarea.input-site {
   &__btns {
     display: flex;
     gap: var(--gap-40);
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+    }
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
   }
 
   &__img {
@@ -2043,7 +2070,8 @@ textarea.input-site {
         content: "0" counter(smartMARVI-item);
         position: absolute;
         right: 0;
-        top: -5px;
+        top: 50%;
+        transform: translateY(-50%);
         font-size: clamp(50px, 7.81vw, 150px);
         line-height: 0.7;
         opacity: 0.5;
@@ -2531,6 +2559,18 @@ textarea.input-site {
   &-items {
     display: flex;
     gap: var(--gap-40);
+  }
+
+  &-info {
+    padding: var(--gap-40);
+    box-shadow: $box-shadow;
+    border-radius: var(--border-radius-40);
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 20px;
+    }
   }
 
   &-item {
@@ -3084,7 +3124,21 @@ textarea.input-site {
 .contacts-form {
   background: $color-light;
   border-radius: var(--border-radius-40);
-  padding: 80px 0;
+  padding: 80px 20px;
+
+  @include media-breakpoint-down(lg) {
+    padding: 40px 20px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 20px 10px;
+  }
+
+  &__img {
+    img {
+      max-width: 100%;
+      margin: auto;
+    }
+  }
 }
 
 .form-contacts {
@@ -3126,6 +3180,12 @@ textarea.input-site {
       background: $color-text;
       mask-size: 100%;
       @include transition();
+
+      @include media-breakpoint-down(lg) {
+        margin-top: -12px;
+        width: 24px;
+        height: 24px;
+      }
     }
     &:not(.collapsed) {
       &:after {
@@ -3147,7 +3207,18 @@ textarea.input-site {
 .section-errorPage {
   background: $bg-3 url("../../images/logo.svg") no-repeat ;
   background-size: 100%;
-  padding: 10vh 0 0;
+  padding: 20% 0 2%;
+
+  @include media-breakpoint-down(xl) {
+    padding: 25% 0 2%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    &__content {
+      margin-top: -50px !important;
+    }
+  }
+
 }
 
 .errorPage {
@@ -3157,11 +3228,22 @@ textarea.input-site {
   border-radius: var(--border-radius-40);
   padding: 40px;
 
+  @include media-breakpoint-down(lg) {
+    padding: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 10px;
+  }
+
   &__title {
     font-size: 150px;
     line-height: 1;
     color: $bg-3;
     margin-bottom: var(--_mb);
+    @include media-breakpoint-down(lg) {
+      font-size: 100px;
+    }
   }
 
   &__text {
@@ -3172,6 +3254,21 @@ textarea.input-site {
     display: flex;
     justify-content: center;
     gap: 10px 40px;
+
+    @include media-breakpoint-down(lg) {
+      gap: 10px 20px;
+    }
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      max-width: 580px;
+      margin: auto;
+    }
   }
 
   .btn-site-2 {

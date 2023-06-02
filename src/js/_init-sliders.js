@@ -3,67 +3,100 @@ import Swiper, { Navigation, Pagination } from "swiper";
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  new Swiper(".reviews-slider", {
-    slidesPerView: 1,
-    spaceBetween: 40,
-    loop: true,
-    modules: [Navigation, Pagination],
-    pagination: {
-      el: ".slider-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".reviews-slider-next",
-      prevEl: ".reviews-slider-prev",
-    },
-    breakpoints: {
-      300: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+  if(document.querySelector('.reviews-slider')) {
+    new Swiper(".reviews-slider", {
+      slidesPerView: 1,
+      spaceBetween: 40,
+      loop: true,
+      modules: [Navigation, Pagination],
+      pagination: {
+        el: ".slider-pagination",
+        clickable: true,
       },
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+      navigation: {
+        nextEl: ".reviews-slider-next",
+        prevEl: ".reviews-slider-prev",
       },
-      1441: {
-        slidesPerView: 3,
-        spaceBetween: 40,
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1441: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
       },
-    },
-  });
+    });
+  }
 
   //init reviewsSlider------------------------------------------------
-  new Swiper(".blog-slider", {
-    slidesPerView: 1,
-    spaceBetween: 40,
-    loop: true,
-    modules: [Navigation, Pagination],
-    pagination: {
-      el: ".slider-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".blog-slider-next",
-      prevEl: ".blog-slider-prev",
-    },
-    breakpoints: {
-      300: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+  if(document.querySelector('.blog-slider')) {
+    new Swiper(".blog-slider", {
+      slidesPerView: 1,
+      spaceBetween: 40,
+      loop: true,
+      modules: [Navigation, Pagination],
+      pagination: {
+        el: ".slider-pagination",
+        clickable: true,
       },
-      575: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+      navigation: {
+        nextEl: ".blog-slider-next",
+        prevEl: ".blog-slider-prev",
       },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1400: {
-        slidesPerView: 4,
-        spaceBetween: 40,
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        575: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1400: {
+          slidesPerView: 4,
+          spaceBetween: 40,
 
+        },
       },
-    },
-  });
+    });
+  }
+
+  //init teamSlider------------------------------------------------
+  if(document.querySelector('.teamSlider')) {
+    let init = false;
+    let teamSlider;
+    const swiperCard = () => {
+      if (window.innerWidth <= 1300) {
+        if (!init) {
+          init = true;
+          teamSlider = new Swiper(".teamSlider", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            modules: [Pagination],
+            pagination: {
+              el: ".slider-pagination",
+              clickable: true,
+            },
+          });
+        }
+      } else if (init) {
+        teamSlider.destroy();
+        init = false;
+      }
+    }
+    swiperCard();
+    window.addEventListener("resize", swiperCard);
+  }
+
 });

@@ -5,6 +5,7 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
 import { Accordion} from 'bootstrap';
 import lottie from "lottie-web";
 import { Modal } from "bootstrap";
+import IMask from 'imask';
 
 
 
@@ -505,24 +506,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const defaultOffset = 700;
   const header = document.querySelector(".header");
 
-  const scrollPosition = () =>
-    window.pageYOffset || document.documentElement.scrollTop;
-  window.addEventListener("scroll", () => {
-    const headerHeight = header.clientHeight;
-    const accordionHeaderSticky = document.querySelector('.accordion-header-sticky')
-    if (
-      (scrollPosition() > lastScroll && scrollPosition() > defaultOffset) ||
-      lastScroll < defaultOffset
-    ) {
-      header.classList.remove("show");
+  if(header) {
+    const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
 
-      accordionHeaderSticky ? accordionHeaderSticky.style.top = '0' : null
-    } else if (scrollPosition() < lastScroll) {
-      header.classList.add("show");
-      accordionHeaderSticky ? accordionHeaderSticky.style.top = `${headerHeight}px` : null
-    }
-    lastScroll = scrollPosition();
-  });
+    window.addEventListener("scroll", () => {
+      const headerHeight = header.clientHeight;
+      const accordionHeaderSticky = document.querySelector('.accordion-header-sticky')
+      if (
+        (scrollPosition() > lastScroll && scrollPosition() > defaultOffset) ||
+        lastScroll < defaultOffset
+      ) {
+        header.classList.remove("show");
+
+        accordionHeaderSticky ? accordionHeaderSticky.style.top = '0' : null
+      } else if (scrollPosition() < lastScroll) {
+        header.classList.add("show");
+        accordionHeaderSticky ? accordionHeaderSticky.style.top = `${headerHeight}px` : null
+      }
+      lastScroll = scrollPosition();
+    });
+
+  }
+
 
   //horizontal scroll section-functionsMARVI---------------------
   const sections = gsap.utils.toArray(".wrap-banner");
@@ -561,27 +566,24 @@ document.addEventListener("DOMContentLoaded", () => {
   // }
 
 
-  const mainParallax = document.querySelector('.section-about');
+  // mousemove parallax-------------------------------------------------------
+  document.addEventListener('mousemove', parallax);
+  let parallaxImgs = document.querySelectorAll('.section-about__parallax--img');
 
-  if(mainParallax) {
-    mainParallax.addEventListener('mousemove', parallax);
+  function parallax(e) {
+    parallaxImgs.forEach(img => {
 
-    let parallaxImgs = document.querySelectorAll('.section-about__parallax--img');
+      const speed = img.getAttribute('data-speed');
 
-    function parallax(e) {
-      parallaxImgs.forEach(img => {
+      const x = (window.innerWidth - e.pageX * speed ) / 100;
+      const y = (window.innerHeight - e.pageY * speed ) / 100;
 
-        const speed = img.getAttribute('data-speed');
+      img.style.transform = `translateX(${x}px) translateY(${y}px)`
 
-        const x = (window.innerWidth - e.pageX * speed ) / 100;
-        const y = (window.innerHeight - e.pageY * speed ) / 100;
-
-        img.style.transform = `translateX(${x}px) translateY(${y}px)`
-
-      })
-    }
+    })
   }
 
+  // full height window-----------------------------------------------
   const appHeight = () => {
     const doc = document.documentElement;
     doc.style.setProperty('--app-height', `${window.innerHeight}px`)
@@ -589,5 +591,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // window.addEventListener('resize', appHeight)
   appHeight()
 
+
+
+  // input tel mask --------------------------------------------------
+  const inputTel = document.querySelectorAll('[type="tel"]');
+
+  inputTel.forEach(input => {
+    const tel = IMask(input, {
+      mask: '+{38}(000)000-00-00'
+    });
+    // clear input tel -----------------------------------------------
+    input.addEventListener('blur', function() {
+      if (tel.value.length !== 17) {
+        tel.value = '';
+      }
+    });
+  })
 
 });

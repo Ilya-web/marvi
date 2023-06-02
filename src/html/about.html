@@ -86,11 +86,26 @@
             <h2 class="h1">Наша команда</h2>
             <div class="h4">Основна команда – це кілька засновників. Кожен з групи має досвід у своїй сфері відповідальності в проекті MARVI: управлінський досвід, досвід складних IT-розробок, бізнес-процесів, саппорту, розвитку продуктів</div>
           </div>
-
         </div>
-        <div class="row g-1 g-lg-2 g-xxl-3">
+
+        <div class="row g-1 g-lg-2 g-xxl-3 d-none d-sm-flex">
           @@loop('components/team/index.html',
           'components/team/bd.json')
+        </div>
+
+        <!-- mobile team slider -->
+        <div class="row d-flex d-sm-none">
+          <div class="swiper teamSlider">
+            <div class="swiper-wrapper">
+              @@loop('components/team/team-slider.html',
+              'components/team/bd.json')
+            </div>
+            <div class="slider-navigation">
+              <div class="slider-navigation-prev reviews-slider-prev"></div>
+              <div class="slider-pagination"></div>
+              <div class="slider-navigation-next reviews-slider-next"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -103,7 +118,7 @@
           </div>
         </div>
         <div class="row g-1 g-lg-2 g-xxl-3">
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <div class="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9051.30227676945!2d30.504641306501565!3d50.46092104645963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce69bbb3b325%3A0x4509070793bf8462!2z0YPQuy4g0JLQvtC30LTQstC40LbQtdC90YHQutCw0Y8sIDEw0JEsINCa0LjQtdCyLCAwNDA3MQ!5e0!3m2!1sru!2sua!4v1684998267794!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -117,7 +132,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <div class="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1131.4057977381121!2d30.508388162370277!3d50.46121311882166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce69bbb3b325%3A0x4509070793bf8462!2z0YPQuy4g0JLQvtC30LTQstC40LbQtdC90YHQutCw0Y8sIDEw0JEsINCa0LjQtdCyLCAwNDA3MQ!5e0!3m2!1sru!2sua!4v1684997783345!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
