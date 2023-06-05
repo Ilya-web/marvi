@@ -45,14 +45,14 @@ html.lenis {
   pointer-events: none;
 }
 
-::-webkit-scrollbar { /* chrome based */
-  width: 0;  /* ширина scrollbar'a */
-  background: transparent;  /* опционально */
-}
-html {
-  -ms-overflow-style: none;  /* IE 10+ */
-  scrollbar-width: none; /* Firefox */
-}
+//::-webkit-scrollbar { /* chrome based */
+//  width: 0;  /* ширина scrollbar'a */
+//  background: transparent;  /* опционально */
+//}
+//html {
+//  -ms-overflow-style: none;  /* IE 10+ */
+//  scrollbar-width: none; /* Firefox */
+//}
 
 .hidden-body {
   &.hidden {
@@ -3557,14 +3557,38 @@ textarea.input-site {
   color: $color-white;
 }
 
+.clients-overlay {
+  @include media-breakpoint-down(sm) {
+    overflow-x: auto;
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+
+}
+
 .clients-logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: var(--gap-40);
+
+  @include media-breakpoint-down(sm) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
   img {
     max-width: 100%;
+  }
+
+  &__item {
+    @include media-breakpoint-down(lg) {
+      max-width: 170px;
+    }
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 170px;
+    }
   }
 }
 

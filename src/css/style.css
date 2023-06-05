@@ -12392,16 +12392,6 @@ html.lenis {
   pointer-events: none;
 }
 
-::-webkit-scrollbar { /* chrome based */
-  width: 0; /* ширина scrollbar'a */
-  background: transparent; /* опционально */
-}
-
-html {
-  -ms-overflow-style: none; /* IE 10+ */
-  scrollbar-width: none; /* Firefox */
-}
-
 .hidden-body.hidden {
   overflow: hidden;
 }
@@ -16111,6 +16101,14 @@ textarea.input-site {
   color: #fbf9fb;
 }
 
+@media (max-width: 575.98px) {
+  .clients-overlay {
+    overflow-x: auto;
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+}
+
 .clients-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16125,8 +16123,29 @@ textarea.input-site {
   align-items: center;
   gap: var(--gap-40);
 }
+@media (max-width: 575.98px) {
+  .clients-logo {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
 .clients-logo img {
   max-width: 100%;
+}
+@media (max-width: 991.98px) {
+  .clients-logo__item {
+    max-width: 170px;
+  }
+}
+@media (max-width: 575.98px) {
+  .clients-logo__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 170px;
+    flex: 0 0 170px;
+  }
 }
 
 /***clients-section***/
