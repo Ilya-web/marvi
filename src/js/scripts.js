@@ -342,23 +342,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     //--------------------------------------------------------------------
-    // const imageParallax = gsap.utils.toArray('.imageParallax img');
-    //
-    // if(imageParallax.length !== 0) {
-    //   const parentImageParallax = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: ".parentImageParallax",
-    //       scrub: true,
-    //       start: "top top",
-    //     },
-    //   });
-    //   parentImageParallax.to(
-    //     imageParallax,
-    //     {
-    //       y: 300,
-    //     }
-    //   );
-    // }
+    const imageParallax = gsap.utils.toArray('.imageParallax img');
+
+    if(imageParallax.length !== 0) {
+      const parentImageParallax = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".parentImageParallax",
+          scrub: true,
+          start: "top top",
+        },
+      });
+      parentImageParallax.to(
+        imageParallax,
+        {
+          y: 200,
+        }
+      );
+    }
 
     //------------------------------------------------------------------
     const smartMARVIItemAnimate = gsap.utils.toArray('.smartMARVI-item--animate');
