@@ -246,7 +246,7 @@
 
   <div class="wrapper">
     <main class="main">
-      <section class="section-main section section-bg parentImageParallax">
+      <section class="section-main section section-bg parentImageParallax clinicPage">
         <div class="section-bg_image imageParallax">
           <picture>
             <source srcset="images/bg/optical.webp" type="image/webp" />
@@ -339,23 +339,23 @@
                 </div>
                 <div class="section-main__btns">
                   <a href="#" class="btn-site-2 click-animation">Відеоогляд</a>
-                  <a href="#" class="btn-site click-animation green" data-bs-toggle="modal" data-bs-target="#checkOutDemo">Отримати демо</a>
+                  <button type="button" class="btn-site click-animation green" data-bs-toggle="modal" data-bs-target="#checkOutDemo">Отримати демо</button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="madeInUkraine">
-          <div class="madeInUkraine_icon">
-            <svg>
-              <use xlink:href="images/icons/sprite.svg#flagForUkraine"></use>
-            </svg>
+          <div class="madeInUkraine">
+            <div class="madeInUkraine_icon">
+              <svg>
+                <use xlink:href="images/icons/sprite.svg#flagForUkraine"></use>
+              </svg>
+            </div>
+            Made in Ukraine
           </div>
-          Made in Ukraine
         </div>
       </section>
 
-      <section class="section-about section">
+      <section class="section-about section clinicPage">
         <div class="container">
           <div class="row align-items-start position-relative g-3">
             <div class="col-lg-6 col-xl-7 sticky-desktop">
@@ -403,7 +403,7 @@
       </section>
 
       <section class="section-system section parentZoomImg">
-        <div class="container">
+        <div class="container d-none d-xl-block">
           <div class="row">
             <div class="col-12">
               <h2 class="h1 text-center mb-80">Як виглядає система</h2>
@@ -417,6 +417,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="container">
           <div class="row mt-3 mt-xl-4 info-boxAnimate">
             <div class="col-lg-8 col-xl-6 offset-lg-1 offset-xl-1">
               <div class="info-box3__content content-box">
@@ -693,7 +695,7 @@
             <div class="row g-1 g-lg-2 g-xl-3 accordion" id="bannerMobileAccordion">
               <div class="col-sm-6">
                 <div class="banner-mobile bg-1">
-                  <div class="banner-mobile__img bannerMobile-item-1 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-1">
+                  <div class="banner-mobile__img bannerMobile-item-1 accordion-collapse collapse collapse-sm show" aria-labelledby="bannerMobile-1">
                     <picture>
                       <source srcset="images/banners/image.webp" type="image/webp">
                       <img src="images/banners/image.png" alt="">
@@ -702,13 +704,12 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-1" aria-expanded="true" aria-controls="bannerMobile-item-1">
                     <h2 class="banner-mobile__title h2">Клієнтська база</h2>
                   </button>
-
-                  <div class="banner-mobile__text bannerMobile-item-1 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-1">Детальні картки клієнтів із можливістю відстежувати активність, історію покупок, та останні дії: дзвінки, візити, обстеження, лікування, замовлення тощо</div>
+                  <div class="banner-mobile__text bannerMobile-item-1 accordion-collapse collapse collapse-sm show" aria-labelledby="bannerMobile-1">Детальні картки клієнтів із можливістю відстежувати активність, історію покупок, та останні дії: дзвінки, візити, обстеження, лікування, замовлення тощо</div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="banner-mobile bg-2">
-                  <div class="banner-mobile__img bannerMobile-item-2 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-2">
+                  <div class="banner-mobile__img bannerMobile-item-2 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-2">
                     <picture>
                       <source srcset="images/banners/image-2.webp" type="image/webp">
                       <img src="images/banners/image-2.png" alt="">
@@ -717,13 +718,12 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-2" aria-expanded="true" aria-controls="bannerMobile-item-2">
                     <h2 class="banner-mobile__title h2">Календар</h2>
                   </button>
-
-                  <div class="banner-mobile__text bannerMobile-item-2 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-2">Можливість індувідіально заповнювати графік роботи лікарів і відповідно до нього, записувати пацієнтів на візити. Зручний та приємний для користування інтерфейс</div>
+                  <div class="banner-mobile__text bannerMobile-item-2 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-2">Можливість індувідіально заповнювати графік роботи лікарів і відповідно до нього, записувати пацієнтів на візити. Зручний та приємний для користування інтерфейс</div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="banner-mobile bg-3">
-                  <div class="banner-mobile__img bannerMobile-item-3 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-3">
+                  <div class="banner-mobile__img bannerMobile-item-3 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-3">
                     <picture>
                       <source srcset="images/banners/image-3.webp" type="image/webp">
                       <img src="images/banners/image-3.png" alt="">
@@ -732,13 +732,12 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-3" aria-expanded="true" aria-controls="bannerMobile-item-3">
                     <h2 class="banner-mobile__title h2">Медичний блок</h2>
                   </button>
-
-                  <div class="banner-mobile__text bannerMobile-item-3 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-3">Повний цикл візиту пацієнта, в якому буде представлений анамнез (медична картка), результати обстеження, щоденник пацієнта та його детальний діагноз. До кожного візиту можна прикріпити необхідний файл з результатами обстеження або будь-якою важливою інформацією про пацієнта</div>
+                  <div class="banner-mobile__text bannerMobile-item-3 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-3">Повний цикл візиту пацієнта, в якому буде представлений анамнез (медична картка), результати обстеження, щоденник пацієнта та його детальний діагноз. До кожного візиту можна прикріпити необхідний файл з результатами обстеження або будь-якою важливою інформацією про пацієнта</div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="banner-mobile bg-4">
-                  <div class="banner-mobile__img bannerMobile-item-4 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-4">
+                  <div class="banner-mobile__img bannerMobile-item-4 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-4">
                     <picture>
                       <source srcset="images/banners/image-1.webp" type="image/webp">
                       <img src="images/banners/image-1.png" alt="">
@@ -747,13 +746,12 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-4" aria-expanded="true" aria-controls="bannerMobile-item-4">
                     <h2 class="banner-mobile__title h2">Робота із замовленнями</h2>
                   </button>
-
-                  <div class="banner-mobile__text bannerMobile-item-4 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-4">Можливість швидко підібрати наявний товар за конкретними характеристиками, вказаними в рецепті лікаря. Відстеження статусу замовлення: створений, переданий постачальнику або майстру, отриманий постачальником або майстром, завершений</div>
+                  <div class="banner-mobile__text bannerMobile-item-4 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-4">Можливість швидко підібрати наявний товар за конкретними характеристиками, вказаними в рецепті лікаря. Відстеження статусу замовлення: створений, переданий постачальнику або майстру, отриманий постачальником або майстром, завершений</div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="banner-mobile bg-5">
-                  <div class="banner-mobile__img bannerMobile-item-5 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-5">
+                  <div class="banner-mobile__img bannerMobile-item-5 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-5">
                     <picture>
                       <source srcset="images/banners/image-5.webp" type="image/webp">
                       <img src="images/banners/image-5.png" alt="">
@@ -762,13 +760,12 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-5" aria-expanded="true" aria-controls="bannerMobile-item-5">
                     <h2 class="banner-mobile__title h2">Платежі</h2>
                   </button>
-
-                  <div class="banner-mobile__text bannerMobile-item-5 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-5">Проведення платежів у зручній для клієнта формі (карткою, готівкою) з фіксацією в системі та можливістю друку квитанції за кожну операцію</div>
+                  <div class="banner-mobile__text bannerMobile-item-5 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-5">Проведення платежів у зручній для клієнта формі (карткою, готівкою) з фіксацією в системі та можливістю друку квитанції за кожну операцію</div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="banner-mobile bg-6">
-                  <div class="banner-mobile__img bannerMobile-item-6 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-6">
+                  <div class="banner-mobile__img bannerMobile-item-6 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-6">
                     <picture>
                       <source srcset="images/banners/image-6.webp" type="image/webp">
                       <img src="images/banners/image-6.png" alt="">
@@ -777,13 +774,12 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-6" aria-expanded="true" aria-controls="bannerMobile-item-6">
                     <h2 class="banner-mobile__title h2">Керування асортиментом</h2>
                   </button>
-
-                  <div class="banner-mobile__text bannerMobile-item-6 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-6">Категорії товарів із параметрами спеціально розробленими для оптики. Можливість додавати та редагувати параметри. Окремі розділи для продажу готового товару та того, що виготовляється на замовлення запо рецептому лікаря</div>
+                  <div class="banner-mobile__text bannerMobile-item-6 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-6">Категорії товарів із параметрами спеціально розробленими для оптики. Можливість додавати та редагувати параметри. Окремі розділи для продажу готового товару та того, що виготовляється на замовлення запо рецептому лікаря</div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="banner-mobile bg-7">
-                  <div class="banner-mobile__img bannerMobile-item-7 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-7">
+                  <div class="banner-mobile__img bannerMobile-item-7 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-7">
                     <picture>
                       <source srcset="images/banners/image-7.webp" type="image/webp">
                       <img src="images/banners/image-7.png" alt="">
@@ -792,13 +788,12 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-7" aria-expanded="true" aria-controls="bannerMobile-item-7">
                     <h2 class="banner-mobile__title h2">Керування цінами</h2>
                   </button>
-
-                  <div class="banner-mobile__text bannerMobile-item-7 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-7">Можливість виставляти ціни на товари вручну, та автоматично для конкретної категорії товару через встановлення націнки. Автоматизована система ціноутворення товарів. У разі зростанняі вартості товару у постачальника націнка залишається, та ціна реалізації підвищується</div>
+                  <div class="banner-mobile__text bannerMobile-item-7 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-7">Можливість виставляти ціни на товари вручну, та автоматично для конкретної категорії товару через встановлення націнки. Автоматизована система ціноутворення товарів. У разі зростанняі вартості товару у постачальника націнка залишається, та ціна реалізації підвищується</div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="banner-mobile bg-8">
-                  <div class="banner-mobile__img bannerMobile-item-8 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-8">
+                  <div class="banner-mobile__img bannerMobile-item-8 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-8">
                     <picture>
                       <source srcset="images/banners/image-8.webp" type="image/webp">
                       <img src="images/banners/image-8.png" alt="">
@@ -807,13 +802,12 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-8" aria-expanded="true" aria-controls="bannerMobile-item-8">
                     <h2 class="banner-mobile__title h2">Робота з постачальниками</h2>
                   </button>
-
-                  <div class="banner-mobile__text bannerMobile-item-8 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-8">Можливість додавати постачальників до системи для легкої взаємодії з ними, а саме: консолідація різних замовлень клієнтів в єдине замовлення на постачальника, автоматичне створення замовлень товарів на склад, авто підказка оптимальної кількості замовлення</div>
+                  <div class="banner-mobile__text bannerMobile-item-8 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-8">Можливість додавати постачальників до системи для легкої взаємодії з ними, а саме: консолідація різних замовлень клієнтів в єдине замовлення на постачальника, автоматичне створення замовлень товарів на склад, авто підказка оптимальної кількості замовлення</div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="banner-mobile bg-9">
-                  <div class="banner-mobile__img bannerMobile-item-9 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-9">
+                  <div class="banner-mobile__img bannerMobile-item-9 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-9">
                     <picture>
                       <source srcset="images/banners/image-9.webp" type="image/webp">
                       <img src="images/banners/image-9.png" alt="">
@@ -822,13 +816,12 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-9" aria-expanded="true" aria-controls="bannerMobile-item-9">
                     <h2 class="banner-mobile__title h2">Складський облік</h2>
                   </button>
-
-                  <div class="banner-mobile__text bannerMobile-item-9 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-9">Дає змогу відстежувати кількість товарів на складі, та нагадує, коли потрібно зробити закупівлю. SMART-інвентаризація — інструмент для проведення інвентаризації швидше та зручніше (можливість використовувати сторонні сканери штрих-кодів)</div>
+                  <div class="banner-mobile__text bannerMobile-item-9 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-9">Дає змогу відстежувати кількість товарів на складі, та нагадує, коли потрібно зробити закупівлю. SMART-інвентаризація — інструмент для проведення інвентаризації швидше та зручніше (можливість використовувати сторонні сканери штрих-кодів)</div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="banner-mobile bg-10">
-                  <div class="banner-mobile__img bannerMobile-item-10 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-10">
+                  <div class="banner-mobile__img bannerMobile-item-10 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-10">
                     <picture>
                       <source srcset="images/banners/image-10.webp" type="image/webp">
                       <img src="images/banners/image-10.png" alt="">
@@ -837,13 +830,12 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-10" aria-expanded="true" aria-controls="bannerMobile-item-10">
                     <h2 class="banner-mobile__title h2">Коммунікації</h2>
                   </button>
-
-                  <div class="banner-mobile__text bannerMobile-item-10 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-10">Можливість розсилати SMS та повідомлення в месенджери клієнтам: нагадування про візит, повідомлення про готове замовлення, маркетингові повідомлення тощо</div>
+                  <div class="banner-mobile__text bannerMobile-item-10 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-10">Можливість розсилати SMS та повідомлення в месенджери клієнтам: нагадування про візит, повідомлення про готове замовлення, маркетингові повідомлення тощо</div>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="banner-mobile bg-11">
-                  <div class="banner-mobile__img bannerMobile-item-11 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-11">
+                  <div class="banner-mobile__img bannerMobile-item-11 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-11">
                     <picture>
                       <source srcset="images/banners/image-11.webp" type="image/webp">
                       <img src="images/banners/image-11.png" alt="">
@@ -852,8 +844,7 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-11" aria-expanded="true" aria-controls="bannerMobile-item-11">
                     <h2 class="banner-mobile__title h2">Звіти</h2>
                   </button>
-
-                  <div class="banner-mobile__text bannerMobile-item-11 accordion-collapse collapse collapse-sm" aria-labelledby="bannerMobile-11">Детальні звіти по результатам діяльності компанії: звіти по комерційні діяльності, основні фінансові результати, звіти по продажах по популярних категоріях, звіти по співробітникам, лікарям, агентам, боржникам, залишкам та інші</div>
+                  <div class="banner-mobile__text bannerMobile-item-11 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-11">Детальні звіти по результатам діяльності компанії: звіти по комерційні діяльності, основні фінансові результати, звіти по продажах по популярних категоріях, звіти по співробітникам, лікарям, агентам, боржникам, залишкам та інші</div>
                 </div>
               </div>
             </div>

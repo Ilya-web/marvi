@@ -784,12 +784,16 @@ textarea.input-site {
           @include media-breakpoint-down(lg) {
             border-top-left-radius: 16px;
             border-top-right-radius: 16px;
+            border-bottom-left-radius: 0;
           }
         }
         &:last-child {
           border-right-style: solid;
           border-bottom-right-radius: 16px;
           border-top-right-radius: 16px;
+          @include media-breakpoint-down(lg) {
+            border-top-right-radius: 0;
+          }
         }
         &:nth-child(3) {
           @include media-breakpoint-down(lg) {
@@ -1198,7 +1202,7 @@ textarea.input-site {
   height: 100vh;
   min-height: 100vh;
   display: flex;
-  z-index: 999999;
+  z-index: 15;
   @include transition(0.5s);
 
   @include media-breakpoint-up(xl) {
@@ -1539,6 +1543,14 @@ textarea.input-site {
 
 }
 
+.clinicPage {
+  @include media-breakpoint-down(sm) {
+    .h1 {
+     @extend .h2;
+    }
+  }
+}
+
 .section-main {
   $this: &;
   background-size: cover;
@@ -1549,9 +1561,11 @@ textarea.input-site {
   position: relative;
   z-index: 9;
 
+
   & > .container{
     z-index: 2;
   }
+
 
   &-small {
     min-height: 72vh;
@@ -1760,9 +1774,11 @@ textarea.input-site {
 
 .section-aboutSystem {
   &__img {
-    height: 100vh;
     max-height: 1150px;
     margin-bottom: 40px;
+    @include media-breakpoint-up(xl) {
+      height: 100vh;
+    }
   }
 }
 
@@ -2541,6 +2557,7 @@ textarea.input-site {
 .section-prices {
   overflow: hidden;
   padding-bottom: 10px;
+  padding-top: 10px;
 
   &__title {
     margin-bottom: 0;
@@ -3015,6 +3032,7 @@ textarea.input-site {
 
 .blogs-nav {
   overflow: auto;
+  padding-top: 10px;
   @include media-breakpoint-down(md) {
     margin-left: -20px;
     margin-right: -20px;
@@ -3217,6 +3235,8 @@ textarea.input-site {
     margin-bottom: 0;
     width: 100%;
     position: relative;
+    color: $color-text;
+
     &:after {
       content: '';
       position: absolute;
@@ -3334,7 +3354,7 @@ textarea.input-site {
 .safety {
   &-item {
     &:not(:last-of-type) {
-      margin-bottom: 240px;
+      @extend .section;
     }
 
     &__title {

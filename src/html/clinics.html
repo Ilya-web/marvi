@@ -6,7 +6,7 @@
 
 <div class="wrapper">
   <main class="main">
-    <section class="section-main section section-bg parentImageParallax">
+    <section class="section-main section section-bg parentImageParallax clinicPage">
       <div class="section-bg_image imageParallax">
         <picture>
           <source srcset="images/bg/optical.webp" type="image/webp"/>
@@ -24,28 +24,26 @@
               </div>
               <div class="section-main__btns">
                 <a href="#" class="btn-site-2 click-animation">Відеоогляд</a>
-                <a
-                  href="#"
+                <button type="button"
                   class="btn-site click-animation green"
                   data-bs-toggle="modal" data-bs-target="#checkOutDemo"
-                >Отримати демо</a
-                >
-              </div>
+                >Отримати демо</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="madeInUkraine">
-        <div class="madeInUkraine_icon">
-          <svg>
-            <use xlink:href="images/icons/sprite.svg#flagForUkraine"></use>
-          </svg>
+        <div class="madeInUkraine">
+          <div class="madeInUkraine_icon">
+            <svg>
+              <use xlink:href="images/icons/sprite.svg#flagForUkraine"></use>
+            </svg>
+          </div>
+          Made in Ukraine
         </div>
-        Made in Ukraine
       </div>
     </section>
 
-    <section class="section-about section">
+    <section class="section-about section clinicPage">
       <div class="container">
         <div class="row align-items-start position-relative g-3">
           <div class="col-lg-6 col-xl-7 sticky-desktop">
@@ -84,8 +82,10 @@
     </section>
 
     <section class="section-system section parentZoomImg">
-      <div class="container">
+      <div class="container d-none d-xl-block">
         @@include('components/systemAnimate/index.html')
+      </div>
+      <div class="container">
         <div class="row mt-3 mt-xl-4 info-boxAnimate">
           <div class="col-lg-8 col-xl-6 offset-lg-1 offset-xl-1">
             <div class="info-box3__content content-box">
