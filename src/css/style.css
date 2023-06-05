@@ -16137,6 +16137,11 @@ textarea.input-site {
   max-width: 100%;
   max-height: 100%;
 }
+@media (max-width: 575.98px) {
+  .clients-logo img {
+    max-height: 50px;
+  }
+}
 .clients-logo__item {
   width: 100%;
   max-width: 230px;
@@ -16161,7 +16166,9 @@ textarea.input-site {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 fit-content;
     flex: 0 0 fit-content;
-    height: 50px;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
   }
 }
 
