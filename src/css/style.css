@@ -14015,10 +14015,8 @@ textarea.input-site {
   }
 }
 
-@media (max-width: 575.98px) {
-  .clinicPage .h1, .clinicPage .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .clinicPage h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .clinicPage .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .clinicPage .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
-    font-size: 20px;
-  }
+.clinicPage .h1, .clinicPage .content-box h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .clinicPage h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .clinicPage .content-box .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6), .content-box .clinicPage .h1:not(.h1, .h2, .h3, .contacts-item__phone, .h4, .section-main__desc, .h5, .h6) {
+  font-size: clamp(30px, 3.02vw, 58px);
 }
 
 .section-main {

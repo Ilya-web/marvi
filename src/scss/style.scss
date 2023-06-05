@@ -1540,14 +1540,11 @@ textarea.input-site {
       display: block;
     }
   }
-
 }
 
 .clinicPage {
-  @include media-breakpoint-down(sm) {
-    .h1 {
-     @extend .h2;
-    }
+  .h1 {
+    font-size: clamp(30px, 3.02vw ,58px);
   }
 }
 
@@ -1561,11 +1558,9 @@ textarea.input-site {
   position: relative;
   z-index: 9;
 
-
   & > .container{
     z-index: 2;
   }
-
 
   &-small {
     min-height: 72vh;

@@ -219,8 +219,8 @@
           </li>
         </ul>
         <div class="mobile-menu__btns d-flex flex-column gap-1">
-          <button type="button" class="btn-site-2 click-animation w-100">Увійти</button>
-          <a href="#" class="btn-site click-animation w-100" data-bs-toggle="modal" data-bs-target="#checkOutDemo">Отримати демо</a>
+          <a href="#" class="btn-site-2 click-animation w-100">Увійти</a>
+          <button type="button" class="btn-site click-animation w-100" data-bs-toggle="modal" data-bs-target="#checkOutDemo">Отримати демо</button>
         </div>
         <div class="social">
           <a href="#">
@@ -694,7 +694,7 @@
   <button type="button" id="chatButton" data-json="jsonAnimate/chatButton.json"></button>
 
   <!--Modal callBack-->
-  <div class="modal fade" id="callBack" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+  <div data-lenis-prevent class="modal fade" id="callBack" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
@@ -741,7 +741,7 @@
 
 
   <!--Modal checkOutDemo-->
-  <div class="modal fade" id="checkOutDemo" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+  <div data-lenis-prevent class="modal fade" id="checkOutDemo" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1" data-bs-keyboard="false">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
@@ -794,7 +794,7 @@
   </div>
 
   <!--Modal order-->
-  <div class="modal fade" id="order" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+  <div data-lenis-prevent class="modal fade" id="order" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
@@ -858,7 +858,7 @@
   <!--Open modal via js-->
   <!--const thanks = new Modal('#thanks');-->
   <!--thanks.show()-->
-  <div class="modal fade" id="thanks" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
+  <div data-lenis-prevent class="modal fade" id="thanks" aria-hidden="true" aria-labelledby="entranceModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">

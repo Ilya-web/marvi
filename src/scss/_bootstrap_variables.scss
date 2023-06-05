@@ -1,18 +1,3 @@
-//$grid-breakpoints: (
-//  xs: 0,
-//  sm: 576px,
-//  md: 768px,
-//  lg: 992px,
-//  xl: 1100px,
-//);
-//$container-max-widths: (
-//  sm: 540px,
-//  md: 720px,
-//  lg: 1320px,
-//  xl: 1880px,
-//);
-//
-
 $grid-breakpoints: (
     xs: 0,
     sm: 576px,
@@ -35,40 +20,6 @@ $grid-gutter-width: 40px; //30
 $modal-md: 585px;
 $modal-lg: 845px;
 
-
-//@import "node_modules/bootstrap/scss/variables";
-//@import "node_modules/bootstrap/scss/mixins";
-
-//
-//$custom-gutter-widths: (
-//    sm: 1rem,
-//    md: 1.5rem,
-//    lg: 2rem,
-//    xl: 2.5rem,
-//    xxl: 3rem,
-//);
-
-//@each $breakpoint, $gutterwidth in $custom-gutter-widths {
-//  $container-padding-x: $gutterwidth*.5;
-//  $grid-gutter-width: $gutterwidth;
-//  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
-//    .container,
-//    .container-fluid {
-//      @include make-container();
-//    }
-//
-//    .row {
-//      @include make-row();
-//
-//      > * {
-//        @include make-col-ready();
-//      }
-//    }
-//    @include make-grid-columns();
-//
-//  }
-//}
-
 $spacer: 80px;
 $spacers: (
   0: 0,
@@ -80,12 +31,3 @@ $spacers: (
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
-//@import "node_modules/bootstrap/scss/functions";
-//@import "node_modules/bootstrap/scss/variables";
-//
-//@import "node_modules/bootstrap/scss/bootstrap-grid";
-//@import "node_modules/bootstrap/scss/bootstrap-utilities";
-//@import "node_modules/bootstrap/scss/modal";
-//@import "node_modules/bootstrap/scss/nav";
-//@import "node_modules/bootstrap/scss/accordion";
-//@import "node_modules/bootstrap/scss/close";
