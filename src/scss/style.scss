@@ -3576,18 +3576,28 @@ textarea.input-site {
   @include media-breakpoint-down(sm) {
     flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 0 50px;
   }
 
   img {
     max-width: 100%;
+    max-height: 100%;
   }
 
   &__item {
+    width: 100%;
+    max-width: 230px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     @include media-breakpoint-down(lg) {
       max-width: 170px;
     }
     @include media-breakpoint-down(sm) {
-      flex: 0 0 170px;
+      flex: 0 0 fit-content;
+      height: 50px;
     }
   }
 }

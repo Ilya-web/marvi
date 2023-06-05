@@ -16130,10 +16130,26 @@ textarea.input-site {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    gap: 0 50px;
   }
 }
 .clients-logo img {
   max-width: 100%;
+  max-height: 100%;
+}
+.clients-logo__item {
+  width: 100%;
+  max-width: 230px;
+  height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 @media (max-width: 991.98px) {
   .clients-logo__item {
@@ -16143,8 +16159,9 @@ textarea.input-site {
 @media (max-width: 575.98px) {
   .clients-logo__item {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 170px;
-    flex: 0 0 170px;
+    -ms-flex: 0 0 fit-content;
+    flex: 0 0 fit-content;
+    height: 50px;
   }
 }
 
