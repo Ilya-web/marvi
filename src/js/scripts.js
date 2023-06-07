@@ -261,9 +261,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //--------------------------------------------------------------------
     const interfaceJson = document.getElementById('interface');
-    const interfaceUrlJson = interfaceJson.getAttribute('data-json');
 
     if(interfaceJson) {
+      const interfaceUrlJson = interfaceJson.getAttribute('data-json');
       const interfaceAnimate = lottie.loadAnimation({
         container: interfaceJson,
         renderer: 'svg',
