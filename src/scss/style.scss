@@ -2329,7 +2329,6 @@ textarea.input-site {
   border-radius: var(--border-radius-16-allMedia);
   overflow: hidden;
   box-shadow: 0 0 5px rgba(25, 15, 25, 0.15);
-  display: block;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -2377,6 +2376,7 @@ textarea.input-site {
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
+    height: 44px;
   }
 
   &_text {
@@ -2387,6 +2387,7 @@ textarea.input-site {
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
+    height: 40px;
   }
 
   &_footer {

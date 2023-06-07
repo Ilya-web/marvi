@@ -14880,7 +14880,6 @@ textarea.input-site {
   overflow: hidden;
   -webkit-box-shadow: 0 0 5px rgba(25, 15, 25, 0.15);
   box-shadow: 0 0 5px rgba(25, 15, 25, 0.15);
-  display: block;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14940,6 +14939,7 @@ textarea.input-site {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
+  height: 44px;
 }
 .blog-item_text {
   font-size: 15px;
@@ -14950,6 +14950,7 @@ textarea.input-site {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
+  height: 40px;
 }
 .blog-item_footer {
   display: -webkit-box;
