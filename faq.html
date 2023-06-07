@@ -115,7 +115,7 @@
         position: fixed;
         z-index: 999;
         inset: 0;
-        animation: load 2s linear forwards;
+        animation: load 3s linear forwards;
       }
 
       .loader.loaded {
@@ -129,7 +129,7 @@
 
       .loader .loader-logo {
         fill: #86368c;
-        animation: svgTransparent 2s linear forwards;
+        animation: svgTransparent 3s linear forwards;
         animation-delay: 0.7s
       }
 
@@ -138,7 +138,11 @@
           fill: #86368c;
         }
 
-        50% {
+        30% {
+          fill: #86368c;
+        }
+
+        70% {
           fill: transparent;
         }
 
@@ -156,13 +160,13 @@
           filter: blur(0);
         }
 
-        70% {
+        80% {
           transform: scale(1);
           opacity: 1;
         }
 
         100% {
-          transform: scale(3);
+          transform: scale(5);
           opacity: 0;
         }
       }
@@ -175,9 +179,8 @@
       window.addEventListener("DOMContentLoaded", function() {
         setTimeout(function() {
           loader.style.visibility = 'hidden'
-          document.body.classList.remove('hidden')
           loader.classList.add('loaded')
-        }, 2000);
+        }, 3000);
       });
     }
     startLoader();

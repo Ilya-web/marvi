@@ -116,7 +116,7 @@
         position: fixed;
         z-index: 999;
         inset: 0;
-        animation: load 2s linear forwards;
+        animation: load 3s linear forwards;
       }
 
       .loader.loaded {
@@ -130,7 +130,7 @@
 
       .loader .loader-logo {
         fill: #86368c;
-        animation: svgTransparent 2s linear forwards;
+        animation: svgTransparent 3s linear forwards;
         animation-delay: 0.7s
       }
 
@@ -139,7 +139,11 @@
           fill: #86368c;
         }
 
-        50% {
+        30% {
+          fill: #86368c;
+        }
+
+        70% {
           fill: transparent;
         }
 
@@ -157,13 +161,13 @@
           filter: blur(0);
         }
 
-        70% {
+        80% {
           transform: scale(1);
           opacity: 1;
         }
 
         100% {
-          transform: scale(3);
+          transform: scale(5);
           opacity: 0;
         }
       }
@@ -176,9 +180,8 @@
       window.addEventListener("DOMContentLoaded", function() {
         setTimeout(function() {
           loader.style.visibility = 'hidden'
-          document.body.classList.remove('hidden')
           loader.classList.add('loaded')
-        }, 2000);
+        }, 3000);
       });
     }
     startLoader();
@@ -408,12 +411,10 @@
             <div class="col-12">
               <h2 class="h1 text-center mb-80">Як виглядає система</h2>
             </div>
-            <div class="col-12 parentZoomImg">
-              <div class="section-aboutSystem__img zoomImg">
-                <picture>
-                  <source srcset="images/systems-img.webp" type="image/webp">
-                  <img src="images/systems-img.png" class="mw-100 mh-100 m-auto" alt="" />
-                </picture>
+            <div class="col-12 ">
+              <div class="section-aboutSystem__img" id="interface" data-json="jsonAnimate/interface.json">
+
+                <!--   parentZoomImg zoomImg  <picture><source srcset="images/systems-img.webp" type="image/webp"><img src="images/systems-img.png" class="mw-100 mh-100 m-auto" alt="" /></picture>-->
               </div>
             </div>
           </div>

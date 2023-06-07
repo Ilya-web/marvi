@@ -260,6 +260,31 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     //--------------------------------------------------------------------
+    const interfaceJson = document.getElementById('interface');
+    const interfaceUrlJson = interfaceJson.getAttribute('data-json');
+
+    if(interfaceJson) {
+      const interfaceAnimate = lottie.loadAnimation({
+        container: interfaceJson,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: interfaceUrlJson
+      })
+      gsap.to(lottieCustomServicesImg, {
+        duration: 3,
+        scrollTrigger: {
+          trigger: lottieCustomServicesImg,
+          start: "top center",
+        },
+        onStart: () => {
+          interfaceAnimate.play()
+        },
+      });
+    }
+
+
+    //--------------------------------------------------------------------
     const serviceItems = gsap.utils.toArray('.service-item--animate');
 
     if(serviceItems.length !== 0) {
