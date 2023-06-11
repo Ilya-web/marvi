@@ -33,6 +33,46 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
+  //banner-slider----------------------------------------------------
+
+  if(document.querySelector('.banner-slider')) {
+    new Swiper(".banner-slider", {
+      slidesPerView: 1,
+      loop: true,
+      modules: [Navigation, Pagination],
+      pagination: {
+        el: ".slider-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".banner-slider-next",
+        prevEl: ".banner-slider-prev",
+      },
+      autoplay: {
+        delay: 500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          console.log('svvsv')
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      },
+      breakpoints: {
+        1100: {
+          slidesPerView: 1.1,
+        },
+        1400: {
+          slidesPerView: 1.3,
+        },
+        2200: {
+          slidesPerView: 1.8,
+        },
+      },
+    });
+  }
 
   //init reviewsSlider------------------------------------------------
   if(document.querySelector('.blog-slider')) {

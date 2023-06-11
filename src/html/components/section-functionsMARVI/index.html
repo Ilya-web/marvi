@@ -6,7 +6,32 @@
       </div>
     </div>
   </div>
+
   <div class="container-fluid px-0">
+    <div class="row">
+      <div class="col-12">
+        <div class="swiper banner-slider">
+          <div class="swiper-wrapper">
+            @@loop('../../components/banner/index.html',
+            'components/banner/bd.json')
+          </div>
+          <div class="slider-navigation">
+            <div class="slider-navigation-prev banner-slider-prev"></div>
+            <div class="slider-pagination"></div>
+            <div class="slider-navigation-next banner-slider-next"></div>
+          </div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container-fluid px-0">
     <div class="row">
       <div class="col-12">
         <div class="banners" id="banners-container" style="width: 500%;">
@@ -15,7 +40,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
 </section>
 
 

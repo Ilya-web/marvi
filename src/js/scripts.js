@@ -66,42 +66,75 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   mm.add("(min-width: 1100px)", () => {
-    let panelsSection = document.querySelector("#banners");
-    let panelsContainer = document.querySelector("#banners-container");
+    // let panelsSection = document.querySelector("#banners");
+    // let panelsContainer = document.querySelector("#banners-container");
 
-    if(panelsSection) {
-      const panels = gsap.utils.toArray("#banners-container .wrap-banner");
+    // if(panelsSection) {
+    //   const panels = gsap.utils.toArray("#banners-container .wrap-banner");
 
-      //скролл по секциям с доводкой секции до начала экрана
-      // const bannersBox = gsap.to(panels, {
-      //   xPercent: -100 * ( panels.length - 1 ),
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: "#banners",
-      //     pin: true,
-      //     start: "top top",
-      //     scrub: 1,
-      //     snap: {
-      //       snapTo: 1 / (panels.length - 1),
-      //       inertia: false,
-      //       duration: {min: 0.1, max: 0.1}
-      //     },
-      //     end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
-      //   }
-      // });
+    //   //скролл по секциям с доводкой секции до начала экрана
+    //   // const bannersBox = gsap.to(panels, {
+    //   //   xPercent: -100 * ( panels.length - 1 ),
+    //   //   ease: "none",
+    //   //   scrollTrigger: {
+    //   //     trigger: "#banners",
+    //   //     pin: true,
+    //   //     start: "top top",
+    //   //     scrub: 1,
+    //   //     snap: {
+    //   //       snapTo: 1 / (panels.length - 1),
+    //   //       inertia: false,
+    //   //       duration: {min: 0.1, max: 0.1}
+    //   //     },
+    //   //     end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
+    //   //   }
+    //   // });
 
-      const bannersBox = gsap.to(panelsContainer, {
-        x: () => -(panelsContainer.scrollWidth - document.documentElement.clientWidth) + "px",
-        ease: "none",
-        scrollTrigger: {
-          trigger: panelsSection,
-          invalidateOnRefresh: true,
-          start: "top top",
-          pin: true,
-          scrub: 1,
-          end: () => "+=" + (panelsContainer.offsetWidth - innerWidth)
-        }
-      })
+    //   const bannersBox = gsap.to(panelsContainer, {
+    //     x: () => -(panelsContainer.scrollWidth - document.documentElement.clientWidth) + "px",
+    //     ease: "none",
+    //     scrollTrigger: {
+    //       trigger: panelsSection,
+    //       invalidateOnRefresh: true,
+    //       start: "top top",
+    //       pin: true,
+    //       scrub: 1,
+    //       end: () => "+=" + (panelsContainer.offsetWidth - innerWidth)
+    //     }
+    //   })
+
+    
+  //   panels.forEach((banner) => {
+  //     const imgAnimate = banner.querySelector('.banner__lottie')
+  //     let bannerImg = banner.querySelectorAll(".banner__img");
+  //     const urlJson = banner.querySelector('.banner__lottie').getAttribute('data-json');
+
+  //     if(bannerImg.length === 0)  return;
+
+  //     const lottieAnimates = lottie.loadAnimation({
+  //       container: imgAnimate,
+  //       renderer: 'svg',
+  //       loop: false,
+  //       autoplay: false,
+  //       path: urlJson
+  //     })
+  //     gsap.to(bannerImg, {
+  //       duration: 3,
+  //       scrollTrigger: {
+  //         trigger: banner,
+  //         containerAnimation: bannersBox,
+  //         start: "left center",
+  //         // toggleActions: 'play none none reverse',
+  //       },
+  //       onStart: () => {
+   // lottieAnimates.play()
+  //       },
+  //     });
+  //   });
+  // }
+
+
+      const panels = document.querySelectorAll(".wrap-banner");
 
       panels.forEach((banner) => {
         const imgAnimate = banner.querySelector('.banner__lottie')
@@ -113,25 +146,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const lottieAnimates = lottie.loadAnimation({
           container: imgAnimate,
           renderer: 'svg',
-          loop: false,
+          loop: true,
           autoplay: false,
           path: urlJson
         })
-        gsap.to(bannerImg, {
-          duration: 3,
-          scrollTrigger: {
-            trigger: banner,
-            containerAnimation: bannersBox,
-            start: "left center",
-            // toggleActions: 'play none none reverse',
-          },
-          onStart: () => {
-            lottieAnimates.play()
-          },
-        });
+      
+        lottieAnimates.play()
       });
-    }
-
+  
     //-------------------------------------------------------------------
 
     const lottieCustomServicesImg = document.getElementById('lottieCustomServices')

@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
 
-
-  <link rel="stylesheet" href="css/styles.min.css" />
+  <link rel="stylesheet" href="src/css/plugins.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
 </head>
 
 <body>
@@ -444,7 +444,7 @@
                   <ul>
                     <li>Функціонал, розроблений саме під особливості бізнесу магазинів оптики та офтальмологічних клінік, дає змогу просто та ефективно керувати бізнесом</li>
                     <li>Інтуїтивно зрозумілий та зручний інтерфейс значно спрощує робочий процес та навчання працівників</li>
-                    <li>Можливість працювати із системою онлайн із будь-якого місця та будь-якого девайсу</li>
+                    <li>Можливість працювати з системою онлайн із будь-якого місця та будь-якого девайсу</li>
                   </ul>
                 </div>
               </div>
@@ -458,7 +458,7 @@
                   <ul>
                     <li>Можливість виставляти різні рівні доступу співробітників до функцій системи</li>
                     <li>Система здійснює автоматичне резервування даних на сервері 2 рази на добу</li>
-                    <li>Завдяки унікальному коду шифрування, ваші дані завжди перебуватимутьзнаходяться в безпеці</li>
+                    <li>Завдяки унікальному коду шифрування ваші дані завжди перебуватимуть в безпеці</li>
                   </ul>
                 </div>
                 <div class="info-box3__btn">
@@ -492,213 +492,436 @@
               </div>
             </div>
           </div>
+
           <div class="container-fluid px-0">
             <div class="row">
               <div class="col-12">
-                <div class="banners" id="banners-container" style="width: 500%;">
-                  <div class="wrap-banner">
-                    <div class="banner bg-1">
-                      <div class="banner__img">
-                        <div class="banner__lottie" data-json="jsonAnimate/1.json"></div>
-                      </div>
-                      <div class="banner__desc">
-                        <div class="banner__count">
-                          <div class="banner__count_current">01</div>
-                          /
-                          <div class="banner__count_all">11</div>
+                <div class="swiper banner-slider">
+                  <div class="swiper-wrapper">
+                    <div class="wrap-banner swiper-slide">
+                      <div class="banner bg-1">
+                        <div class="banner__img">
+                          <div class="banner__lottie" data-json="jsonAnimate/1.json"></div>
                         </div>
-                        <div class="banner__desc__footer">
-                          <h2 class="banner__desc_title h2">Клієнтська база</h2>
-                          <div class="banner__desc_text">Детальні картки клієнтів із можливістю відстежувати активність, історію покупок, та останні дії: дзвінки, візити, обстеження, лікування, замовлення тощо</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wrap-banner">
-                    <div class="banner bg-2">
-                      <div class="banner__img">
-                        <div class="banner__lottie" data-json="jsonAnimate/2.json"></div>
-                      </div>
-                      <div class="banner__desc">
-                        <div class="banner__count">
-                          <div class="banner__count_current">01</div>
-                          /
-                          <div class="banner__count_all">11</div>
-                        </div>
-                        <div class="banner__desc__footer">
-                          <h2 class="banner__desc_title h2">Календар</h2>
-                          <div class="banner__desc_text">Можливість індувідіально заповнювати графік роботи лікарів і відповідно до нього, записувати пацієнтів на візити. Зручний та приємний для користування інтерфейс</div>
+                        <div class="banner__desc">
+                          <div class="banner__count">
+                            <div class="banner__count_current">01</div>
+                            /
+                            <div class="banner__count_all">11</div>
+                          </div>
+                          <div class="banner__desc__footer">
+                            <h2 class="banner__desc_title h2">Клієнтська база</h2>
+                            <div class="banner__desc_text">Детальні картки клієнтів із можливістю відстежувати активність, історію покупок, та останні дії: дзвінки, візити, обстеження, лікування, замовлення тощо</div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="wrap-banner">
-                    <div class="banner bg-3">
-                      <div class="banner__img">
-                        <div class="banner__lottie" data-json="jsonAnimate/3.json"></div>
-                      </div>
-                      <div class="banner__desc">
-                        <div class="banner__count">
-                          <div class="banner__count_current">01</div>
-                          /
-                          <div class="banner__count_all">11</div>
+                    <div class="wrap-banner swiper-slide">
+                      <div class="banner bg-2">
+                        <div class="banner__img">
+                          <div class="banner__lottie" data-json="jsonAnimate/2.json"></div>
                         </div>
-                        <div class="banner__desc__footer">
-                          <h2 class="banner__desc_title h2">Медичний блок</h2>
-                          <div class="banner__desc_text">Повний цикл візиту пацієнта, в якому буде представлений анамнез (медична картка), результати обстеження, щоденник пацієнта та його детальний діагноз. До кожного візиту можна прикріпити необхідний файл з результатами обстеження або будь-якою важливою інформацією про пацієнта</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wrap-banner">
-                    <div class="banner bg-4">
-                      <div class="banner__img">
-                        <div class="banner__lottie" data-json="jsonAnimate/4.json"></div>
-                      </div>
-                      <div class="banner__desc">
-                        <div class="banner__count">
-                          <div class="banner__count_current">01</div>
-                          /
-                          <div class="banner__count_all">11</div>
-                        </div>
-                        <div class="banner__desc__footer">
-                          <h2 class="banner__desc_title h2">Робота із замовленнями</h2>
-                          <div class="banner__desc_text">Можливість швидко підібрати наявний товар за конкретними характеристиками, вказаними в рецепті лікаря. Відстеження статусу замовлення: створений, переданий постачальнику або майстру, отриманий постачальником або майстром, завершений</div>
+                        <div class="banner__desc">
+                          <div class="banner__count">
+                            <div class="banner__count_current">01</div>
+                            /
+                            <div class="banner__count_all">11</div>
+                          </div>
+                          <div class="banner__desc__footer">
+                            <h2 class="banner__desc_title h2">Календар</h2>
+                            <div class="banner__desc_text">Можливість індувідіально заповнювати графік роботи лікарів і відповідно до нього, записувати пацієнтів на візити. Зручний та приємний для користування інтерфейс</div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="wrap-banner">
-                    <div class="banner bg-5">
-                      <div class="banner__img">
-                        <div class="banner__lottie" data-json="jsonAnimate/5.json"></div>
-                      </div>
-                      <div class="banner__desc">
-                        <div class="banner__count">
-                          <div class="banner__count_current">01</div>
-                          /
-                          <div class="banner__count_all">11</div>
+                    <div class="wrap-banner swiper-slide">
+                      <div class="banner bg-3">
+                        <div class="banner__img">
+                          <div class="banner__lottie" data-json="jsonAnimate/3.json"></div>
                         </div>
-                        <div class="banner__desc__footer">
-                          <h2 class="banner__desc_title h2">Платежі</h2>
-                          <div class="banner__desc_text">Проведення платежів у зручній для клієнта формі (карткою, готівкою) з фіксацією в системі та можливістю друку квитанції за кожну операцію</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wrap-banner">
-                    <div class="banner bg-6">
-                      <div class="banner__img">
-                        <div class="banner__lottie" data-json="jsonAnimate/6.json"></div>
-                      </div>
-                      <div class="banner__desc">
-                        <div class="banner__count">
-                          <div class="banner__count_current">01</div>
-                          /
-                          <div class="banner__count_all">11</div>
-                        </div>
-                        <div class="banner__desc__footer">
-                          <h2 class="banner__desc_title h2">Керування асортиментом</h2>
-                          <div class="banner__desc_text">Категорії товарів із параметрами спеціально розробленими для оптики. Можливість додавати та редагувати параметри. Окремі розділи для продажу готового товару та того, що виготовляється на замовлення запо рецептому лікаря</div>
+                        <div class="banner__desc">
+                          <div class="banner__count">
+                            <div class="banner__count_current">01</div>
+                            /
+                            <div class="banner__count_all">11</div>
+                          </div>
+                          <div class="banner__desc__footer">
+                            <h2 class="banner__desc_title h2">Медичний блок</h2>
+                            <div class="banner__desc_text">Повний цикл візиту пацієнта, в якому буде представлений анамнез (медична картка), результати обстеження, щоденник пацієнта та його детальний діагноз. До кожного візиту можна прикріпити необхідний файл з результатами обстеження або будь-якою важливою інформацією про пацієнта</div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="wrap-banner">
-                    <div class="banner bg-7">
-                      <div class="banner__img">
-                        <div class="banner__lottie" data-json="jsonAnimate/7.json"></div>
-                      </div>
-                      <div class="banner__desc">
-                        <div class="banner__count">
-                          <div class="banner__count_current">01</div>
-                          /
-                          <div class="banner__count_all">11</div>
+                    <div class="wrap-banner swiper-slide">
+                      <div class="banner bg-4">
+                        <div class="banner__img">
+                          <div class="banner__lottie" data-json="jsonAnimate/4.json"></div>
                         </div>
-                        <div class="banner__desc__footer">
-                          <h2 class="banner__desc_title h2">Керування цінами</h2>
-                          <div class="banner__desc_text">Можливість виставляти ціни на товари вручну, та автоматично для конкретної категорії товару через встановлення націнки. Автоматизована система ціноутворення товарів. У разі зростанняі вартості товару у постачальника націнка залишається, та ціна реалізації підвищується</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wrap-banner">
-                    <div class="banner bg-8">
-                      <div class="banner__img">
-                        <div class="banner__lottie" data-json="jsonAnimate/8.json"></div>
-                      </div>
-                      <div class="banner__desc">
-                        <div class="banner__count">
-                          <div class="banner__count_current">01</div>
-                          /
-                          <div class="banner__count_all">11</div>
-                        </div>
-                        <div class="banner__desc__footer">
-                          <h2 class="banner__desc_title h2">Робота з постачальниками</h2>
-                          <div class="banner__desc_text">Можливість додавати постачальників до системи для легкої взаємодії з ними, а саме: консолідація різних замовлень клієнтів в єдине замовлення на постачальника, автоматичне створення замовлень товарів на склад, авто підказка оптимальної кількості замовлення</div>
+                        <div class="banner__desc">
+                          <div class="banner__count">
+                            <div class="banner__count_current">01</div>
+                            /
+                            <div class="banner__count_all">11</div>
+                          </div>
+                          <div class="banner__desc__footer">
+                            <h2 class="banner__desc_title h2">Робота із замовленнями</h2>
+                            <div class="banner__desc_text">Можливість швидко підібрати наявний товар за конкретними характеристиками, вказаними в рецепті лікаря. Відстеження статусу замовлення: створений, переданий постачальнику або майстру, отриманий постачальником або майстром, завершений</div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="wrap-banner">
-                    <div class="banner bg-9">
-                      <div class="banner__img">
-                        <div class="banner__lottie" data-json="jsonAnimate/9.json"></div>
-                      </div>
-                      <div class="banner__desc">
-                        <div class="banner__count">
-                          <div class="banner__count_current">01</div>
-                          /
-                          <div class="banner__count_all">11</div>
+                    <div class="wrap-banner swiper-slide">
+                      <div class="banner bg-5">
+                        <div class="banner__img">
+                          <div class="banner__lottie" data-json="jsonAnimate/5.json"></div>
                         </div>
-                        <div class="banner__desc__footer">
-                          <h2 class="banner__desc_title h2">Складський облік</h2>
-                          <div class="banner__desc_text">Дає змогу відстежувати кількість товарів на складі, та нагадує, коли потрібно зробити закупівлю. SMART-інвентаризація — інструмент для проведення інвентаризації швидше та зручніше (можливість використовувати сторонні сканери штрих-кодів)</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wrap-banner">
-                    <div class="banner bg-10">
-                      <div class="banner__img">
-                        <div class="banner__lottie" data-json="jsonAnimate/10.json"></div>
-                      </div>
-                      <div class="banner__desc">
-                        <div class="banner__count">
-                          <div class="banner__count_current">01</div>
-                          /
-                          <div class="banner__count_all">11</div>
-                        </div>
-                        <div class="banner__desc__footer">
-                          <h2 class="banner__desc_title h2">Коммунікації</h2>
-                          <div class="banner__desc_text">Можливість розсилати SMS та повідомлення в месенджери клієнтам: нагадування про візит, повідомлення про готове замовлення, маркетингові повідомлення тощо</div>
+                        <div class="banner__desc">
+                          <div class="banner__count">
+                            <div class="banner__count_current">01</div>
+                            /
+                            <div class="banner__count_all">11</div>
+                          </div>
+                          <div class="banner__desc__footer">
+                            <h2 class="banner__desc_title h2">Платежі</h2>
+                            <div class="banner__desc_text">Проведення платежів у зручній для клієнта формі (карткою, готівкою) з фіксацією в системі та можливістю друку квитанції за кожну операцію</div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="wrap-banner">
-                    <div class="banner bg-11">
-                      <div class="banner__img">
-                        <div class="banner__lottie" data-json="jsonAnimate/11.json"></div>
-                      </div>
-                      <div class="banner__desc">
-                        <div class="banner__count">
-                          <div class="banner__count_current">01</div>
-                          /
-                          <div class="banner__count_all">11</div>
+                    <div class="wrap-banner swiper-slide">
+                      <div class="banner bg-6">
+                        <div class="banner__img">
+                          <div class="banner__lottie" data-json="jsonAnimate/6.json"></div>
                         </div>
-                        <div class="banner__desc__footer">
-                          <h2 class="banner__desc_title h2">Звіти</h2>
-                          <div class="banner__desc_text">Детальні звіти по результатам діяльності компанії: звіти по комерційні діяльності, основні фінансові результати, звіти по продажах по популярних категоріях, звіти по співробітникам, лікарям, агентам, боржникам, залишкам та інші</div>
+                        <div class="banner__desc">
+                          <div class="banner__count">
+                            <div class="banner__count_current">01</div>
+                            /
+                            <div class="banner__count_all">11</div>
+                          </div>
+                          <div class="banner__desc__footer">
+                            <h2 class="banner__desc_title h2">Керування асортиментом</h2>
+                            <div class="banner__desc_text">Категорії товарів з параметрами, спеціально розробленими для оптики. Можливість додавати та редагувати параметри. Окремі розділи для продажу готового товару та того, що виготовляється на замовлення за рецептом лікаря</div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                    <div class="wrap-banner swiper-slide">
+                      <div class="banner bg-7">
+                        <div class="banner__img">
+                          <div class="banner__lottie" data-json="jsonAnimate/7.json"></div>
+                        </div>
+                        <div class="banner__desc">
+                          <div class="banner__count">
+                            <div class="banner__count_current">01</div>
+                            /
+                            <div class="banner__count_all">11</div>
+                          </div>
+                          <div class="banner__desc__footer">
+                            <h2 class="banner__desc_title h2">Керування цінами</h2>
+                            <div class="banner__desc_text">Можливість виставляти ціни на товари вручну та автоматично для конкретної категорії товару через встановлення націнки. Автоматизована система ціноутворення товарів. У разі зростання вартості товару у постачальника націнка залишається, та ціна реалізації підвищується</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrap-banner swiper-slide">
+                      <div class="banner bg-8">
+                        <div class="banner__img">
+                          <div class="banner__lottie" data-json="jsonAnimate/8.json"></div>
+                        </div>
+                        <div class="banner__desc">
+                          <div class="banner__count">
+                            <div class="banner__count_current">01</div>
+                            /
+                            <div class="banner__count_all">11</div>
+                          </div>
+                          <div class="banner__desc__footer">
+                            <h2 class="banner__desc_title h2">Робота з постачальниками</h2>
+                            <div class="banner__desc_text">Можливість додавати постачальників до системи для легкої взаємодії з ними, а саме: консолідація різних замовлень клієнтів в єдине замовлення на постачальника, автоматичне створення замовлень товарів на склад, автопідказка оптимальної кількості замовлення</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrap-banner swiper-slide">
+                      <div class="banner bg-9">
+                        <div class="banner__img">
+                          <div class="banner__lottie" data-json="jsonAnimate/9.json"></div>
+                        </div>
+                        <div class="banner__desc">
+                          <div class="banner__count">
+                            <div class="banner__count_current">01</div>
+                            /
+                            <div class="banner__count_all">11</div>
+                          </div>
+                          <div class="banner__desc__footer">
+                            <h2 class="banner__desc_title h2">Складський облік</h2>
+                            <div class="banner__desc_text">Дає змогу відстежувати кількість товарів на складі та нагадує, коли потрібно зробити закупівлю. SMART-інвентаризація — інструмент для проведення інвентаризації швидше та зручніше (можливість використовувати сторонні сканери штрихкодів)</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrap-banner swiper-slide">
+                      <div class="banner bg-10">
+                        <div class="banner__img">
+                          <div class="banner__lottie" data-json="jsonAnimate/10.json"></div>
+                        </div>
+                        <div class="banner__desc">
+                          <div class="banner__count">
+                            <div class="banner__count_current">01</div>
+                            /
+                            <div class="banner__count_all">11</div>
+                          </div>
+                          <div class="banner__desc__footer">
+                            <h2 class="banner__desc_title h2">Коммунікації</h2>
+                            <div class="banner__desc_text">Можливість розсилати SMS та повідомлення в месенджери клієнтам: нагадування про візит, повідомлення про готове замовлення, маркетингові повідомлення тощо</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrap-banner swiper-slide">
+                      <div class="banner bg-11">
+                        <div class="banner__img">
+                          <div class="banner__lottie" data-json="jsonAnimate/11.json"></div>
+                        </div>
+                        <div class="banner__desc">
+                          <div class="banner__count">
+                            <div class="banner__count_current">01</div>
+                            /
+                            <div class="banner__count_all">11</div>
+                          </div>
+                          <div class="banner__desc__footer">
+                            <h2 class="banner__desc_title h2">Звіти</h2>
+                            <div class="banner__desc_text">Детальні звіти по результатам діяльності компанії: звіти по комерціній діяльності, основні фінансові результати, звіти по продажах за популярними категоріями, звіти по співробітникам, лікарям, агентам, боржникам, залишкам тощо</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
+                  </div>
+                  <div class="slider-navigation">
+                    <div class="slider-navigation-prev banner-slider-prev"></div>
+                    <div class="slider-pagination"></div>
+                    <div class="slider-navigation-next banner-slider-next"></div>
+                  </div>
+                  <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                      <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- <div class="container-fluid px-0">
+    <div class="row">
+      <div class="col-12">
+        <div class="banners" id="banners-container" style="width: 500%;">
+          <div class="wrap-banner swiper-slide">
+  <div class="banner bg-1">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="jsonAnimate/1.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Клієнтська база</h2>
+        <div class="banner__desc_text">Детальні картки клієнтів із можливістю відстежувати активність, історію покупок, та останні дії: дзвінки, візити, обстеження, лікування, замовлення тощо</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner swiper-slide">
+  <div class="banner bg-2">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="jsonAnimate/2.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Календар</h2>
+        <div class="banner__desc_text">Можливість індувідіально заповнювати графік роботи лікарів і відповідно до нього, записувати пацієнтів на візити. Зручний та приємний для користування інтерфейс</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner swiper-slide">
+  <div class="banner bg-3">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="jsonAnimate/3.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Медичний блок</h2>
+        <div class="banner__desc_text">Повний цикл візиту пацієнта, в якому буде представлений анамнез (медична картка), результати обстеження, щоденник пацієнта та його детальний діагноз. До кожного візиту можна прикріпити необхідний файл з результатами обстеження або будь-якою важливою інформацією про пацієнта</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner swiper-slide">
+  <div class="banner bg-4">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="jsonAnimate/4.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Робота із замовленнями</h2>
+        <div class="banner__desc_text">Можливість швидко підібрати наявний товар за конкретними характеристиками, вказаними в рецепті лікаря. Відстеження статусу замовлення: створений, переданий постачальнику або майстру, отриманий постачальником або майстром, завершений</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner swiper-slide">
+  <div class="banner bg-5">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="jsonAnimate/5.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Платежі</h2>
+        <div class="banner__desc_text">Проведення платежів у зручній для клієнта формі (карткою, готівкою) з фіксацією в системі та можливістю друку квитанції за кожну операцію</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner swiper-slide">
+  <div class="banner bg-6">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="jsonAnimate/6.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Керування асортиментом</h2>
+        <div class="banner__desc_text">Категорії товарів з параметрами, спеціально розробленими для оптики. Можливість додавати та редагувати параметри. Окремі розділи для продажу готового товару та того, що виготовляється на замовлення за рецептом лікаря</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner swiper-slide">
+  <div class="banner bg-7">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="jsonAnimate/7.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Керування цінами</h2>
+        <div class="banner__desc_text">Можливість виставляти ціни на товари вручну та автоматично для конкретної категорії товару через встановлення націнки. Автоматизована система ціноутворення товарів. У разі зростання вартості товару у постачальника націнка залишається, та ціна реалізації підвищується</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner swiper-slide">
+  <div class="banner bg-8">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="jsonAnimate/8.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Робота з постачальниками</h2>
+        <div class="banner__desc_text">Можливість додавати постачальників до системи для легкої взаємодії з ними, а саме: консолідація різних замовлень клієнтів в єдине замовлення на постачальника, автоматичне створення замовлень товарів на склад, автопідказка оптимальної кількості замовлення</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner swiper-slide">
+  <div class="banner bg-9">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="jsonAnimate/9.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Складський облік</h2>
+        <div class="banner__desc_text">Дає змогу відстежувати кількість товарів на складі та нагадує, коли потрібно зробити закупівлю. SMART-інвентаризація — інструмент для проведення інвентаризації швидше та зручніше (можливість використовувати сторонні сканери штрихкодів)</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner swiper-slide">
+  <div class="banner bg-10">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="jsonAnimate/10.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Коммунікації</h2>
+        <div class="banner__desc_text">Можливість розсилати SMS та повідомлення в месенджери клієнтам: нагадування про візит, повідомлення про готове замовлення, маркетингові повідомлення тощо</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap-banner swiper-slide">
+  <div class="banner bg-11">
+    <div class="banner__img">
+      <div class="banner__lottie" data-json="jsonAnimate/11.json"></div>
+    </div>
+    <div class="banner__desc">
+      <div class="banner__count">
+        <div class="banner__count_current">01</div>
+        /
+        <div class="banner__count_all">11</div>
+      </div>
+      <div class="banner__desc__footer">
+        <h2 class="banner__desc_title h2">Звіти</h2>
+        <div class="banner__desc_text">Детальні звіти по результатам діяльності компанії: звіти по комерціній діяльності, основні фінансові результати, звіти по продажах за популярними категоріями, звіти по співробітникам, лікарям, агентам, боржникам, залишкам тощо</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+
         </section>
 
 
@@ -773,7 +996,7 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-6" aria-expanded="true" aria-controls="bannerMobile-item-6">
                     <h2 class="banner-mobile__title h2">Керування асортиментом</h2>
                   </button>
-                  <div class="banner-mobile__text bannerMobile-item-6 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-6">Категорії товарів із параметрами спеціально розробленими для оптики. Можливість додавати та редагувати параметри. Окремі розділи для продажу готового товару та того, що виготовляється на замовлення запо рецептому лікаря</div>
+                  <div class="banner-mobile__text bannerMobile-item-6 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-6">Категорії товарів з параметрами, спеціально розробленими для оптики. Можливість додавати та редагувати параметри. Окремі розділи для продажу готового товару та того, що виготовляється на замовлення за рецептом лікаря</div>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -784,7 +1007,7 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-7" aria-expanded="true" aria-controls="bannerMobile-item-7">
                     <h2 class="banner-mobile__title h2">Керування цінами</h2>
                   </button>
-                  <div class="banner-mobile__text bannerMobile-item-7 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-7">Можливість виставляти ціни на товари вручну, та автоматично для конкретної категорії товару через встановлення націнки. Автоматизована система ціноутворення товарів. У разі зростанняі вартості товару у постачальника націнка залишається, та ціна реалізації підвищується</div>
+                  <div class="banner-mobile__text bannerMobile-item-7 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-7">Можливість виставляти ціни на товари вручну та автоматично для конкретної категорії товару через встановлення націнки. Автоматизована система ціноутворення товарів. У разі зростання вартості товару у постачальника націнка залишається, та ціна реалізації підвищується</div>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -795,7 +1018,7 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-8" aria-expanded="true" aria-controls="bannerMobile-item-8">
                     <h2 class="banner-mobile__title h2">Робота з постачальниками</h2>
                   </button>
-                  <div class="banner-mobile__text bannerMobile-item-8 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-8">Можливість додавати постачальників до системи для легкої взаємодії з ними, а саме: консолідація різних замовлень клієнтів в єдине замовлення на постачальника, автоматичне створення замовлень товарів на склад, авто підказка оптимальної кількості замовлення</div>
+                  <div class="banner-mobile__text bannerMobile-item-8 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-8">Можливість додавати постачальників до системи для легкої взаємодії з ними, а саме: консолідація різних замовлень клієнтів в єдине замовлення на постачальника, автоматичне створення замовлень товарів на склад, автопідказка оптимальної кількості замовлення</div>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -806,7 +1029,7 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-9" aria-expanded="true" aria-controls="bannerMobile-item-9">
                     <h2 class="banner-mobile__title h2">Складський облік</h2>
                   </button>
-                  <div class="banner-mobile__text bannerMobile-item-9 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-9">Дає змогу відстежувати кількість товарів на складі, та нагадує, коли потрібно зробити закупівлю. SMART-інвентаризація — інструмент для проведення інвентаризації швидше та зручніше (можливість використовувати сторонні сканери штрих-кодів)</div>
+                  <div class="banner-mobile__text bannerMobile-item-9 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-9">Дає змогу відстежувати кількість товарів на складі та нагадує, коли потрібно зробити закупівлю. SMART-інвентаризація — інструмент для проведення інвентаризації швидше та зручніше (можливість використовувати сторонні сканери штрихкодів)</div>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -828,7 +1051,7 @@
                   <button class="banner-mobile__button text-center" type="button" data-bs-toggle="collapse" data-bs-target=".bannerMobile-item-11" aria-expanded="true" aria-controls="bannerMobile-item-11">
                     <h2 class="banner-mobile__title h2">Звіти</h2>
                   </button>
-                  <div class="banner-mobile__text bannerMobile-item-11 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-11">Детальні звіти по результатам діяльності компанії: звіти по комерційні діяльності, основні фінансові результати, звіти по продажах по популярних категоріях, звіти по співробітникам, лікарям, агентам, боржникам, залишкам та інші</div>
+                  <div class="banner-mobile__text bannerMobile-item-11 accordion-collapse collapse collapse-sm " aria-labelledby="bannerMobile-11">Детальні звіти по результатам діяльності компанії: звіти по комерціній діяльності, основні фінансові результати, звіти по продажах за популярними категоріями, звіти по співробітникам, лікарям, агентам, боржникам, залишкам тощо</div>
                 </div>
               </div>
             </div>
@@ -1157,7 +1380,7 @@
                 <div class="h3">Навігація</div>
                 <ul class="footer-menu">
                   <li>
-                    <a href="about.html">О компанії</a>
+                    <a href="about.html">Про компанію</a>
                   </li>
                   <li>
                     <a href="optical.html">Для магазинів оптики</a>
@@ -1426,8 +1649,8 @@
             </div>
             <div class="col-lg-7">
               <div class="thanks_desc text-center">
-                <h4 class="thanks_title h4">Дякуємо за ваш запит!</h4>
-                <div class="thanks_desc">Найближчім часом наші менеджери зв’яжуться з вами для уточнення вашого запиту або питаннь</div>
+                <h4 class="thanks_title h4">Дякуємо за звернення!</h4>
+                <div class="thanks_desc">Найближчим часом наші менеджери з в'яжуться з вами для уточнення запиту та дадуть відповідь на всі ваші запитання. </div>
                 <div class="thanks_btn">
                   <a href="index.html" class="btn-site click-animation">На головну</a>
                 </div>

@@ -1,4 +1,4 @@
-const developmentBuild = false;
+const developmentBuild = true;
 const bundleCssFileName = "styles.min.css";
 
 const { src, dest, parallel, series, watch } = require("gulp");

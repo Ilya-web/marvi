@@ -14355,9 +14355,6 @@ textarea.input-site {
 
 /***info-box***/
 /***section-functionsMARVI***/
-.section-functionsMARVI {
-  height: 100vh;
-}
 @media screen and (max-height: 800px) {
   .section-functionsMARVI .mb-80, .section-functionsMARVI .content-box_row:not(:last-of-type) {
     margin-bottom: 40px;
@@ -14373,26 +14370,45 @@ textarea.input-site {
 }
 
 .wrap-banner {
-  overflow: hidden;
+  height: auto;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 70vw;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  color: red;
 }
-@media screen and (max-height: 800px) {
-  .wrap-banner {
-    min-width: 80vw;
-  }
-}
-@media screen and (max-height: 650px) {
-  .wrap-banner {
-    min-width: 90vw;
-  }
-}
-@media (max-width: 1449.98px) {
-  .wrap-banner {
-    min-width: 90vw;
-  }
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: red;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 #banners {
@@ -14418,6 +14434,7 @@ textarea.input-site {
   display: flex;
   margin: 0 var(--gap-20);
   gap: var(--border-radius-40);
+  height: 100%;
 }
 .banner.bg-1 {
   background: #36498c;

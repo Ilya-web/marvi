@@ -1852,7 +1852,7 @@ textarea.input-site {
 /***section-functionsMARVI***/
 
 .section-functionsMARVI {
-  height: 100vh;
+  // height: 100vh;
   @media screen and (max-height: 800px) {
     .mb-80 {
       margin-bottom: 40px;
@@ -1869,22 +1869,52 @@ textarea.input-site {
 }
 
 .wrap-banner {
-  overflow: hidden;
-  display: flex;
-  min-width: 70vw;
+  height: auto;
+  // overflow: hidden;
+  // display: flex;
+  // min-width: 70vw;
 
-  @media screen and (max-height: 800px) {
-    min-width: 80vw;
-  }
-  @media screen and (max-height: 650px) {
-    min-width: 90vw;
-  }
+  // @media screen and (max-height: 800px) {
+  //   min-width: 80vw;
+  // }
+  // @media screen and (max-height: 650px) {
+  //   min-width: 90vw;
+  // }
 
-  @include media-breakpoint-down(xxl) {
-    min-width: 90vw;
-  }
+  // @include media-breakpoint-down(xxl) {
+  //   min-width: 90vw;
+  // }
 }
 
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: red;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: red;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
 
 #banners {
   overflow: hidden;
@@ -1943,6 +1973,8 @@ textarea.input-site {
   gap: var(--border-radius-40);
 
   @include bg;
+
+  height: 100%;
 
 
   &__img {
