@@ -9,8 +9,8 @@
     <section class="section-main section section-bg parentImageParallax clinicPage">
       <div class="section-bg_image imageParallax">
         <picture>
-          <source srcset="images/bg/optical.webp" type="image/webp"/>
-          <img src="images/bg/optical.jpg" loading="lazy" alt="" />
+          <source srcset="images/bg/clinics.webp" type="image/webp"/>
+          <img src="images/bg/clinics.jpg" loading="lazy" alt="" />
         </picture>
       </div>
       @@include('components/header/index.html')
@@ -28,18 +28,10 @@
                   class="btn-site click-animation green"
                   data-bs-toggle="modal" data-bs-target="#checkOutDemo"
                 >Отримати демо</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      </div>
-      <div class="madeInUkraine">
-        <div class="madeInUkraine_icon">
-          <svg>
-            <use xlink:href="images/icons/sprite.svg#flagForUkraine"></use>
-          </svg>
-        </div>
-        Made in Ukraine
       </div>
     </section>
 
@@ -52,6 +44,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-xxl-5 content-box">
+            @@include('components/madeInUkraine/index.html')
             <div class="content-box_row section-about_itemAnimate">
               <h2 class="h1 mb-80 text-center text-lg-start">Рішення для офтальмологічних клінік</h2>
               <h3 class="h3 mb-80">
