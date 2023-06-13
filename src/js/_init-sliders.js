@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //banner-slider----------------------------------------------------
 
   if(document.querySelector('.banner-slider')) {
-    new Swiper(".banner-slider", {
+    const bannerSlider= new Swiper(".banner-slider", {
       slidesPerView: 1,
       loop: true,
       speed: 1000,
@@ -67,6 +67,18 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       },
     });
+
+    const observer = new IntersectionObserver(entries => {
+      const firstEntry = entries[0];
+      if (firstEntry.isIntersecting) {
+        bannerSlider.autoplay.start();
+      } else {
+        bannerSlider.autoplay.stop();
+      }
+    });
+
+    const swiperContainer = document.querySelector('.section-functionsMARVI');
+    observer.observe(swiperContainer);
   }
 
   //init reviewsSlider------------------------------------------------
