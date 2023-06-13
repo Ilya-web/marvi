@@ -13801,6 +13801,7 @@ textarea.input-site {
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
+  border-radius: 20px;
 }
 .header-menu > li.active {
   background: #fbf9fb;
@@ -13833,6 +13834,7 @@ textarea.input-site {
 }
 .header-menu > li.drop-li {
   position: relative;
+  border-radius: 20px 20px 0 0;
 }
 .header-menu > li.drop-li span {
   padding-right: 54px;
@@ -13892,6 +13894,9 @@ textarea.input-site {
   -o-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   pointer-events: none;
+  border-radius: 0 0 20px 20px;
+  -webkit-box-shadow: 0 10px 12px rgba(134, 54, 140, 0.15);
+  box-shadow: 0 10px 12px rgba(134, 54, 140, 0.15);
 }
 .header-menu > li .drop-menu li {
   white-space: nowrap;

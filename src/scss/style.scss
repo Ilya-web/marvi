@@ -1339,6 +1339,7 @@ textarea.input-site {
 
     & > li {
       @include transition($time-animate);
+      border-radius: 20px;
       &.active {
         background: $color-white;
         a,
@@ -1370,6 +1371,7 @@ textarea.input-site {
 
       &.drop-li {
         position: relative;
+        border-radius: 20px 20px 0 0;
         span {
           padding-right: 54px;
           position: relative;
@@ -1422,6 +1424,8 @@ textarea.input-site {
         opacity: 0;
         @include transition($time-animate);
         pointer-events: none;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 10px 12px rgba(134, 54, 140, 0.15);
 
         li {
           white-space: nowrap;

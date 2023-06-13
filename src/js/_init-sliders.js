@@ -1,5 +1,5 @@
 //init reviewsSlider------------------------------------------------
-import Swiper, { Navigation, Pagination } from "swiper";
+import Swiper, {Autoplay, Navigation, Pagination } from "swiper";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     new Swiper(".banner-slider", {
       slidesPerView: 1,
       loop: true,
-      modules: [Navigation, Pagination],
+      modules: [Navigation, Pagination, Autoplay],
       pagination: {
         el: ".slider-pagination",
         clickable: true,
@@ -48,17 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
         nextEl: ".banner-slider-next",
         prevEl: ".banner-slider-prev",
       },
+
       autoplay: {
-        delay: 500,
+        delay: 3000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true
-      },
-      on: {
-        autoplayTimeLeft(s, time, progress) {
-          console.log('svvsv')
-          progressCircle.style.setProperty("--progress", 1 - progress);
-          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-        }
       },
       breakpoints: {
         1100: {
