@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     new Swiper(".banner-slider", {
       slidesPerView: 1,
       loop: true,
+      speed: 1000,
       modules: [Navigation, Pagination, Autoplay],
       pagination: {
         el: ".slider-pagination",
