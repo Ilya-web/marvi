@@ -1144,6 +1144,14 @@ textarea.input-site {
 }
 /***copyRight***/
 
+.madeBy {
+  display: flex;
+  margin-bottom: 10px;
+  img {
+    margin-left: 5px;
+  }
+}
+
 .btn-menu {
   width: 27px;
   height: 27px;
@@ -1270,7 +1278,6 @@ textarea.input-site {
   @include media-breakpoint-down(xl) {
     padding: 10px 0;
   }
-
 
   &-fixed {
     position: fixed;
@@ -3567,14 +3574,6 @@ textarea.input-site {
   }
   &.bg-blue {
     background: $bg-2;
-  }
-
-  &__address {
-    margin-bottom: 20px;
-  }
-
-  &__phone {
-    margin-bottom: 0;
   }
 }
 

@@ -13605,6 +13605,16 @@ textarea.input-site {
 }
 
 /***copyRight***/
+.madeBy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.madeBy img {
+  margin-left: 5px;
+}
+
 .btn-menu {
   width: 27px;
   height: 27px;
@@ -16115,12 +16125,6 @@ textarea.input-site {
 }
 .contact-box.bg-blue {
   background: #36498c;
-}
-.contact-box__address {
-  margin-bottom: 20px;
-}
-.contact-box__phone {
-  margin-bottom: 0;
 }
 
 /***contact-box***/

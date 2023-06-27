@@ -1,0 +1,42 @@
+@@include('components/head/index.html', {'title': 'Marvi'})
+@@include('components/header/index.html', {'fixed' : true})
+@@include('components/loader/index.html')
+@@include('components/mobile-menu/index.html')
+
+<div class="wrapper">
+  <main class="main">
+    <section class="section-main section-main-small section section-bg parentImageParallax">
+      <div class="section-bg_image imageParallax">
+        <picture>
+          <source srcset="images/bg/about-bg.webp" type="image/webp"/>
+          <img src="images/bg/about-bg.jpg" loading="lazy" alt="" />
+        </picture>
+      </div>
+      @@include('components/header/index.html')
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-main__content">
+              <h1 class="h1">Політика з обробки персональних даних MARVI</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 offset-xl-2 content-box">
+            тут текст
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('components/footer/index.html')
+</div>
+
+@@include('components/chatButton/index.html')
+@@include('components/scripts/index.html')
